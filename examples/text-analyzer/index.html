@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Barrington Venables">
+    <meta name="description" content="Text analysis app. Counts number of words, and outputs a list of unique words and how many times those words appear">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Enter your text</h1>
+    <textarea id="text-input" placeholder="Enter your text here"></textarea>
+    <div>
+        <strong>Word count: </strong><span id="word-count"></span>    
+    </div>
+    <div>
+        <strong class="text-underline">Word list</strong>
+        <div id="list-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

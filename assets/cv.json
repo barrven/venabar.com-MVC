@@ -1,0 +1,289 @@
+{
+    "skillSchema": {
+    "title": "description of skill",
+    "rating": "int from 1-5",
+    "type": "hard/soft",
+    "category":"Administrative/Technical/Communication/Analytical/Leadership/Project Management/Creative/Operational"
+
+    },
+    "experienceSchema":{
+        "company": "company name",
+        "title": "job title",
+        "location": "format: 'Toronto, ON'",
+        "startDate": "YYYY-MM",
+        "endDate": "YYYY-MM",
+        "duties": ["description of each duty in a separate string"],
+        "description": "optional"
+    },
+    "skills":[
+        {
+            "title": "MS Office 365 Admin",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative"
+        },
+        {
+            "title": "Azure Active Directory",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative"
+        },
+        {
+            "title": "MS Exchange Admin",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative"
+        },
+        {
+            "title": "Windows 10",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Windows 11",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Windows Server",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "MS Teams support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "VOIP support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Desktop support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Remote support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Mobile Device Management",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative"
+        },
+        {
+            "title": "IT Asset Management",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative"
+        },
+        {
+            "title": "Documentation",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Communication"
+        },
+        {
+            "title": "Training",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Communication"
+        },
+        {
+            "title": "Onboarding",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Administrative"
+        },
+        {
+            "title": "Offboarding",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Administrative"
+        },
+        {
+            "title": "JIRA Ticketing",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Operational"
+        },
+        {
+            "title": "ITIL Service Knowledge",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative"
+        },
+        {
+            "title": "Troubleshooting",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Process Improvement",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Analytical"
+        },
+        {
+            "title": "Communication",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Communication"
+        },
+        {
+            "title": "Collaboration",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Communication"
+        },
+        {
+            "title": "TCP/IP",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "DHCP",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "DNS",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "PowerShell",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Python",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Java",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "JavaScript",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "HTML",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "CSS",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "PHP",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "VBA",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Automation",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "Shell scripting",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "SQL",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        },
+        {
+            "title": "SQL Server",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical"
+        }
+    ]
+    
+    ,
+    "experience":[
+        {
+            "company": "DRIAS International Ltd",
+            "title": "Technical Support Analyst",
+            "location": "Mississauga, ON",
+            "startDate": "2022-09",
+            "endDate": "Current",
+            "duties": [
+                "Performed admin duties for Office 365, on-prem AD/AzureAD user accounts, network permissions, security/distribution groups, and mobile device management.",
+                "Performed onboarding and offboarding of users, and ran quarterly user access reports for executive team & auditors.",
+                "Resolved 100+ tier 2, (in-person and remote) administrative, software, network, and server-related support tickets per month. Researched / implemented solutions.",
+                "Supervised tier 1 support staff. Conducted in-person and remote onboarding sessions for 250+ users resulting in a 20% reduction in helpdesk tickets per month.",
+                "Implemented the rollout of multi-factor authentication, and VPN software for 500+ users. Created training documentation resulting in an 80% improvement in security survey results.",
+                "Created and documented 100+ automation scripts to improve efficiency of daily operations by 80%.",
+                "Managed deployment, configuration, & support of 20+ desktop/server-based applications. Assisted with data center migration and OS upgrade for 20+ virtual servers."
+            ],
+            "description": ""
+        },
+        {
+            "company": "DRIAS International Ltd",
+            "title": "Help Desk Technician",
+            "location": "Mississauga, ON",
+            "startDate": "2021-06",
+            "endDate": "2022-09",
+            "duties": [
+                "Provided desktop/remote technical support involving software, hardware, printers, and VOIP phones.",
+                "Resolved 200+ tickets per month, resulting in a 97% satisfaction rate. Escalated tickets to tier 2 support if necessary.",
+                "Managed 300+ IT assets, produced reports. Developed 50+ knowledge base articles, and maintained incident resolution log improving helpdesk support efficiency by 50%."
+            ],
+            "description": ""
+        },
+        {
+            "company": "George Brown College",
+            "title": "Coding & English Tutor",
+            "location": "Toronto, ON",
+            "startDate": "2019-09",
+            "endDate": "2021-04",
+            "duties": [
+                "Provided peer tutoring in programming languages / data structures & algorithms, troubleshooting & system config.",
+                "Tutored students in written / verbal communication, academic, and presentation skills."
+            ],
+            "description": ""
+        }
+    ]
+ 
+}

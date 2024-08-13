@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        html {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: white;
+        }
+        .calendar {
+            border: 1px solid white;
+            display: inline-block; /* Ensure the calendar adjusts to its content */
+            width: 100%;
+        }
+        .week, .week-header {
+            display: flex; /* Use flex display for the week row */
+            justify-content: space-between; /* Distribute cells evenly */
+            width: 100%; /* Make the row take up the full width */
+        }
+        .week-header div {
+            flex: 1; /* Each cell takes up an equal fraction of available space */
+            text-align: center;
+            background-color: #333;
+        }
+        .week div{
+            flex: 1; /* Each cell takes up an equal fraction of available space */
+            display: flex; /* Use flex display for better alignment control */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align items to the top vertically */
+            padding: 5px;
+            text-align: left;
+            background-color: #333;
+            border: 1px solid white;
+            height: 6em;
+        }
+        .curr-day{
+            border: 2px solid blue !important;
+            background-color: #7a7979 !important;
+            color: blue;
+        }
+        .selected-day{
+            background-color: #7a7979 !important;
+        }
+        .controls{
+            display: flex;
+            margin: 5px;
+            justify-content: center;
+        }
+        .controls button {
+            width: 3em;
+            height: 3em;
+            align-self: center;
+        }
+        .controls h1 {
+            width: 5em;
+            text-align: center;
+            padding: 0;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="decrementYear()">&lt;</button>
+        <h1 id="year"></h1>
+        <button onclick="incrementYear()">&gt;</button>
+    </div>
+    <div class="controls">
+        <button onclick="decrementMonth()">&lt;</button>
+        <h1 id="month"></h1>
+        <button onclick="incrementMonth()">&gt;</button>
+    </div>
+    <div class="calendar" id="calendar"></div>
+
+    <script>
+        const yearTitle = document.getElementById('year');
+        const monthTitle = document.getElementById('month');
+        const calendar = document.getElementById('calendar');
+        let now = new Date();
+        let year, month;
+        let dayObjects = [];
+        onLoad();
+
+        function onLoad() {
+            month = now.getMonth() + 1;
+            year = now.getFullYear();
+            yearTitle.innerHTML = year;
+            updateDisplay();
+        }
+        
+        function drawCalendar(year, month){
+            calendar.innerHTML = '';
+            const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            const header = document.createElement('div');
+            header.className = 'week-header';
+            for(const day of days){
+                let entry = document.createElement('div');
+                entry.innerHTML = day;
+                header.appendChild(entry);
+            }
+            calendar.appendChild(header)
+
+            let stats = getMonthStats(year, month);
+            let numDays = stats.days;
+            let monthStart = stats.start; //day of the week month starts
+            let numWeeks = Math.ceil((numDays + stats.start-1) / 7); //round up to nearest int
+
+            let dayNum = 1;
+            let isNonMonthDay;
+            for (let i = 0; i < numWeeks; i++) {
+
+                const week = document.createElement('div');
+                week.className = 'week';
+
+                for (let j = 0; j < 7; j++) {
+                    const day = document.createElement('div');
+                    isNonMonthDay = false;
+                    if ((i === 0 && j < monthStart - 1) || (dayNum > numDays)) {
+                        isNonMonthDay = true;
+                    }
+                    if (!isNonMonthDay) {
+                        if(dayNum === now.getDate() && year === now.getFullYear() && month === now.getMonth()+1){
+                            day.className = 'curr-day';
+                        }
+                        day.dayNum = dayNum;
+                        day.innerHTML = `${dayNum++}`;
+                        dayObjects.push(day);
+                        day.addEventListener('click', (e) => {
+                            toggleDayClick(e.target.dayNum, now.getDate());
+                        })
+                    }
+                    
+                    week.appendChild(day);
+                }
+
+                calendar.appendChild(week);
+            }
+        }
+
+        function toggleDayClick(clickedDayNum, currDay){
+            for(const item of dayObjects){
+                if(item.dayNum === currDay) continue;
+                if(item.dayNum === clickedDayNum){
+                    item.className = 'selected-day';
+                }
+                else item.className = '';
+            }
+        }
+
+        function getMonthStats(year, month){
+            month--;
+            let numDaysInCurrentMonth = new Date(year, month+1,0).getDate();
+            let firstDayOfMonth = new Date(year, month, 1).getDay();
+            return {days: numDaysInCurrentMonth, start: firstDayOfMonth+1};
+        }
+
+        function getMonthTitle(monthNum){
+            const months = {
+                1: 'January', 2: 'February', 3: 'March', 4: 'April',
+                5: 'May', 6: 'June', 7: 'July', 8: 'August', 
+                9: 'September', 10: 'October', 11: 'November', 12: 'December'
+            };
+            return months[monthNum];
+        }
+
+        function updateDisplay(){
+            monthTitle.innerHTML = getMonthTitle(month);
+            yearTitle.innerHTML = year;
+            drawCalendar(year, month);
+        }
+
+        function decrementMonth(){
+            if(month === 1){
+                month = 12;
+                year--;
+            } else{
+                month--;
+            }
+            updateDisplay();
+        }
+
+        function incrementMonth(){
+            if(month === 12){
+                month = 1;
+                year++;
+            } else {
+                month++;
+            }
+            updateDisplay();
+        }
+
+        function incrementYear(){
+            year++;
+            updateDisplay();
+        }
+
+        function decrementYear(){
+            year--;
+            updateDisplay();
+        }
+
+    </script>
+</body>
+</html>

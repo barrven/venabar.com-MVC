@@ -1,0 +1,109 @@
+<main class="container">
+    <!-- Resume -->
+    <div class="p-2 mb-5">
+            <!-- <a class="btn btn-primary float-right" title="Download my Resume" href="files/Venables_Resume.pdf">
+                Download <i class="fas fa-file-download"></i></a> -->
+            <h2>Resume</h2>
+            <hr>
+            
+            <div class="row">
+
+                <!-- Highlights of Qualifications -->
+                <!-- <div class="col-md mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark text-white text-center">Highlights of Qualifications</li>
+                        <li class="list-group-item">Collaborative skills learned through music background as well as through several group projects in school</li>
+                        <li class="list-group-item">Problem solving experience gained through school assignments and tests</li>
+                        <li class="list-group-item">The ability to design, implement, and test a solution based on given requirements</li>
+                        <li class="list-group-item">Knowledge of OOP concepts and practices</li>
+                        <li class="list-group-item">Familiar with agile methodologies, version control and collaborative tools such as Git</li>
+                    </ul>
+                </div> -->
+
+                <!-- skills -->
+                <div class="col-md mb-2">
+                    <div class="bg-dark text-white text-center box-title">
+                        <div style="padding-top: 12px;">Skills</div>
+                    </div>
+                    <div class="border-grey-round p-2">
+                        <?php
+                            // var_dump($skills);
+                            foreach($skills as $skill){
+                                $temp = $skill['title'];
+                                echo "<div class='item-pill'>$temp</div>";
+                            }
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work experience -->
+            <div class="mx-5-sm">
+                <div class="bg-dark text-white text-center box-title">
+                    <div style="padding-top: 12px;">Work Experience</div>
+                </div>
+                <div class="border-grey-round p-2">
+                    <table class="table">
+                        <!-- this would be used for sorting the table -->
+                        <!-- <thead class="thead-light">
+                            <tr>
+                                <th scope="col"><button class="btn btn-primary">Title <span class="fas fa-sort"></span></button></th>
+                                <th scope="col"><button class="btn btn-primary">Company <span class="fas fa-sort"></span></button></th>
+                                <th scope="col"><button class="btn btn-primary">Date <span class="fas fa-sort"></span></button></th>
+                            </tr>
+                        </thead> -->
+                        <tbody id="work-xp-content">
+                            
+                            <!-- ********** Example ********** -->
+                            <!-- <tr class="bg-light font-weight-bold">
+                                <td>Fullstack Programming Tutor</td>
+                                <td class="text-right">January 2020 - Current</td>
+                            </tr>
+                            <tr class="bg-light small text-muted font-italic">
+                                <td colspan="">George Brown College</td>
+                                <td class="text-right">Toronto, ON</td>
+                            </tr>
+                            <tr><td colspan="2">
+                                <p>hello</p>
+                                <p>hello</p>
+                                <p>hello</p>
+                            </td></tr> -->
+                            
+                            <?php foreach($experience as $exp): ?>
+                                <!-- List each job -->
+                                <tr class='bg-light font-weight-bold'>
+                                    <td><?= $exp['title'] ?></td>
+                                    <td class='text-right'><?= $exp['startDate'] ?> - <?= $exp['endDate'] ?></td>
+                                </tr>
+                                <tr class='bg-light small text-muted font-italic'>
+                                    <td colspan=""><?= $exp['company'] ?></td>
+                                    <td class="text-right"><?= $exp['location'] ?></td>
+                                </tr>
+
+                                <!-- List the duties -->
+                                <tr><td colspan="2">
+                                <?php foreach($exp['duties'] as $duty): ?>
+                                    <p><?= $duty ?></p>
+                                <?php endforeach; ?>
+                                </td></tr>
+
+                            <?php endforeach; ?>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <!-- <div class="p-2">
+            <a class="btn btn-primary float-right" title="Download my Cover Letter" href="files/Venables_Cover_Letter.pdf">
+                Download <i class="fas fa-file-download"></i></a>
+            <h2>Cover Letter</h2>
+            <hr>
+        </div> -->
+</main>
+
+ <!-- programmatically populate table with data-->
+ <!-- <script src="js/populate-work-xp.js"></script> -->

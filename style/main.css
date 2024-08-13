@@ -1,0 +1,95 @@
+.bg-honeycomb{
+    background-image: url(../assets/abstract-honeycomb-crop.jpg);
+}
+
+.card-link:hover{
+    box-shadow: 0 0 10px;
+    transition: 0.3s;
+}
+
+.card-link{
+    transition: 0.3s;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.col-sm{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Bootstrap-esque styles */
+/* .inline-label{
+    background-color: #f0ecec;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    width: 100px;
+}
+.inline-content{
+    border: 1px solid #ced4da;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+.box-title{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50px;
+}
+
+.border-grey-round{
+    border-left: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: auto;
+    background-color: white;
+}
+
+.item-pill{
+    background-color: #f0ecec;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    float: left;
+    min-width: 90px;
+    text-align: center;
+}
+.trigger-hover-special{
+    background-color: #047bfb;
+    color: white;
+   
+}
+
+.cust-link1{
+    color: white;
+}
+
+.cust-link1:hover{
+    /* color:#ced4da; */
+    color: #047bfb;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9*/
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}

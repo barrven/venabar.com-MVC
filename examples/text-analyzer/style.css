@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#text-input{
+ height: 10em;
+ width: 20em;   
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.badge{
+    padding: 3px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 40%;
+}
