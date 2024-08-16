@@ -54,10 +54,20 @@ body{
     background-color: white;
 }
 
+.border-primary-round{
+    border-left: 1px solid #007bff;
+    border-bottom: 1px solid #007bff;
+    border-right: 1px solid #007bff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: auto;
+    background-color: white;
+}
+
 .item-pill{
-    background-color: #f0ecec;
+    background-color: #f8f9fa;
     border-radius: 5px;
-    border: 1px solid #ced4da;
+    border: 1px solid #dee2e6;
     padding: 0.4rem;
     margin: 0.2rem;
     float: left;
@@ -67,6 +77,7 @@ body{
 }
 .item-pill:hover{
     background-color: #ebeef5;
+    /* border: 1px solid #ebeef5; */
 }
 .trigger-hover-special{
     background-color: #047bfb;

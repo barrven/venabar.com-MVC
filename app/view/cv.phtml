@@ -25,7 +25,7 @@
                     <div class="bg-dark text-white text-center box-title">
                         <div style="padding-top: 12px;">Skills</div>
                     </div>
-                    <div class="border-grey-round p-2">
+                    <div class="border-primary-round p-2">
                     
                     <?php $index = 0; ?>
                     <?php foreach($skills as $skill): ?>
@@ -70,8 +70,7 @@
 
             </script>
 
-            <!-- **************** modal test **************** -->
-
+            <!-- Hidden button to open modal on click event -->
             <button id="btnModal" hidden type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                 Open Modal
             </button>
@@ -83,9 +82,10 @@
 
                         <div class="modal-header">
                             <h5 class="modal-title" id="myModalLabel">Modal Heading</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button>
+                            </button> -->
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         </div>
 
                         <div class="modal-body" id="modalBody">
@@ -93,7 +93,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            
                         </div>
 
                     </div>
@@ -108,7 +108,7 @@
                 <div class="bg-dark text-white text-center box-title">
                     <div style="padding-top: 12px;">Work Experience</div>
                 </div>
-                <div class="border-grey-round p-2">
+                <div class="border-primary-round p-2">
                     <table class="table">
                         <!-- this would be used for sorting the table -->
                         <!-- <thead class="thead-light">
@@ -141,7 +141,7 @@
                                     <td><?= $exp['title'] ?></td>
                                     <td class='text-right'><?= $exp['startDate'] ?> - <?= $exp['endDate'] ?></td>
                                 </tr>
-                                <tr class='bg-light small text-muted font-italic'>
+                                <tr class='bg-light small font-italic text-muted'>
                                     <td colspan=""><?= $exp['company'] ?></td>
                                     <td class="text-right"><?= $exp['location'] ?></td>
                                 </tr>
