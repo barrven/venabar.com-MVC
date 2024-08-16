@@ -6,6 +6,8 @@ session_start();
 require APP.DS.'config.php';
 require APP.DS.'functions.php';
 
+loadEnv(APP.DS.'.env');
+
 $page = getParam('page', 'home'); //default is home
 $model = $paths['MODEL'].DS.$page.'.php';
 $view = $paths['VIEW'].DS.$page.'.phtml';
