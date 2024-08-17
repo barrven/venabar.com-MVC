@@ -18,13 +18,13 @@
     "skills":[
         {
             "title": "MS Office 365 Admin",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Administrative"
         },
         {
             "title": "Azure Active Directory",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Administrative"
         },
@@ -36,13 +36,13 @@
         },
         {
             "title": "Windows 10",
-            "rating": 4,
+            "rating": 5,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "Windows 11",
-            "rating": 4,
+            "rating": 5,
             "type": "Hard",
             "category": "Technical"
         },
@@ -60,7 +60,7 @@
         },
         {
             "title": "VOIP support",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Technical"
         },

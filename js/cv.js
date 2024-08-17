@@ -4,31 +4,38 @@
 renderSkills(skills.skills);
 
 function renderSkills(skillsArr) {
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
     
-    const mainContainer = $('<div>', { class: 'col-md mb-2' });
-    const titleBox = $('<div>', { class: 'bg-dark text-white text-center box-title' });
-    const titleText = $('<div>', { text: 'Skills', css: { paddingTop: '12px' } });
-    titleBox.append(titleText);
+    const ratingFilter = params.get('rating');
+    const typeFilter = params.get('type');
+    const categoryFilter = params.get('category');
 
-    const skillsContainer = $('<div>', { class: 'border-primary-round p-2' });
-    
-    // Loop through skillsArr and create each skill pill
+    // Loop through skillsArr and create then attach each skill
     skillsArr.forEach((skill, index) => {
+        // console.log('skill:', skill)
+        if(ratingFilter && ratingFilter > skill.rating){
+            // console.log('skipped',skill.rating, skill.title)
+            return;
+        }
+        if(typeFilter && skill.type.toLowerCase() != typeFilter.toLowerCase()){
+            // console.log('skipped',skill.type, skill.title)
+            return;
+        }
+        if(categoryFilter && skill.category.toLowerCase() != categoryFilter.toLowerCase()){
+            // console.log('skipped', skill.category)
+            return;
+        }
+
         const skillPill = $('<div>', {
             class: 'item-pill',
             click: ()=>{ handleSkillClick(index); },
-            // attr: { index: index }
+            text: skill.title
         });
 
-        const skillTitle = $('<span>', { text: skill.title });
-        skillPill.append(skillTitle);
-        skillsContainer.append(skillPill);
+        $('#skillsCont').append(skillPill);
     });
 
-    mainContainer.append(titleBox).append(skillsContainer);
-
-    // Finally, append the main container to the desired parent element in the DOM
-    $('#skillsCont').append(mainContainer);
 }
 
 function handleSkillClick(index){

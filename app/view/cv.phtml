@@ -6,7 +6,7 @@
             <h2>Resume</h2>
             <hr>
             
-            <div class="row" id="skillsCont">
+            <div class="row">
 
                 <!-- Highlights of Qualifications -->
                 <!-- <div class="col-md mb-3">
@@ -21,21 +21,34 @@
                 </div> -->
 
                 <!-- skills -->
-                <!-- <div class="col-md mb-2">
-                    <div class="bg-dark text-white text-center box-title">
-                        <div style="padding-top: 12px;">Skills</div>
-                    </div>
-                    <div class="border-primary-round p-2">
+                <div class="col-md mb-2">
                     
-                    <?php $index = 0; ?>
-                    <?php foreach($skills as $skill): ?>
-                        <div class='item-pill' onclick="handleSkillClick(this)" index="<?= $index++ ?>">
-                            <span><?= $skill['title'] ?></span>
-                        </div>
-                    <?php endforeach; ?>
+                    <script>
+                        function displayFiltersClick(){
+                            const e = document.getElementById('filtersDisplay');
+                            e.hidden = !e.hidden;
+                        }
+                    </script>
+
+                    <div id="skillsHeader" class="bg-dark text-white text-center box-title d-flex justify-content-between">
+                        <div class=""><a class="btn btn-primary" onclick="displayFiltersClick()">Filters</a></div>
+                        <div class="">Skills</div>
+                        <div class=""><a class="btn btn-primary">Sort</a></div>
+                    </div>
+
+                    <div id="filtersDisplay" hidden class="border-grey-round bg-light p-2"></div>
+
+                    <div class="border-primary-round p-2" id="skillsCont">
+                    
+                        <!-- <?php $index = 0; ?>
+                        <?php foreach($skills as $skill): ?>
+                            <div class='item-pill' onclick="handleSkillClick(this)" index="<?= $index++ ?>">
+                                <?= $skill['title'] ?>
+                            </div>
+                        <?php endforeach; ?> -->
 
                     </div>
-                </div> -->
+                </div>
             </div>
 
             

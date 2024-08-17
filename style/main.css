@@ -108,3 +108,19 @@ body{
    top: 0;
    width: 100%;
 }
+
+#skillsHeader > div{
+    display: inline;
+    /* margin-top: 8px; */
+    display: flex;
+    align-items: center;
+}
+
+
+#skillsHeader > :first-child {
+    margin-left: 8px;
+}
+
+#skillsHeader > :last-child {
+    margin-right: 8px;
+}
