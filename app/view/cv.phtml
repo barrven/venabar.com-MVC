@@ -31,13 +31,88 @@
                     </script>
 
                     <div id="skillsHeader" class="bg-dark text-white text-center box-title d-flex justify-content-between">
-                        <div class=""><a class="btn btn-primary" onclick="displayFiltersClick()">Filters</a></div>
+                        <div class="">
+                            <a class="btn btn-primary" onclick="displayFiltersClick()"><i class="fas fa-filter"></i></a>
+                        </div>
                         <div class="">Skills</div>
-                        <div class=""><a class="btn btn-primary">Sort</a></div>
+                        <!-- <div class="">
+                            <a class="btn btn-primary">Sort</a>
+                        </div> -->
+                        <div></div>
                     </div>
 
-                    <div id="filtersDisplay" hidden class="border-grey-round bg-light p-2"></div>
+                    <div id="filtersDisplay" hidden class="border-grey-round bg-light p-2">
+                        
+                        <div class="form-group d-flex align-items-center justify-content-start">
+                            <label for="selRating" class="mr-2 mb-0 bg-primary dropdown-label-inline">Rating</label>
+                            <select class="form-control dropdown-inline" id="selRating" name="selRating" onchange="filterChange(this, 'rating')">
+                                <option value="">-</option>
+                                <option value="5">5</option>
+                                <option value="4">4 & up</option>
+                                <option value="3">3 & up</option>
+                                <option value="2">2 & up</option>
+                                <option value="1">1 & up</option>
+                            </select>
+                        </div>
 
+                        <div class="form-group d-flex align-items-center justify-content-start">
+                            <label for="selType" class="mr-2 mb-0 bg-primary dropdown-label-inline">Type</label>
+                            <select class="form-control dropdown-inline" id="selType" name="selType" onchange="filterChange(this, 'type')">
+                                <option value="">-</option>
+                                <option value="hard">Hard</option>
+                                <option value="soft">Soft</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group d-flex align-items-center justify-content-start">
+                            <label for="selCat" class="mr-2 mb-0 bg-primary dropdown-label-inline">Category</label>
+                            <select class="form-control dropdown-inline" id="selCat" name="selCat" onchange="filterChange(this, 'category')">
+                                <option value="">-</option>
+                                <option value="Administrative">Administrative</option>
+                                <option value="Technical">Technical</option>
+                                <option value="Communication">Communication</option>
+                                <option value="Analytical">Analytical</option>
+                                <!-- <option value="Leadership">Leadership</option> -->
+                                <!-- <option value="Project Management">Project Management</option> -->
+                                <option value="Creative">Creative</option>
+                                <option value="Operational">Operational</option>
+
+                            </select>
+                        </div>
+
+                        <script>
+
+                            // Set the dropdown value based on the URL parameter when the page loads
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const rating = urlParams.get('rating');
+                                const type = urlParams.get('type');
+                                const category = urlParams.get('category');
+                                if (rating) document.getElementById('selRating').value = rating;
+                                if (type) document.getElementById('selType').value = type;
+                                if (category) document.getElementById('selCat').value = category;
+                            });
+
+                            function filterChange(e, filter) {
+                                const value = e.value;
+                                const url = new URL(window.location);
+
+                                // If there's already a 'rating' parameter, update it; otherwise, add it
+                                if (value) {
+                                    url.searchParams.set(filter, value);
+                                } else {
+                                    url.searchParams.delete(filter);
+                                }
+
+                                // Update the URL without reloading the page
+                                const newUrl = url.href;
+                                window.history.pushState({ path: newUrl }, '', newUrl);
+                                // console.log("URL changed to: " + newUrl);
+                                renderSkills(skills);
+                            }
+                        </script>
+
+                    </div>
                     <div class="border-primary-round p-2" id="skillsCont">
                     
                         <!-- <?php $index = 0; ?>
@@ -155,6 +230,9 @@
 </main>
 
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script>const skills = <?php echo $json_data; ?>;</script>
+ <script>
+    let skills = <?php echo $json_data; ?>;
+    skills = skills.skills;
+</script>
  <script src="js/cv.js"></script>
   

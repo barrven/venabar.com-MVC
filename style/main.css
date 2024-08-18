@@ -124,3 +124,22 @@ body{
 #skillsHeader > :last-child {
     margin-right: 8px;
 }
+
+.dropdown-label-inline{
+    /* border: 1px solid #ced4da; */
+    border: 1px solid #007bff;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding: 6px;
+    margin-right: 0 !important;
+    color: white;
+    width: 5rem;
+    text-align: center;
+}
+
+.dropdown-inline{
+    margin-left: 0;
+    border-radius: 0 5px 5px 0;
+    width: 10rem !important;
+    /* text-align: center; */
+}

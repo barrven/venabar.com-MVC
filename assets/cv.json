@@ -18,7 +18,7 @@
     "skills":[
         {
             "title": "MS Office 365 Admin",
-            "rating": 3,
+            "rating": 4,
             "type": "Hard",
             "category": "Administrative"
         },
@@ -30,7 +30,7 @@
         },
         {
             "title": "MS Exchange Admin",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Administrative"
         },
@@ -48,7 +48,7 @@
         },
         {
             "title": "Windows Server",
-            "rating": 4,
+            "rating": 2,
             "type": "Hard",
             "category": "Technical"
         },
@@ -78,19 +78,19 @@
         },
         {
             "title": "Mobile Device Management",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Administrative"
         },
         {
             "title": "IT Asset Management",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Administrative"
         },
         {
             "title": "Documentation",
-            "rating": 4,
+            "rating": 5,
             "type": "Hard",
             "category": "Communication"
         },
@@ -120,7 +120,7 @@
         },
         {
             "title": "ITIL Service Knowledge",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Administrative"
         },
@@ -138,7 +138,7 @@
         },
         {
             "title": "Communication",
-            "rating": 4,
+            "rating": 5,
             "type": "Soft",
             "category": "Communication"
         },
@@ -156,37 +156,37 @@
         },
         {
             "title": "DHCP",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "DNS",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "PowerShell",
-            "rating": 4,
+            "rating": 5,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "Python",
-            "rating": 4,
+            "rating": 5,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "Java",
-            "rating": 4,
+            "rating": 3,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "JavaScript",
-            "rating": 4,
+            "rating": 5,
             "type": "Hard",
             "category": "Technical"
         },
@@ -228,13 +228,13 @@
         },
         {
             "title": "SQL",
-            "rating": 4,
+            "rating": 2,
             "type": "Hard",
             "category": "Technical"
         },
         {
             "title": "SQL Server",
-            "rating": 4,
+            "rating": 1,
             "type": "Hard",
             "category": "Technical"
         }
