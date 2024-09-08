@@ -5,13 +5,17 @@
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    <div class="nav-item">
+        <a class="nav-link" href="?page=home" title="home">
+            <!-- <span class="fas fa-home fa-lg"></span> -->
+            <img style="width: 2em;" src="assets/favicon.ico">
+            <!-- <span>Home</span> -->
+        </a>
+    </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="?page=home" title="home">
-                    <span class="fas fa-home fa-lg"></span>
-                </a>
-            </li>
+            
 
             <li class="nav-item <?php echo $page == 'about'? 'active' : ''; ?>">
                 <a class="nav-link" href="?page=about">About Me</a>
