@@ -8,6 +8,12 @@
 
     "projects":[
         {
+            "title":"Infini Quiz",
+            "description":"PHP app that generates infinite multiple choice quizzes based on course information organized by course, section, and subsection. Other features that will be added, such as login, create account, track quiz stats, upload course info.",
+            "url":"?page=quiz",
+            "source":""
+        },
+        {
             "title":"MyCatGPT",
             "description":"NextJS app which calls the chatGPT API with a system prompt that causes it to respond like a cat.",
             "url":"https://mycatgpt.com/",
