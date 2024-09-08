@@ -1,0 +1,44 @@
+{
+    "name": "quiz_response",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "optionText": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "optionText"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "correct_answer": {
+          "type": "number"
+        },
+        "answerExplanationText": {
+          "type": "string"
+        },
+        "questionText": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "options",
+        "correct_answer",
+        "answerExplanationText",
+        "questionText"
+      ]
+    }
+}

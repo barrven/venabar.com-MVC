@@ -1,5 +1,5 @@
 <?php
-$json_data = file_get_contents('assets/cv.json');
+$json_data = file_get_contents('data/cv.json');
 $data = json_decode($json_data, true); // Decode the JSON data into a PHP array
 
 // echo "<br><br><br><br>";
@@ -35,11 +35,4 @@ $experience = $data['experience'];
 ]
 */
 
-// $output = [];
-// $return_var = 0;
-// exec('echo "Hello, world"', $output, $return_var);
-// echo "<br><br><br><br>";
-// print_r($output); // Output from the command
-// echo "<br>$return_var"; // Return status of the command
-
-
+// var_dump($skills[0]['title']);

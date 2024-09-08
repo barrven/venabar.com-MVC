@@ -1,0 +1,51 @@
+<main class="container">
+    <h1>Infini Quiz</h1>
+    <select id="courseSelect" onchange="dropDownChange(this, 'course')">
+        <option value="">Select Course</option>
+        <option value="comptia-a-core1">Comptia A+ Core 1</option>
+        <option value="comptia-a-core2">Comptia A+ Core 2</option>
+    </select>
+    <ul id="sections"></ul>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/quiz.js"></script>
+
+<script>
+    const cs = document.getElementById('courseSelect');
+    const sections = document.getElementById('sections');
+
+    //todo: populate dropdown with this info
+
+    const courseList = <?php echo $courseListJson; ?>;
+    // console.log('coursesData', courseList[0]);
+    
+    renderSections(courseList, 'course');
+
+
+    // Set the dropdown value based on the URL parameter when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const course = urlParams.get('course');
+        if (course) cs.value = course;
+    });
+
+    function dropDownChange(e, filter) {
+        const value = e.value;
+        const url = new URL(window.location);
+
+        // If there's already a 'rating' parameter, update it; otherwise, add it
+        if (value) {
+            url.searchParams.set(filter, value);
+        } else {
+            url.searchParams.delete(filter);
+        }
+
+        // Update the URL without reloading the page
+        const newUrl = url.href;
+        window.history.pushState({ path: newUrl }, '', newUrl);
+        
+        renderSections(courseList, 'course');
+    }
+
+</script>

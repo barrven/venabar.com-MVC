@@ -12,4 +12,11 @@ $data = [
     'max_tokens' => 100,
 ];
 
-$response = callAPI($data);
+$temp = callAPI($data, 'raw');
+
+if(isset($temp['error'])){
+    $response = $temp['error'];
+} else {
+    $response = $temp['choices'][0]['message']['content'];
+}
+

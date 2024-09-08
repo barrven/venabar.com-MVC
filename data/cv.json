@@ -1,0 +1,367 @@
+{
+    "skillSchema": {
+    "title": "description of skill",
+    "rating": "int from 1-5",
+    "type": "hard/soft",
+    "category":"Administrative/Technical/Communication/Analytical/Leadership/Project Management/Creative/Operational",
+    "description": "skill description"
+
+    },
+    "experienceSchema":{
+        "company": "company name",
+        "title": "job title",
+        "location": "format: 'Toronto, ON'",
+        "startDate": "YYYY-MM",
+        "endDate": "YYYY-MM",
+        "duties": ["description of each duty in a separate string"],
+        "description": "optional"
+    },
+    "skills":[
+        {
+            "title": "MS Office 365 Admin",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "Azure Active Directory",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "MS Exchange Admin",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "Windows 10",
+            "rating": 5,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Windows 11",
+            "rating": 5,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Windows Server",
+            "rating": 2,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "MS Teams support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "VOIP support",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Desktop support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Remote support",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Mobile Device Management",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "IT Asset Management",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "Documentation",
+            "rating": 5,
+            "type": "Hard",
+            "category": "Communication",
+            "description": "skill description"
+        },
+        {
+            "title": "Training",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Communication",
+            "description": "skill description"
+        },
+        {
+            "title": "Onboarding",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "Offboarding",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "JIRA Ticketing",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Operational",
+            "description": "skill description"
+        },
+        {
+            "title": "ITIL Service Knowledge",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Administrative",
+            "description": "skill description"
+        },
+        {
+            "title": "Troubleshooting",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Process Improvement",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Analytical",
+            "description": "skill description"
+        },
+        {
+            "title": "Communication",
+            "rating": 5,
+            "type": "Soft",
+            "category": "Communication",
+            "description": "skill description"
+        },
+        {
+            "title": "Collaboration",
+            "rating": 4,
+            "type": "Soft",
+            "category": "Communication",
+            "description": "skill description"
+        },
+        {
+            "title": "TCP/IP",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "DHCP",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "DNS",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "PowerShell",
+            "rating": 5,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Python",
+            "rating": 5,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Java",
+            "rating": 3,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "JavaScript",
+            "rating": 5,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "HTML",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "CSS",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "PHP",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "VBA",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Automation",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "Shell scripting",
+            "rating": 4,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "SQL",
+            "rating": 2,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        },
+        {
+            "title": "SQL Server",
+            "rating": 1,
+            "type": "Hard",
+            "category": "Technical",
+            "description": "skill description"
+        }
+    ]
+    
+    ,
+    "experience":[
+        {
+            "company": "DRIAS International Ltd",
+            "title": "Technical Support Analyst",
+            "location": "Mississauga, ON",
+            "startDate": "2022-09",
+            "endDate": "Current",
+            "duties": [
+                "Performed admin duties for Office 365, on-prem AD/AzureAD user accounts, network permissions, security/distribution groups, and mobile device management.",
+                "Performed onboarding and offboarding of users, and ran quarterly user access reports for executive team & auditors.",
+                "Resolved 100+ tier 2, (in-person and remote) administrative, software, network, and server-related support tickets per month. Researched / implemented solutions.",
+                "Supervised tier 1 support staff. Conducted in-person and remote onboarding sessions for 250+ users resulting in a 20% reduction in helpdesk tickets per month.",
+                "Implemented the rollout of multi-factor authentication, and VPN software for 500+ users. Created training documentation resulting in an 80% improvement in security survey results.",
+                "Created and documented 100+ automation scripts to improve efficiency of daily operations by 80%.",
+                "Managed deployment, configuration, & support of 20+ desktop/server-based applications. Assisted with data center migration and OS upgrade for 20+ virtual servers."
+            ],
+            "description": ""
+        },
+        {
+            "company": "DRIAS International Ltd",
+            "title": "Help Desk Technician",
+            "location": "Mississauga, ON",
+            "startDate": "2021-06",
+            "endDate": "2022-09",
+            "duties": [
+                "Provided desktop/remote technical support involving software, hardware, printers, and VOIP phones.",
+                "Resolved 200+ tickets per month, resulting in a 97% satisfaction rate. Escalated tickets to tier 2 support if necessary.",
+                "Managed 300+ IT assets, produced reports. Developed 50+ knowledge base articles, and maintained incident resolution log improving helpdesk support efficiency by 50%."
+            ],
+            "description": ""
+        },
+        {
+            "company": "George Brown College",
+            "title": "Information Technology Tutor",
+            "location": "Toronto, ON",
+            "startDate": "2020-01",
+            "endDate": "2021-04",
+            "duties": [
+                "Provided one on one instruction in Java, Python, JavaScript, Android, and C# programming, as well as HTML, CSS, MongoDB, SQL, OOP concepts and data structures and algorithms.",
+                "Led study sessions, provided personalized study material, and exam prep to fellow students in order to help them achieve their academic and professional goals.",
+                "Instructed IT students in configuring command line tools, installing, and configuring required software such as IDE’s, programming languages, and frameworks such as such as Laravel, Django, and ASP.Net."
+            ],
+            "description": "Web profile for Mobihelp: https://gbc.mobihelp.ca/app/user/profile/283"
+        },
+        {
+            "company": "George Brown College",
+            "title": "English Tutor",
+            "location": "Toronto, ON",
+            "startDate": "2019-09",
+            "endDate": "2021-04",
+            "duties": [
+                "Tutored students and ESL students in grammar, sentence structure, assignment planning, communication, presentation, conversation, pronunciation, and vocabulary.",
+                "Wrote reports to track work completed during tutoring sessions.",
+                "Promoted the Tutoring and Learning Center through in-class presentations."
+            ],
+            "description": ""
+        },
+        {
+            "company": "OMD Media",
+            "title": "Media Administrator",
+            "location": "Toronto, ON'",
+            "startDate": "2019-04",
+            "endDate": "2019-09",
+            "duties": [
+                "Work with Account Group and OFS to identify billing discrepancies.",
+                "Communicate with media partners obtain credit for ad spots that did not follow contract guidelines and document acceptable changes.",
+                "Note changes in DPS system to reflect changes before next billing cycle."
+            ],
+            "description": ""
+        },
+        {
+            "company": "Cosmo Music",
+            "title": "Music Teacher",
+            "location": "Richmond Hill, ON'",
+            "startDate": "2017-05",
+            "endDate": "2019-04",
+            "duties": [
+                "Instruct students in the principles of playing brass instruments, music theory, and performance practices.",
+                "Provide progress reports, set goals, and track attendance using online web portal.",
+                "Individually tailor lesson plans for each student in order to ensure customer satisfaction."
+            ],
+            "description": "Example video: https://youtu.be/TCAqjXcLMZM?si=hACH7Dn0RLdep4De"
+        }
+    ]
+ 
+}

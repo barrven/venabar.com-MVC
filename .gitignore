@@ -1,8 +1,7 @@
 /cgi-bin
 /.well-known
 .htaccess
+/venabar.com
+/projects
 /assets/nbw-gallery
 .env
-404.shtml
-500.shtml
-error_log
