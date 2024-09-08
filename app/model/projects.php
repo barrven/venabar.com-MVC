@@ -1,5 +1,5 @@
 <?php
-$json_data = file_get_contents('assets/projects.json');
+$json_data = file_get_contents('data/projects.json');
 $data = json_decode($json_data, true); // Decode the JSON data into a PHP array
 $projects = $data['projects'];
 /***** format *****:
