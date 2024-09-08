@@ -143,3 +143,10 @@ body{
     width: 10rem !important;
     /* text-align: center; */
 }
+
+.dropdown-inline:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: inherit;
+    border: 1px solid #007bff;
+}
