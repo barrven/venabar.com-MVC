@@ -1,0 +1,240 @@
+<main class="container">
+    <!-- Resume -->
+    <div class="p-2 mb-5">
+            <!-- <a class="btn btn-primary float-right" title="Download my Resume" href="files/Venables_Resume.pdf">
+                Download <i class="fas fa-file-download"></i></a> -->
+            <h2>Resume</h2>
+            <hr>
+            
+            <div class="row">
+
+                <!-- Highlights of Qualifications -->
+                <!-- <div class="col-md mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark text-white text-center">Highlights of Qualifications</li>
+                        <li class="list-group-item">Collaborative skills learned through music background as well as through several group projects in school</li>
+                        <li class="list-group-item">Problem solving experience gained through school assignments and tests</li>
+                        <li class="list-group-item">The ability to design, implement, and test a solution based on given requirements</li>
+                        <li class="list-group-item">Knowledge of OOP concepts and practices</li>
+                        <li class="list-group-item">Familiar with agile methodologies, version control and collaborative tools such as Git</li>
+                    </ul>
+                </div> -->
+
+                <!-- skills -->
+                <div class="col-md mb-2">
+                    
+                    <script>
+                        function displayFiltersClick(){
+                            const e = document.getElementById('filtersDisplay');
+                            e.hidden = !e.hidden;
+                        }
+                    </script>
+
+                    <div id="skillsHeader" class="bg-dark text-white text-center box-title d-flex justify-content-between">
+                        <div class="">
+                            <a class="btn btn-primary" onclick="displayFiltersClick()"><i class="fas fa-filter"></i></a>
+                        </div>
+                        <div class="">Skills</div>
+                        
+                        <!-- Replaced this with a spacing div for now urgh css-->
+                        <!-- <div class="">
+                            <a class="btn btn-primary">Sort</a>
+                        </div> -->
+                        <div style="width: 42px;"></div>
+                    </div>
+
+                    <div id="filtersDisplay" hidden class="border-grey-round bg-light p-2">
+                        
+                        <div class="form-group d-flex align-items-center justify-content-start">
+                            <label for="selRating" class="mr-2 mb-0 bg-primary dropdown-label-inline">Rating</label>
+                            <select class="form-control dropdown-inline" id="selRating" name="selRating" onchange="filterChange(this, 'rating')">
+                                <option value=""></option>
+                                <option value="5">5</option>
+                                <option value="4">4 & up</option>
+                                <option value="3">3 & up</option>
+                                <option value="2">2 & up</option>
+                                <option value="1">1 & up</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group d-flex align-items-center justify-content-start">
+                            <label for="selType" class="mr-2 mb-0 bg-primary dropdown-label-inline">Type</label>
+                            <select class="form-control dropdown-inline" id="selType" name="selType" onchange="filterChange(this, 'type')">
+                                <option value=""></option>
+                                <option value="hard">Hard</option>
+                                <option value="soft">Soft</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group d-flex align-items-center justify-content-start">
+                            <label for="selCat" class="mr-2 mb-0 bg-primary dropdown-label-inline">Category</label>
+                            <select class="form-control dropdown-inline" id="selCat" name="selCat" onchange="filterChange(this, 'category')">
+                                <option value=""></option>
+                                <option value="Administrative">Administrative</option>
+                                <option value="Technical">Technical</option>
+                                <option value="Communication">Communication</option>
+                                <option value="Analytical">Analytical</option>
+                                <!-- <option value="Leadership">Leadership</option> -->
+                                <!-- <option value="Project Management">Project Management</option> -->
+                                <option value="Creative">Creative</option>
+                                <option value="Operational">Operational</option>
+
+                            </select>
+                        </div>
+
+                        <script>
+
+                            // Set the dropdown value based on the URL parameter when the page loads
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const rating = urlParams.get('rating');
+                                const type = urlParams.get('type');
+                                const category = urlParams.get('category');
+                                if (rating) document.getElementById('selRating').value = rating;
+                                if (type) document.getElementById('selType').value = type;
+                                if (category) document.getElementById('selCat').value = category;
+                            });
+
+                            function filterChange(e, filter) {
+                                const value = e.value;
+                                const url = new URL(window.location);
+
+                                // If there's already a 'rating' parameter, update it; otherwise, add it
+                                if (value) {
+                                    url.searchParams.set(filter, value);
+                                } else {
+                                    url.searchParams.delete(filter);
+                                }
+
+                                // Update the URL without reloading the page
+                                const newUrl = url.href;
+                                window.history.pushState({ path: newUrl }, '', newUrl);
+                                // console.log("URL changed to: " + newUrl);
+                                renderSkills(skills);
+                            }
+                        </script>
+
+                    </div>
+                    <div class="border-primary-round p-2" id="skillsCont">
+                    
+                        <!-- <?php $index = 0; ?>
+                        <?php foreach($skills as $skill): ?>
+                            <div class='item-pill' onclick="handleSkillClick(this)" index="<?= $index++ ?>">
+                                <?= $skill['title'] ?>
+                            </div>
+                        <?php endforeach; ?> -->
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Hidden button to open modal on click event -->
+            <button id="btnModal" hidden type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open Modal
+            </button>
+
+            <!-- Modal for displaying details about skills -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">Modal Heading</h5>
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button> -->
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+
+                        <div class="modal-body" id="modalBody">
+                            
+                        </div>
+
+                        <div class="modal-footer">
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Work experience -->
+            <div class="mx-5-sm">
+                <div class="bg-dark text-white text-center box-title">
+                    <div style="padding-top: 12px;">Work Experience</div>
+                </div>
+                <div class="border-primary-round p-2">
+                    <table class="table">
+                        <!-- this would be used for sorting the table -->
+                        <!-- <thead class="thead-light">
+                            <tr>
+                                <th scope="col"><button class="btn btn-primary">Title <span class="fas fa-sort"></span></button></th>
+                                <th scope="col"><button class="btn btn-primary">Company <span class="fas fa-sort"></span></button></th>
+                                <th scope="col"><button class="btn btn-primary">Date <span class="fas fa-sort"></span></button></th>
+                            </tr>
+                        </thead> -->
+                        <tbody id="work-xp-content">
+                            
+                            <!-- ********** Example ********** -->
+                            <!-- <tr class="bg-light font-weight-bold">
+                                <td>Fullstack Programming Tutor</td>
+                                <td class="text-right">January 2020 - Current</td>
+                            </tr>
+                            <tr class="bg-light small text-muted font-italic">
+                                <td colspan="">George Brown College</td>
+                                <td class="text-right">Toronto, ON</td>
+                            </tr>
+                            <tr><td colspan="2">
+                                <p>hello</p>
+                                <p>hello</p>
+                                <p>hello</p>
+                            </td></tr> -->
+                            
+                            <?php foreach($experience as $exp): ?>
+                                <!-- List each job -->
+                                <tr class='bg-light font-weight-bold'>
+                                    <td><?= $exp['title'] ?></td>
+                                    <td class='text-right'><?= $exp['startDate'] ?> - <?= $exp['endDate'] ?></td>
+                                </tr>
+                                <tr class='bg-light small font-italic text-muted'>
+                                    <td colspan=""><?= $exp['company'] ?></td>
+                                    <td class="text-right"><?= $exp['location'] ?></td>
+                                </tr>
+
+                                <!-- List the duties -->
+                                <tr><td colspan="2">
+                                <?php foreach($exp['duties'] as $duty): ?>
+                                    <p><?= $duty ?></p>
+                                <?php endforeach; ?>
+                                </td></tr>
+
+                            <?php endforeach; ?>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <!-- <div class="p-2">
+            <a class="btn btn-primary float-right" title="Download my Cover Letter" href="files/Venables_Cover_Letter.pdf">
+                Download <i class="fas fa-file-download"></i></a>
+            <h2>Cover Letter</h2>
+            <hr>
+        </div> -->
+</main>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script>
+    let skills = <?php echo $json_data; ?>;
+    skills = skills.skills;
+</script>
+ <script src="js/cv.js"></script>
+  

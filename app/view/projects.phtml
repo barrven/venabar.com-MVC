@@ -1,0 +1,173 @@
+<main role="main" class="container">
+
+    <!-- Work Samples -->
+    <div class="p-4 rounded mb-5 mt-5">
+        <a class="btn btn-primary float-right" title="View on Github" target="_blank" href="https://github.com/barrven/javascript-html-css-practice"><span class="fab fa-github-square fa-2x"></span></a>
+        <h2>Projects</h2>
+        <hr>
+        
+        <!-- <div class="row mx-auto" style="max-width: 800px;">
+            
+            <div class="col-md card-link bg-light rounded m-2">
+                <div class="m-2 pl-3">
+                    <a class="btn btn-outline-primary btn-lg float-right hover-special" target="_blank" href="examples/draggable-div-with-container.html"><span class="fas fa-arrow-right"></a>
+                    <h5>Play With Blocks</h5>
+                    <p class="m-1">This is some simple scripting and styling that shows a contaier where you can add blocks of a specified size and
+                        color. You can also click on the
+                        blocks you've already added and change their size and color. Implemented in plain javascript</p>
+                </div>
+            </div>
+
+            <div class="col-md card-link bg-light rounded m-2">
+                <div class="m-2 pl-3">
+                    <a class="btn btn-outline-primary btn-lg float-right hover-special" target="_blank" href="examples/draggable-div-with-container.html"><span class="fas fa-arrow-right"></a>
+                    <h5>Play With Blocks</h5>
+                    <p class="m-1">This is some simple scripting and styling that shows a contaier where you can add blocks of a specified size and
+                        color. You can also click on the
+                        blocks you've already added and change their size and color. Implemented in plain javascript</p>
+                </div>
+            </div>
+
+        </div> -->
+
+        <!-- List each item -->
+        <?php foreach($projects as $project): ?>
+            <?= isEven($row++)? "<div class='row mx-auto' style='max-width: 800px;'>" : ""?>
+                <div class="col-md card-link bg-light rounded m-2">    
+                    <div class="m-2 pl-3">
+                        <a class="btn btn-outline-primary btn-lg float-right hover-special" target="_blank" href="<?= $project['url'] ?>"><span class="fas fa-arrow-right"></a>
+                        <h5><?= $project['title'] ?></h5>
+                        <p class="m-1"><?= $project['description'] ?></p>
+                    </div>
+                </div>
+            <?= isEven($row)? "</div>" : ""?>
+            
+        <?php endforeach; ?>
+    
+    </div>
+
+    
+        <!-- Work Samples -->
+        <div class="p-4 rounded mb-5 mt-5">
+            <h2>Demo Videos</h2>
+            <hr>
+            
+            <!-- Expense Tracker -->
+            <div class="mt-5">
+                <a class="btn btn-primary float-right" title="View on Github" target="_blank"
+                    href="https://github.com/barrven/python-expenseTracker"><span class="fab fa-github-square fa-2x"></span></a>
+                <h4>Expense Tracker Using Python and Tkinter GUI</h4>
+                <ul>
+                    <li>Enter and store expenses per category per month</li>
+                    <li>View expenses per category for a given month, as well as average expenses per category for the year</li>
+                    <li>Above or below everage indicator</li>
+                    <li>Display percentage of expenses from each category out of the total
+                        monthly expenses</li>
+                    <li>Uses SQLite database</li>
+                    <li>Uses Tkinter Python OOP approach</li>
+                    <li>Uses Tkinter GUI</li>
+                </ul>
+                <h5>Video Demo</h5>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oZlvMcfwYgU" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                
+            </div>
+            <hr>
+
+            <!-- Client Notification Manager -->
+            
+            <div class="mt-5">
+                <a class="btn btn-primary float-right" title="View on Github" target="_blank"
+                    href="https://github.com/barrven/w2020-php-assignment2"><span class="fab fa-github-square fa-2x"></span></a>
+                <h4>Client Notification Manager</h4>
+                <p>This app could be used to notify clients about due dates that could be monthly,
+                    quarterly or annually. This application keeps track of clients and notifications that are assigned to them.
+                    It sets a schedule for each client and can send an automatic notification, either email or SMS on the appropriate
+                    date</p>
+                <p>This application has the following modules:</p>
+                <ul>
+                    <li>Clients manager – this module will be used to manage client’s information and facilities</li>
+                    <ul>
+                        <li>Adding a new client</li>
+                        <li>Modifying the client’s information</li>
+                        <li>Archiving a client</li>
+                    </ul>
+                    <li class="mt-2">Notification manager – this module provides functionalities</li>
+                    <ul>
+                        <li>Add new notification (email, SMS, Push Notifications</li>
+                        <li>Modify notification (enable /disable/ change name)</li>
+                    </ul>
+                    <li class="mt-2">Client’s Notification Manager - managing the type and frequency of sending client’s notifications.</li>
+                    <ul>
+                        <li>Create a notification for a client</li>
+                        <li>Manage client’s notifications</li>
+                        <li>Archive the client’s notifications.</li>
+                    </ul>
+                    <li class="mt-2">Additional Features</li>
+                    <ul>
+                        <li>The application is password protected and
+                        unauthorized access to any page is redirected to the login page showing an error message
+                        indicating login is required</li>
+                        <li>User management module that allows management of user accounts for users who will have access to the application</li>
+                        <li>Log all operations on all four modules (User, Client, Notification,
+                        ClientEvent) Storing user , module name, action, DateTime, IP</li>
+                        <li>Add database backup feature. When backup (all table/data) is complete authorized users should be
+                        able to download the backup file</li>
+                        <li>An authorized user can restore the database from backup
+                        file</li>
+                    </ul>
+                </ul>
+
+                <h5>Video Demo</h5>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gXufhSRqsBc" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                
+            </div>
+            <hr>
+
+            <!-- React CRUD  -->
+
+            <div class="mt-5">
+                <a class="btn btn-primary float-right" title="View on Github" target="_blank"
+                    href="https://github.com/barrven/101189284_lab_assignment_1"><span class="fab fa-github-square fa-2x"></span></a>
+                <h4>React CRUD With Springboot API</h4>
+                <p>Simple CRUD app with Bootstrap styling that uses rest API running with Springboot and SQL.</p>
+
+                <h5>Video Demo</h5>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4s-neuKYrZ4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                
+            </div>
+
+            <!-- Android CRUD, Maps -->
+            <div class="mt-5">
+
+                <a class="btn btn-primary float-right" title="View on Github" target="_blank"
+                    href="https://github.com/barrven/ScavengerHunt"><span class="fab fa-github-square fa-2x"></span></a>
+                <h4>Points of Interest Android App</h4>
+                <ul>
+                    <li>Create Retrieve, Update and Delete information about points on a map, and people in your team</li>
+                    <li>Uses Location Services and Uses Google Maps API</li>
+                    <li>Launch email, launch twitter intents</li>
+                    <li>Local storage with SQLite</li>
+                </ul>
+                
+                <h5>Video Demo</h5>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nSKwLjCCpdk" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+    
+
+    </main>

@@ -1,0 +1,147 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #515a69;
+}
+
+html{
+    background-color: #515a69;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.select-panel, .display{
+    margin: auto;
+    /* width: 80%; */
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.select-panel{
+    margin-top: 20px;
+}
+
+table{
+    margin: auto;
+}
+
+#level{
+    height: 35px;
+    font-size: 14px;
+}
+
+.button{
+    height: 35px;
+    /* background-color: #0d6efd; */
+    background-color: #198754;
+    color: white;
+    border: 1px solid black;
+    /* border-radius: 5%; */
+}
+
+.button:hover{
+    background-color: #3683f5;
+}
+
+#level{
+    /* border-radius: 5%; */
+    /* width: 100px; */
+}
+
+.dropdown-label{
+    border: 1px solid black;
+    height: 19px;
+    display: inline-block;
+    /* border-radius: 5%; */
+    background-color: #dce7f7;
+    padding: 7px;
+    vertical-align: text-bottom;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.display{
+    height: 50px;
+    /* background-color: black;
+    color: white; */
+}
+
+
+.button-link {
+    font-size: 13px;
+    /* font-weight: bolder; */
+    text-decoration: none;
+    background-color: #0D6EFD;
+    color: white;
+    /* padding: 2px 6px 2px 6px; */
+    padding: 9px;
+    border: 1px solid black;
+    /* height: 40px; */
+    margin: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.button-link:hover{
+
+}
+
+.btn-holder{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#btnUndo{
+    width: 100px;
+}
+
+.input-box {
+    border: 1px solid black;
+    height: 19px;
+    display: inline-block;
+    /* border-radius: 5%; */
+    /* background-color: #dce7f7; */
+    padding: 7px;
+    vertical-align: text-bottom;
+    font-size: 14px;
+}
+
+.added-word{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.display-word{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.btn-bottom {
+    width: 200px;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+.btn-clear{
+    height: 35px;
+    background-color: #DC3545;
+    color: white;
+    border: 1px solid black;
+    padding: 9px;
+}
+
+.control-row {
+    width: 100%;
+}
+
+.main-parent{
+
+}

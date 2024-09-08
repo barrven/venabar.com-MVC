@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="stack.js"></script>
+    <script src="logic.js"></script>
+</head>
+<body onload="populate()">
+    <div id="display" class="display"></div>
+    <div class="controls">
+        <span>
+            <!-- the autofocus attribute allows this element to have the focus when the page is loaded -->
+            <label for="input">Enter a Value: </label><input type="text" id="input" autofocus> 
+        </span>
+        <span>
+            <button id="push">Push</button>
+            <button id="pop">Pop</button>
+            <button id="peek">Peek</button>
+        </span>
+    </div>
+
+
+    
+    <script src="event-listeners.js"></script>
+</body>
+</html>

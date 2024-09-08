@@ -1,0 +1,84 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: aqua;
+}
+
+button{
+    background-color: grey;
+    height: 50px;
+    width: 100px;
+    color: aqua;
+    /* clear: left; */
+    display: block;
+    margin: auto
+    
+}
+button:hover, select:hover{
+    background-color: lightgray;
+    color: red;
+    cursor: pointer;
+}
+
+.start-button{
+    width: 200px;
+}
+
+.float-left{
+    float: left;
+}
+
+.select-panel-centered{
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+select{
+    height: 35px;
+    background-color: grey;
+    color: white;
+    width: 100%;
+}
+
+input{
+    height: 29px;
+    width: 100%;
+}
+
+#selectionTable > tbody >tr > td{
+   padding-top: 10px;
+}
+
+.col-width-30{
+    width: 30%;
+    color: red;
+}
+.col-width-70{
+    width: 70%;
+}
+
+#selectionTable>tbody >tr {
+    width: 100%;
+}
+
+#selectionTable{
+    width: 100%;
+}
+.selected-card{
+    opacity: 0.60;
+    border: 2px solid aqua;
+    border-radius: 4%;
+}
+.card-displayed{
+    cursor: pointer;
+}
+.card-displayed:hover{
+    border: 2px solid aqua;
+    border-radius: 4%;
+}
