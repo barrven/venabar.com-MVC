@@ -1,0 +1,77 @@
+{
+    "schema":{
+        "title":"",
+        "description":"",
+        "url":"",
+        "source":""
+    },
+
+    "projects":[
+        {
+            "title":"MyCatGPT",
+            "description":"NextJS app which calls the chatGPT API with a system prompt that causes it to respond like a cat.",
+            "url":"https://mycatgpt.com/",
+            "source":""
+        },
+        {
+            "title":"Wedding Website",
+            "description":"Site to allow guests to RSVP, add a guest to their invitation, add an RSVP message, get basic info about the event, view photo gallery, and ask questions to the chatbot. Also features logging of user IPs who viewed the gallery.",
+            "url":"https://nafisabarry.com/",
+            "source":""
+        },
+        {
+            "title": "Ammortization Calculator",
+            "description": "Calculate a loan schedule based on fixed payment or fixed term",
+            "url": "examples/ammortization-schedule/index.html",
+            "source": ""
+        },
+        {
+            "title": "Text Analyzer",
+            "description": "Counts number of words, and outputs a list of unique words and how many times those words appear",
+            "url": "examples/text-analyzer/index.html",
+            "source": ""
+        },
+        {
+            "title": "Card Game",
+            "description": "Simple card game. Goal is to find 4 matching suits. Players start with four cards each, then take a card from the deck, choose card to discard and pass the discard to the next player.",
+            "url": "examples/card-game/index.html",
+            "source": ""
+        },
+        {
+            "title": "Pictionary Word Generator",
+            "description": "Pictionary word generator where you can choose from four different categories: Easy, Medium, Hard, and Custom. You can add your own words to the custom category, remove, and clear them. Uses PHP, jquery, ajax",
+            "url": "examples/pictionary/index.php",
+            "source": ""
+        },
+        {
+            "title": "Calendar",
+            "description": "Calendar app that lets you view the layout of days of the week based on year and month with clickable days.",
+            "url": "examples/calendar/index.html",
+            "source": ""
+        },
+        {
+            "title":"Play With Blocks",
+            "description":"This is some simple scripting and styling that shows a contaier where you can add blocks of a specified size and color. You can also click on the blocks you've already added and change their size and color. Implemented in plain javascript",
+            "url":"examples/draggable-div-with-container.html",
+            "source":""
+        },
+        {
+            "title": "Image Carousel",
+            "description": "Use Javascript to display a series of images, one at a time and provide buttons which can view the next image or return to the previous",
+            "url": "examples/carousel/oop-carousel-bootstrap.html",
+            "source": ""
+        },
+        {
+            "title": "JS Metronome",
+            "description": "Simple metronome app",
+            "url": "examples/metronome/index.html",
+            "source": ""
+        },
+        {
+            "title": "JS Canvas",
+            "description": "Use Javascript canvas to draw a spiral within a container. User can specify tightness, start x and start y",
+            "url": "examples/canvas_draw_squareSpiral/user-input.html",
+            "source": ""
+        }
+    ]
+}
