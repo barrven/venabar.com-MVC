@@ -1,0 +1,265 @@
+{
+    "name": "Comptia A+ Core 1",
+    "description": "",
+    "folder": "comptia-a-core1",
+    "sections": [
+        {
+            "title": "Section 1: Chapter 0: All About the CompTIA A+",
+            "description": "",
+            "subSections": [
+                "1. What is the CompTIA A+",
+                "2. Why Get CompTIA A+ Certified",
+                "3. How to Take the A+ Exam",
+                "4. What's on the CompTIA A+ Core 1 (220-1101) Exam",
+                "5. How to Pass the CompTIA A+ Exams",
+                "6. How to Use this Video Course"
+            ]
+        },
+        {
+            "title": "Section 2: Book Chapter 1 - Safety and Professionalism",
+            "description": "",
+            "subSections": [
+                "7. Tools of the Trade",
+                "8. Troubleshooting Theory"
+            ]
+        },
+        {
+            "title": "Section 3: Book Chapter 2 - The Visible Computer",
+            "description": "",
+            "subSections": [
+                "9. Primary PC Components",
+                "10. Touring a PC",
+                "11. What Is a Computer"
+            ]
+        },
+        {
+            "title": "Section 4: Book Chapter 3 - CPUs",
+            "description": "",
+            "subSections": [
+                "12. What Is a CPU",
+                "13. Modern CPUs",
+                "14. 32-Bit vs. 64-Bit Computing",
+                "15. Choosing the Right CPU",
+                "16. CPU Generations and Architecture",
+                "17. CPU Cooling",
+                "18. Installing and Troubleshooting a CPU"
+            ]
+        },
+        {
+            "title": "Section 5: Book Chapter 4 - RAM",
+            "description": "",
+            "subSections": [
+                "19. RAM Technology",
+                "20. RAM Capacity",
+                "21. RAM Features",
+                "22. Virtual Memory",
+                "23. Installing and Troubleshooting RAM"
+            ]
+        },
+        {
+            "title": "Section 6: Book Chapter 5 - Firmware",
+            "description": "",
+            "subSections": [
+                "24. What Is BIOS",
+                "25. POST",
+                "26. System Setup",
+                "27. Troubleshooting Firmware"
+            ]
+        },
+        {
+            "title": "Section 7: Book Chapter 6 - Motherboards",
+            "description": "",
+            "subSections": [
+                "28. Form Factors",
+                "29. Chipsets",
+                "30. Choosing the Right Motherboard",
+                "31. Installing and Troubleshooting a Motherboard"
+            ]
+        },
+        {
+            "title": "Section 8: Book Chapter 7 - Power Supplies",
+            "description": "",
+            "subSections": [
+                "32. The Power Supply",
+                "33. Choosing a Power Supply",
+                "34. Cooling Your System",
+                "35. Installing and Troubleshooting a PSU"
+            ]
+        },
+        {
+            "title": "Section 9: Book Chapter 8 - Mass Storage Technologies",
+            "description": "",
+            "subSections": [
+                "36. Introduction to Mass Storage",
+                "37. Magnetic Disk Drives",
+                "38. Solid-State Drives (SSDs)",
+                "39. SCSI"
+            ]
+        },
+        {
+            "title": "Section 10: Book Chapter 9 - Implementing Mass Storage",
+            "description": "",
+            "subSections": [
+                "40. RAID",
+                "41. Hardware RAID",
+                "42. Software RAID in Storage Spaces",
+                "43. Encrypting Mass Storage",
+                "44. Mass Storage Troubleshooting"
+            ]
+        },
+        {
+            "title": "Section 11: Book Chapter 10 - Essential Peripherals",
+            "description": "",
+            "subSections": [
+                "45. USB Standards",
+                "46. Understanding USB",
+                "47. Configuring USB",
+                "48. Thunder and Lightning",
+                "49. Optical Media",
+                "50. Readers and Scanners",
+                "51. Common Peripherals",
+                "52. Webcams and Videoconferencing",
+                "53. Installing and Troubleshooting Expansion Cards"
+            ]
+        },
+        {
+            "title": "Section 12: Book Chapter 17 - Display Technologies",
+            "description": "",
+            "subSections": [
+                "54. Monitor Technologies",
+                "55. LCD Breakdown",
+                "56. Graphics Cards and Connections",
+                "57. Resolutions and Aspect Ratios",
+                "58. Installing a Graphics Card",
+                "59. Multiple Monitors",
+                "60. Projectors",
+                "61. Troubleshooting Display Technologies"
+            ]
+        },
+        {
+            "title": "Section 13: Book Chapter 18 - Essentials of Networking",
+            "description": "",
+            "subSections": [
+                "62. Introduction to Networking",
+                "63. Hubs vs. Switches",
+                "64. Hexadecimal",
+                "65. WANs and Routers",
+                "66. Cables and Connectors",
+                "67. Crimping Cables",
+                "68. Structured Cabling",
+                "69. Network Card Troubleshooting"
+            ]
+        },
+        {
+            "title": "Section 14: Book Chapter 19 - Local Area Networking",
+            "description": "",
+            "subSections": [
+                "70. Introduction to TCPIP",
+                "71. Dynamic IP Addressing",
+                "72. IPv6",
+                "73. Port Numbers",
+                "74. TCP, UDP, and ICMP",
+                "75. Understanding DNS",
+                "76. Working with DNS",
+                "77. Routers",
+                "78. Basic Router Configuration",
+                "79. Virtual LANs (VLANs)",
+                "80. Network Troubleshooting"
+            ]
+        },
+        {
+            "title": "Section 15: Book Chapter 20 - Wireless Networking",
+            "description": "",
+            "subSections": [
+                "81. Wireless Network Hardware",
+                "82. Wi-Fi Standards",
+                "83. It's a Huge Mesh",
+                "84. Enterprise Wireless",
+                "85. Beyond Wi-Fi",
+                "86. Troubleshooting Wireless Connections"
+            ]
+        },
+        {
+            "title": "Section 16: Book Chapter 21 - The Internet",
+            "description": "",
+            "subSections": [
+                "87. Beyond the LAN",
+                "88. Internet Tiers",
+                "89. Broadband Connections",
+                "90. Firewalls and Servers",
+                "91. E-Mail",
+                "92. Proxy Servers",
+                "93. Virtual Private Networks (VPNs)",
+                "94. Internet of Things (IoT)",
+                "95. Troubleshooting Internet Connections, Part 1"
+            ]
+        },
+        {
+            "title": "Section 17: Book Chapter 22 - Virtualization",
+            "description": "",
+            "subSections": [
+                "96. Understanding Virtualization",
+                "97. Your First Virtual Machine",
+                "98. Advanced Virtualization Setup",
+                "99. Cloud Computing",
+                "100. Cloud Ownership",
+                "101. Cloud-Based Applications"
+            ]
+        },
+        {
+            "title": "Section 18: Book Chapter 23 - Portable Computing",
+            "description": "",
+            "subSections": [
+                "102. Laptop Features",
+                "103. Laptop Hardware Troubleshooting - The Tools",
+                "104. Laptop Hardware - Core Hardware",
+                "105. Laptop Hardware - CPU and Motherboard",
+                "106. Touring Your Laptop Display"
+            ]
+        },
+        {
+            "title": "Section 19: Book Chapter 24 - Mobile Devices",
+            "description": "",
+            "subSections": [
+                "107. What Is a Mobile Device",
+                "108. Mobile Connections",
+                "109. Touring Android",
+                "110. Virtual Reality"
+            ]
+        },
+        {
+            "title": "Section 20: Book Chapter 25 - Maintaining and Securing Mobile Devices",
+            "description": "",
+            "subSections": [
+                "111. Maintaining Mobile Devices",
+                "112. Mobile Devices and E-mail",
+                "113. Mobile Synchronization",
+                "114. Mobile Device Security",
+                "115. Mobile Security Troubleshooting",
+                "116. Mobile Device Troubleshooting"
+            ]
+        },
+        {
+            "title": "Section 21: Book Chapter 26 - Printers and Multifunction Devices",
+            "description": "",
+            "subSections": [
+                "117. Laser Printers",
+                "118. Inkjet Printers",
+                "119. Impact Printers",
+                "120. Thermal Printers",
+                "121. Installing a Local Printer",
+                "122. Sharing Printers",
+                "123. Installing Wireless and Cloud Printers",
+                "124. Troubleshooting Printers",
+                "125. 3D Printing"
+            ]
+        },
+        {
+            "title": "Section 22: Bonus Lecture",
+            "description": "",
+            "subSections": [
+                "126. Bonus Video"
+            ]
+        }
+    ]
+}

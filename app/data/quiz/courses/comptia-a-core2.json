@@ -1,0 +1,14 @@
+{
+    "schema": {
+        "name": "course name",
+        "description": "",
+        "sections": "{title, description, subSections[string]}",
+        "folder": "foldername"
+    },
+    "name": "Comptia A+ Core 2",
+    "folder":"comptia-a-core2",
+    "description": "",
+    "sections": [
+        
+    ]
+}
