@@ -77,18 +77,20 @@ function handleExpandClick(item, e){
 }
 
 function attachSubSections(item, e){
-    console.log(item.subSections[0]);
+    // console.log(item.subSections[0]);
     item.subSections.forEach((ss) => {
         const p = $('<p>', {});
-        const s = $('<span>', {text: `${ss}`})
-        p.append(s);
-
+        
         const btn = $('<button>', {
             class: 'ss-button',
             click: () => { handleQuizClick(ss); },
-            html: `<i class="fas fa-arrow-right"></i>`
+            html: `
+            <span>${ss}</span>
+            <i class="fas fa-arrow-right"></i>
+            `
         });
  
+        // const s = $('<span>', {text: `${ss}`})
         p.append(btn);
         e.append(p);
     });

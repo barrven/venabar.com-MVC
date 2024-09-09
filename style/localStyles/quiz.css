@@ -5,10 +5,9 @@
 
 ul {
     list-style-type: none;
-    width: 100%;
 }
 
-ul li {
+.section-item {
     margin-bottom: 10px;
 }
 
@@ -16,7 +15,7 @@ ul li {
     padding: 0;
 }
 
-ul li > button {
+.section-button {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -24,24 +23,25 @@ ul li > button {
     border-radius: var(--border-radius);
     align-items: center;
     border-color: var(--accent-color);
-    /* box-shadow: none;   */
     border-style: solid;
+    min-width: 300px;
 
 }
 
-ul li > button:active{
+.section-button:active, .ss-button:active{
     border-color: var(--accent-color);
     transform: scale(0.98); 
 }
 
-
-ul li > button span {
-    /* flex-grow: 1; */
+.ss-button{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    border-radius: var(--border-radius);
+    align-items: center;
+    width: 100%;
 }
 
-ul li > button i {
-    /* margin-left: 10px; */
-}
 
 li p {
     margin: 1rem;
@@ -60,7 +60,6 @@ main > select:focus, main > select:active{
     border-color: var(--accent-color);
     outline: none;
     box-shadow: none !important;
-    /* transform: scale(0.98);  */
 }
 
 
@@ -73,5 +72,9 @@ main > select option{
     ul li > button {
         width: 400px;
         height: 3rem;
+    }
+
+    #sections, .section-title{
+        max-width: 800px;
     }
 }
