@@ -31,7 +31,7 @@ function renderSections(arr, filterName) {
         const btnExpand = $('<button>', {
             class: 'section-button',
             click: () => { handleExpandClick(section, itemElement); },
-            html: '&#11206;'
+            html: `<i class="fas fa-chevron-down"></i>`
         });
  
         itemElement.append(btnExpand);
@@ -87,7 +87,7 @@ function attachSubSections(item, e){
         const btn = $('<button>', {
             class: 'ss-button',
             click: () => { handleQuizClick(ss); },
-            html: '&#11208;' //sideways arrow
+            html: `<i class="fas fa-arrow-right"></i>` //sideways arrow
         });
  
         p.append(btn);
