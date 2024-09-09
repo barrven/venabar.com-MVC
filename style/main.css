@@ -1,3 +1,7 @@
+:root {
+    --accent-color: #007bff;
+}
+
 .bg-honeycomb{
     background-image: url(../assets/abstract-honeycomb-crop.jpg);
 }

@@ -1,10 +1,13 @@
-<main class="container">
+<main class="container" id="main">
     <h1>Infini Quiz</h1>
     <select id="courseSelect" onchange="dropDownChange(this, 'course')">
         <option value="">Select Course</option>
         <option value="comptia-a-core1">Comptia A+ Core 1</option>
         <option value="comptia-a-core2">Comptia A+ Core 2</option>
     </select>
+    <div>
+        <h3 id="sectionTitle"></h3>
+    </div>
     <ul id="sections"></ul>
 </main>
 
@@ -12,13 +15,20 @@
 <script src="js/quiz.js"></script>
 
 <script>
+    // add the local stylesheet
+    $('<link>', {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'style/localStyles/quiz.css' // URL to your stylesheet
+    }).appendTo('head'); // Append it to the head of the document
+
     const cs = document.getElementById('courseSelect');
     const sections = document.getElementById('sections');
 
     //todo: populate dropdown with this info
 
     const courseList = <?php echo $courseListJson; ?>;
-    // console.log('coursesData', courseList[0]);
+    console.log('coursesData', courseList[0]);
     
     renderSections(courseList, 'course');
 

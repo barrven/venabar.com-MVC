@@ -1,37 +1,45 @@
-
 // note: jquery must be imported
 
 function renderSections(arr, filterName) {
     document.getElementById('sections').innerHTML = "";
 
+    $('#sectionTitle').text('');
+
     const url = new URL(window.location.href);
     const params = new URLSearchParams(url.search);
     const filterStr = params.get(filterName);
-    let noneRendered = true;
+    
 
     // Flatten the array of sections from the filtered items
     const sections = arr
-        .filter((item) => filterStr === item.folder)
-        .flatMap((item) => item.sections);
+    .filter((item) => filterStr === item.folder)
+    .flatMap((item) => item.sections);
 
-    // console.log(sections[0])
+    if(sections.length !== 0){
+        $('#sectionTitle').text('Sections');
+    } else if (filterStr){
+        $('#sectionTitle').text('No sections in this course');
+    }
     // Loop through the flattened sections and attach each one
     sections.forEach((section) => {
         const itemElement = $('<li>', {
             class: 'section-item',
         });
 
-        const span = $('<span>', {
-            class: 'text-cont',
-            text: section.title
-        });
+        // const span = $('<span>', {
+        //     class: 'text-cont',
+        //     text: section.title
+        // });
+        // itemElement.append(span);
 
-        itemElement.append(span);
+        let sectionTitle = formatSectionTitle(section.title);
 
         const btnExpand = $('<button>', {
             class: 'section-button',
             click: () => { handleExpandClick(section, itemElement); },
-            html: `<i class="fas fa-chevron-down"></i>`
+            html: `
+                <span>${sectionTitle}</span>
+                <i class="fas fa-chevron-down"></i>`
         });
  
         itemElement.append(btnExpand);
@@ -54,14 +62,8 @@ function renderSections(arr, filterName) {
         itemElement.append(divElement);
 
         $('#sections').append(itemElement);
-        noneRendered = false;
     });
-}
 
-function handleItemClick(item){
-
-    // console.log('clicked', item);
-    
 }
 
 function handleButtonClick(item, e){
@@ -71,15 +73,12 @@ function handleButtonClick(item, e){
 function handleExpandClick(item, e){
     let element = e[0].querySelector('div');
     element.hidden = !element.hidden;
-    console.log('clicked expand', element)
-    
     e.hidden = !e.hidden;
 }
 
 function attachSubSections(item, e){
     console.log(item.subSections[0]);
     item.subSections.forEach((ss) => {
-        // console.log(ss)
         const p = $('<p>', {});
         const s = $('<span>', {text: `${ss}`})
         p.append(s);
@@ -87,7 +86,7 @@ function attachSubSections(item, e){
         const btn = $('<button>', {
             class: 'ss-button',
             click: () => { handleQuizClick(ss); },
-            html: `<i class="fas fa-arrow-right"></i>` //sideways arrow
+            html: `<i class="fas fa-arrow-right"></i>`
         });
  
         p.append(btn);
@@ -109,7 +108,11 @@ function handleQuizClick(title){
     url.searchParams.set('page', 'quizDetail');
     url.searchParams.set('detail', title);
 
-    console.log('go to quiz', 'new url',url.href);
+    // console.log('go to quiz', 'new url',url.href);
     window.open(url.href, '_blank');
 
+}
+
+function formatSectionTitle(str){
+    return str.replace(/Book Chapter \d+ - /, '');
 }
