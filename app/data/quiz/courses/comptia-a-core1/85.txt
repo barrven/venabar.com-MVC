@@ -1,0 +1,289 @@
+-: 802.11 is certainly the most dominant form
+
+of wireless we use today, but there are others.
+
+So I wanna talk about a couple of these in this episode.
+
+In particular, I wanna talk about RFID,
+
+and I wanna talk about Bluetooth.
+
+Now, RFID stands for Radio Frequency Identification, RFID.
+
+Now, RFID is very, very popular
+
+like in warehouses and things like that.
+
+RFID manifests as a tiny little sticker.
+
+Now, this sticker is actually a radio,
+
+and it stores usually a few hundred bits of information,
+
+not a lot, although there are some versions
+
+of RFID that store more.
+
+Now, what you'll do is you will then take the sticker,
+
+and you put it on a box or whatever you want,
+
+and then you have these readers.
+
+And these readers actually use the radio frequency energy
+
+to power up these little tiny stickers,
+
+and then the stickers have enough energy to transmit back.
+
+So whatever information they have will be transmitted back
+
+to the reader, and you get whatever you need.
+
+So number of toothpastes in a box,
+
+or is this an empty trash can, or is this a full trash can?
+
+So RFID is used a lot in the industrial world.
+
+We see it a lot in distribution.
+
+But when it comes down to individual users,
+
+we don't see RFID too much
+
+except for one particular situation
+
+called near-field communication, or NFC.
+
+For example, what I have here is a little laser printer.
+
+And this laser printer has what we call tap-to-print.
+
+One of the cool things about NFC
+
+is that pretty much all smart devices today
+
+have an RFID reader in it that does this NFC thing.
+
+NFC is RFID.
+
+So what we can do is, for example,
+
+I can go ahead and do a tap-to-print.
+
+Now the reason they say tap
+
+is because these are very low power,
+
+and they have to be physically very, very close.
+
+You don't really have to tap it.
+
+If you wanna get really close, it'll still work.
+
+So we see these types of NFCs
+
+for all kinds of tap-to-anything.
+
+Tap-to-pay, for example, is very popular
+
+both with Mac and with Google devices.
+
+We see that a lot.
+
+But the bottom line
+
+is that they are all different types of RFID.
+
+They work fantastically well.
+
+The other technology I wanna talk about is Bluetooth.
+
+Now, Bluetooth, from a signal level,
+
+looks a lot like 802.11,
+
+but it has some very big differences.
+
+The biggest single difference of Bluetooth versus 802.11
+
+is that Bluetooth is designed to connect two devices
+
+and only two devices together at one time
+
+in what's called a personal area network, or a PAN.
+
+So if you see the word PAN, think Bluetooth.
+
+Like for example, I've got some cool Apple headphones here,
+
+and I've got my iPhone,
+
+and I wanna actually get these guys together.
+
+I'm going to join them together
+
+in this personal area network.
+
+Now, before we do that, you do need to be aware
+
+that Bluetooth comes in different classes,
+
+which gives you an idea as to how far
+
+the signal strength can work.
+
+Let me show you the three classes you need to know.
+
+Class 1 will shoot out up to 100 meters.
+
+Class 2 is 10 meters, and class 3 is less than 10 meters.
+
+These classes are important because interesting things
+
+come up from time to time.
+
+For example, for years,
+
+Microsoft sold a particular type of Bluetooth keyboard.
+
+So what you would have is you'd have your keyboard,
+
+and you had a little dongle that came with it.
+
+You plug the dongle in.
+
+It was already paired to the keyboard.
+
+But the interesting part was,
+
+is it was a class 1 Bluetooth device,
+
+which always made it fun 'cause I could go over
+
+to my friend's computers,
+
+and I could plug the Bluetooth dongle in,
+
+and from the other side of the room,
+
+I could start typing on their screens,
+
+which made for hours and hours of raucous laughter.
+
+Normally, we work very hard with Bluetooth devices
+
+to make sure that they have a class
+
+that makes sense for a particular device.
+
+So today, if you're gonna get a keyboard,
+
+odds are good, it's gonna be class 2.
+
+So if you wanna mess with your friends,
+
+you gotta get closer than 100 meters
+
+'cause it might make a bit of a difference.
+
+Anyway, so what I wanna do right now
+
+is I wanna go through the process of pairing.
+
+So what I've got here is my iPhone and some earbuds.
+
+Let's watch pairing in action.
+
+Okay, so first of all,
+
+you'll see I've got Bluetooth turned on.
+
+So I'm gonna actually open the package
+
+that my earbuds are in.
+
+Let him do a little search.
+
+And I actually have some AirPods on here already.
+
+These are not mine. That's okay.
+
+He sees them, so I'm gonna go ahead and connect.
+
+And I've gotta actually hold a button
+
+on the little charging case.
+
+The connection starts.
+
+Everybody's got plenty of electricity.
+
+And I've got me some AirPods.
+
+On a lot of Bluetooth devices, especially older ones,
+
+it's not quite this pretty.
+
+What we need to be aware of is that for a lot of devices,
+
+you have to set one device
+
+into what we call discoverable mode,
+
+and then the other device then seeks out
+
+these other Bluetooth devices.
+
+Once they see each other, they will then go
+
+through usually a four-digit PIN code
+
+to actually create the pairing.
+
+So this is a much more modern one.
+
+We see this both on Mac
+
+as well as on Android devices now where they don't even go
+
+through the four-digit pairing anymore.
+
+So either one of those is fine.
+
+Okay, so the big takeaway from this episode
+
+is make sure you're aware of RFID.
+
+The big thing about RFID
+
+is that it doesn't transmit very fast.
+
+In fact, there's about 100 subsets.
+
+I'm not even gonna give you a speed for RFID
+
+'cause there's so many different ones, but it requires
+
+some kind of reader to activate the RFID tag,
+
+which then send data back to the reader itself.
+
+And the big place we see RFID today
+
+is in near-field communication.
+
+And if you've got a smartphone, you have that ability today.
+
+The other one is Bluetooth,
+
+which we all probably know and love.
+
+And if you wanna connect anything from earbuds
+
+to connect yourself to your automobile,
+
+to set up a pair of speakers, Bluetooth is the way to go.
+
+Just remember, you gotta pair 'em.

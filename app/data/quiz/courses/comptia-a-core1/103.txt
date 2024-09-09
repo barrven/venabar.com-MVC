@@ -1,0 +1,225 @@
+-: When it comes to hardware,
+
+laptops are in many ways identical to desktop systems,
+
+and in other ways very, very different.
+
+And in this episode,
+
+which I'm gonna call "Laptop Hardware Troubleshooting,"
+
+we're gonna be breaking down a couple of laptops here.
+
+And I wanna be talking about some of the components
+
+that you might be replacing within a laptop,
+
+and then talking about some of the issues
+
+that come into play when it comes time
+
+to start breaking open one of these things.
+
+So, a couple of words of wisdom before we even do anything:
+
+Number one: use caution.
+
+Laptops are all different on the inside.
+
+They are going to have gazillions of little screws.
+
+They're going to use double-sided tape.
+
+They're going to use single-sided tape.
+
+They're gonna have tiny little extremely weak connectors
+
+for plugging things in,
+
+and you need to really take your time
+
+and be careful whenever you're dealing
+
+with the inside of a laptop.
+
+Now, I'm just gonna be kind of breaking this laptop down.
+
+In fact, I got another one to show you
+
+on a few other things.
+
+But normally, when you're going into a laptop,
+
+you're going in for a reason.
+
+You already have some type of symptom
+
+that's pointing towards a particular component,
+
+and you're going in and you wanna fix it.
+
+So, I'm gonna be a bit more generic here.
+
+I'm just gonna be playing operation and pulling parts apart.
+
+But normally, when you're working on a laptop,
+
+you're going in with a particular goal in mind.
+
+Now, before you ever pick up a screwdriver,
+
+the first place you need to go is online.
+
+And there's a few places I wanna talk about.
+
+The first place I wanna talk about
+
+is that all manufacturers provide some degree
+
+of maintenance guides for laptops.
+
+So, lots of stuff; know where the parts are,
+
+that's not terribly interesting.
+
+But like, this right here.
+
+So, here are all the internal major components
+
+for this particular laptop.
+
+And not only is it all the different components,
+
+but even part numbers,
+
+so that if I want to, I can actually call the manufacturer
+
+and see if they have them.
+
+Now, that's one good thing.
+
+The other good thing about these types of guides
+
+is that they're usually going to give you some idea
+
+of how to remove and replace certain parts.
+
+And this is a good example here.
+
+It's gonna talk about
+
+how to replace, for example, your battery.
+
+Well, that's an easy one.
+
+Or how to take off a cover, replace a hard drive.
+
+There's another one.
+
+The other big challenge you run into with laptops is parts.
+
+Now, certain parts, like a 2 1/2 inch SATA drive
+
+is identical no matter where you get it.
+
+So, you wanna avoid buying things like hard drives
+
+directly from the OEMs 'cause they're expensive.
+
+Same thing with RAM.
+
+All these guys take very standardized RAM.
+
+They're gonna be SO-DIMMs. You're gonna have to go in there,
+
+see out what kind of RAM they need,
+
+pop one off, take a look at it.
+
+It's probably gonna be DDR-2, DDR-3, DDR-4,
+
+depending on how old of a laptop you're dealing with.
+
+But you're gonna need parts.
+
+So, you can get a lot of standard parts,
+
+but there's also a lot of non-standard parts.
+
+If you've got a broken case, if you've got a broken screen,
+
+if you've got a broken touch pad;
+
+stuff like that is not standardized.
+
+So, where I go to get this stuff;
+
+in fact, my first step is always eBay.
+
+I love eBay because there's a lot
+
+of these exact same systems out there.
+
+I'm just gonna see if I can find what's out there.
+
+So, I just did a quick search,
+
+and here's spare batteries, spare AC adapters.
+
+Here's somebody just selling the screen.
+
+Even if I have to, a lot of times, be aware it's cheaper
+
+to buy a complete other identical laptop
+
+just to pull one part, especially if it's dead.
+
+Ebay sells tons and tons of dead laptops.
+
+Pick one just because you need the fan out of it
+
+or something like that.
+
+Somebody will probably sell it to you for 30 bucks.
+
+It's a pretty good deal.
+
+All right.
+
+So, with all this in mind,
+
+there's a couple of tools I have around.
+
+I like power screwdrivers, just 'cause I'm lazy.
+
+I've got an iFixit toolkit.
+
+Again, I make no money from iFixit;
+
+I just like these guys.
+
+And the other thing I'm gonna be doing
+
+is I've got a piece of tape right here,
+
+and it's just regular old one-sided tape,
+
+and I've got it tacked down a little bit.
+
+The reason I do that
+
+is because there are going to be a gazillion screws,
+
+and I have to have some form of organization,
+
+and the tape is nothing more
+
+than a place for me to drop screws,
+
+so as I'm taking things apart,
+
+I know what I'm doing roughly.
+
+Also, by putting them in an order, it gives me a rough idea
+
+as to first in, first out kind of a thing.

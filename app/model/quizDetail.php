@@ -1,6 +1,6 @@
 <?php
 require APP.DS.'connections'.DS.'chatGPT.php';
-echo "<br><br>";
+// echo "<br><br><br><br>";
 
 //parse url into its components: path, query 
 $urlComponents = parse_url($_SERVER['REQUEST_URI']);
@@ -9,6 +9,8 @@ $urlComponents = parse_url($_SERVER['REQUEST_URI']);
 parse_str($urlComponents['query'], $urlArgs);
 $course = $urlArgs['course'];
 $file = $urlArgs['detail'];
+$file = explode(".", $file)[0];
+// var_dump($file);
 
 $basePath = 'app/data/quiz';
 // $srcDataFilePath = APP.DS.'data'.DS.'quiz'.DS.'courses'.DS.$course.DS.$file.'.txt';

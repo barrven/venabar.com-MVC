@@ -1,0 +1,507 @@
+-: If you're gonna be having a computer,
+
+you're gonna be having some RAM in it.
+
+So, in this episode, what I wanna talk about
+
+are the different types of RAM technologies
+
+that have been out over the years
+
+because I want you to be able,
+
+when you're buying a new motherboard or picking a system,
+
+to be able to get the kind of RAM you need
+
+for your computer.
+
+So, let's take a look,
+
+what I've got here in front of me
+
+is a bunch of RAM technologies
+
+that span a number of years,
+
+and what I'd like to concentrate on
+
+is this stick of RAM right here.
+
+This is, as far as I'm concerned, the original RAM.
+
+This is known as synchronous DRAM or SDRAM.
+
+There was RAM before this,
+
+but it was the RAM of your forefathers,
+
+and I don't wanna talk about it,
+
+it's not on the exam.
+
+And if you find a computer
+
+that still uses that ancient RAM,
+
+well, it's probably gonna be in a museum.
+
+So anyway, SDRAM is interesting
+
+because in other episodes
+
+we talk about the system crystal
+
+that sets the metronome for the CPU.
+
+Well, synchronous means that it's synchronized
+
+to the same crystal, and that's very, very helpful
+
+because any given click of the clock,
+
+we can count on this stick of RAM
+
+to do something for us.
+
+So, SDRAM was the first one out of the box.
+
+Now, what's important for me
+
+is that as you look at this stick of RAM,
+
+there's a couple of things that I want you to notice.
+
+Number one, this is 168 pins.
+
+Go ahead and count 'em real quick.
+
+Oh, I'm kidding.
+
+But what is very important
+
+is you'll notice that there are two notches.
+
+SDRAM sticks are the only type of RAM out there
+
+that have two notches that you're gonna run into anymore.
+
+Now, SDRAM runs fantastically well,
+
+but just like your CPU has a speed,
+
+your SDRAM has a speed.
+
+So, when we talk about SDRAM,
+
+we talk about the speeds associated with it.
+
+So with SDRAM, it was just running
+
+what your motherboard speed was,
+
+66 megahertz, 100 megahertz, whatever it was,
+
+that was just the speed associated with it.
+
+We're gonna see that that gets a little bit more complicated
+
+as the technologies improve.
+
+So the first big leap forward from SDRAM
+
+is this stick right here.
+
+This stick is known as double data rate or DDR SDRAM,
+
+but most of us will just say DDR RAM.
+
+DDR RAMs, double data rate is the clue.
+
+Basically for any one given click of the clock,
+
+this would give us two bits of information
+
+which was a huge breakthrough
+
+and really sped RAM up a lot.
+
+Now, the problem we're gonna run into now
+
+is how do we define that speed?
+
+Because when you're going to buy RAM,
+
+your motherboard needs RAM at a certain speed,
+
+it's in the motherboard book.
+
+So when you go to the store to buy your RAM,
+
+you need to make sure that you have those speeds,
+
+and that's where we come into the DDR or PC ratings.
+
+Let me give you an example of this for DDR.
+
+here's some examples of DDR speeds that we used to see.
+
+So, you'll notice on the left we have a clock speed,
+
+and this is basically the speed
+
+of the motherboard itself.
+
+The speed ratings or the DDR speed ratings
+
+are known as, it'll say DDR, then a dash,
+
+and then some speed.
+
+Now if you look closely here, it's pretty straightforward,
+
+all you have to do is double it.
+
+It's double data rate, that makes sense.
+
+Now the next thing I want you to look at
+
+is the PC speed rating.
+
+You can see either one of these.
+
+When you're buying RAM,
+
+it's gonna be printed on the RAM stick,
+
+or at least in the box you get it in.
+
+So this PC speed rating is simply measuring
+
+the same speed but instead of in bytes, in bits,
+
+so just take the DDR rating, multiply it times eight,
+
+and you get the PC rating,
+
+pretty straightforward, right?
+
+Fantastic, DDR was a huge breakthrough
+
+and it's really really important to me
+
+that you be comfortable with these DDR and these PC ratings.
+
+In fact, you're about to see a few more of these
+
+as we progress through.
+
+So, time marches forward,
+
+and let's go ahead and get our next generation.
+
+And that's right here, this is DDR2.
+
+Now, forget the metal cover.
+
+To me, these metal covers, they're called heat spreaders.
+
+I think they're more sales than anything else,
+
+that's my opinion.
+
+But what is important,
+
+and you've gotta look very, very carefully,
+
+it's hard to catch this.
+
+So, if SDRAM used a 168 pin,
+
+DDR used 184 pins,
+
+and notice there's only a single notch,
+
+DDR2 uses a 240 pin,
+
+and it looks like the notches are in the same place,
+
+but if I put 'em right next to each other,
+
+notice the subtle offset between those two notches.
+
+Be glad for that.
+
+The idea is that one particular motherboard
+
+is gonna use one particular technology of RAM
+
+and they don't want you to accidentally put DDR
+
+into a motherboard that needs DDR2.
+
+So, we're glad that the notches are a little bit offset.
+
+DDR2 really set the standard for RAM on systems
+
+and it had a long, long lifespan.
+
+It also had some speed ratings,
+
+let's take a look at those.
+
+So here's a table of common DDR2 speeds.
+
+Now keep in mind, in all these tables,
+
+I don't list every possible speed,
+
+it would be 40 feet long,
+
+but these are the more common ones.
+
+So once again, we look at our core speed,
+
+which I call the motherboard speed,
+
+and you'll see that's the speed,
+
+the system crystal itself.
+
+Now with DDR, it goes ahead and does the double
+
+as I'd mentioned before.
+
+But with DDR2,
+
+it actually doubles a second time
+
+by using this interesting function
+
+which you call a prefetch.
+
+But the bottom line is DDR2 is really four times faster
+
+than regular SDRAM, twice as fast as DDR.
+
+So, if we take a look at this, first of all,
+
+when you look at the speed ratings,
+
+again, these are printed on the boxes
+
+when you buy RAM.
+
+Notice that DDR2, the actual DDR2 rating
+
+is gonna say DDR2 on the box.
+
+And on the box, when we're talking about DDR2,
+
+you'll see it says PC2 and then whatever speed.
+
+You go ahead, look at the third column,
+
+multiply it times eight, and you get that PC rating.
+
+you always multiply times eight,
+
+remember that, it's on the exam.
+
+So what is important,
+
+if I'm holding two different sticks of RAM
+
+and I don't have the notches memorized
+
+so I can't tell 'em apart
+
+and the sticks don't say DDR or DDR2,
+
+all I need to do is look at that PC rating.
+
+If the PC rating says just PC-,
+
+then we know that that's DDR.
+
+If it says PC2 and then a dash,
+
+then we know that it's DDR2,
+
+just by looking at the speed rating, fantastic.
+
+Let's go ahead and keep marching on.
+
+Now, what I've got right here is DDR3.
+
+Yep, DDR3, once again, doubled from DDR2
+
+and created some wonderful bandwidths.
+
+Now again, as we look at the sticks very, very carefully,
+
+by the way DDR3 uses a 240 pinned stick
+
+just like DDR2 does.
+
+But again, can we catch it on camera,
+
+it should be more obvious this time?
+
+We can see that the slots are very much offset
+
+so you can't accidentally put it into the wrong motherboard.
+
+DDR3, it didn't have that long of a lifespan.
+
+It was around for a while,
+
+but it also introduced some much faster speeds.
+
+Let's take a look at those.
+
+So at this point in the game,
+
+I'm hoping you're kind of used to looking at the table.
+
+So on the left, once again, is our core speed.
+
+Notice that the core speeds keep getting faster and faster.
+
+Technology marches on,
+
+motherboards are getting faster.
+
+So, the actual DDR I/O Speed
+
+is going to be four times that in this case.
+
+So it's actually doubling once again
+
+what we had from DDR2.
+
+So our speed ratings,
+
+now look, this is very important,
+
+you see it says DDR3, see, it says PC3,
+
+that's how you know the speed rating defines
+
+the actual technology of RAM.
+
+Just because it says PC3,
+
+just because it says DDR3,
+
+we instantly know that we're talking about DDR3 memory,
+
+and all you have to do, once again,
+
+let's take a look at the top one
+
+where it says DDR3-800, multiply it times eight
+
+and you get the actual PC3 speed rating.
+
+People will say to me, "Mike,
+
+why is these two different speed ratings so important?"
+
+Well, the answer's pretty simple,
+
+because different RAM makers will use one or the other.
+
+A lot of them are using both
+
+when you actually look on the box itself.
+
+But I can't guarantee it,
+
+and I want you to be able to walk into your computer store
+
+and order the right stuff for your system.
+
+The motherboard book itself is going to use these
+
+to tell you what kind of RAM you need,
+
+so be comfortable with this terminology.
+
+The last type of general purpose RAM I wanna talk about
+
+is DDR4, and I've got a stick right here.
+
+Now, DDR4 uses a 288 pin stick,
+
+and again, this one you can see it's well offset
+
+from anybody else.
+
+There's no question mark
+
+that these are different types of technology.
+
+DDR4 has some outrageous speeds,
+
+let me show you those.
+
+As we take a look at the speeds here with DDR4,
+
+first of all, if you look on the left hand side,
+
+these are the motherboard speeds,
+
+they're getting faster
+
+But this time, as opposed to the other tables,
+
+we we tend to use the term bandwidth
+
+when we're talking about DDR4.
+
+So, what we're talking about is MT per second,
+
+we're talking about mega transfers per second.
+
+So, that means the actual amount of data that's being moved,
+
+not necessarily just the clicks of the clock.
+
+But we still have our DDR4 and our PC speed rating
+
+when we're talking about DDR4.
+
+When we talk about speed ratings,
+
+we use the nomenclature DDR4 and PC4.
+
+Like any other type of technology,
+
+RAM has been improving over the years.
+
+What's important for you
+
+is that when you're picking a particular motherboard,
+
+that motherboard must use a particular type of technology.
+
+The newer types of boards tend to use the newest technology,
+
+but there's plenty of room for older technology RAM.
+
+You'd be surprised how many big laser printers
+
+or dedicated systems still use older RAM.
+
+Check out any electronic store,
+
+you'll see, you can still buy DDR2 today.
+
+So, make sure you're comfortable
+
+with the different types of technologies,
+
+make sure you're comfortable with the pin counts,
+
+and make sure you use the right RAM for your system.

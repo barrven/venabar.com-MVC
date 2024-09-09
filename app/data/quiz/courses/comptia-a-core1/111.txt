@@ -1,0 +1,479 @@
+-: So now you've got yourself a smartphone.
+
+Well, what do you do to actually maintain this device?
+
+Well, the answer is actually
+
+if you have an Apple device, not much.
+
+Apples are pretty good at maintaining themselves.
+
+If you have an Android,
+
+there's a few things you need to take care of.
+
+But whether you have an Apple or an Android,
+
+there is one thing that's always going to be the same.
+
+And that is there's only two kinds of cell phones out there.
+
+There are CDMA phones, Code division multiple access
+
+and then there are what I call GSM phones.
+
+It's really easy to tell the difference.
+
+GSM phones come with a little SIM card
+
+and if you get a GSM phone,
+
+usually going to get a little SIM card
+
+and they have to put that in
+
+and then you can actually use the phone.
+
+With the CDMAs, they didn't come with a SIM card.
+
+Now if you're watching me in Europe, or in Africa,
+
+or in Asia, you're looking at me going,
+
+"Mike, what is CDMA? What are you speaking?"
+
+That's because if you're, other than the North America
+
+and some of South America
+
+you'll never ever, ever see CDMA phones.
+
+However, stuff about CDMA is mentioned on the exam,
+
+so I'm gonna cover that in here as well.
+
+The big challenge you have
+
+with CDMA phones is that there's lots of stuff
+
+that needs to be updated
+
+and the big magic word here is firmware.
+
+Now there's no hard drive in here
+
+so there's no place to store our operating system
+
+and our drivers and all that stuff.
+
+So we store it on ROM
+
+and that's firmware and sometimes it has to be updated.
+
+There's all kinds of updates that take place.
+
+You've got what we call Baseband updates,
+
+which is going to be some of your cellular stuff.
+
+We've got broadband updates, we've got radio updates
+
+for wifi and all these things, and the exam seems to
+
+trait these separately when they really don't.
+
+In the real world, this is handled for you pretty much
+
+magically with a few exceptions
+
+that we're not gonna worry about.
+
+One issue that you do see with CDMA phones
+
+is something called the PRL.
+
+The PRL is your Preferred Roaming List.
+
+And if you have an old CDMA phone,
+
+if you're suddenly noticing
+
+that your texting is running slow
+
+or your phone calls are taking forever to connect
+
+you might wanna consider updating your PRL.
+
+Now, how that's done depends on your carrier
+
+but it's usually consists of getting on the phone
+
+and dialing something like *228 or something like that,
+
+and the updates will be taken care of for you automagically.
+
+PRL is a part of what we call
+
+the Product Release Information or PRI.
+
+This is a big chunk of updates that hit all at once
+
+on CDMA phones and the only time
+
+you have to worry about this
+
+is if you're having trouble connecting,
+
+if things are going slow,
+
+or if you're in like a new place
+
+you haven't been before
+
+and suddenly you can't make any form of connection,
+
+usually just updating your PRL
+
+will take care of that for you.
+
+But when it comes to all of this updating
+
+that comes in, you really...
+
+If you're in the world of GSM phones, that doesn't happen
+
+because pretty much all phones are designed
+
+to have updates sent to you.
+
+Now, the one choice you can make is whether you want
+
+to have it automatically update or not
+
+and you're gonna have to go in,
+
+Android and iOS are different on this,
+
+but they still will have something that says,
+
+"Do you wanna update automatically
+
+or do you want to have an update come in?"
+
+And then you manually go through the updating process.
+
+(coughs) On desktop operating systems,
+
+I'm a little bit nervous about updates
+
+but when it comes to my phones, I update like crazy.
+
+I don't even think about it.
+
+And I'm not saying I've never had problems
+
+but it's been an extremely rare issue.
+
+So update like crazy.
+
+So if you're talking about OS updates,
+
+if you're talking about patching,
+
+if you're talking about firmware,
+
+when it comes to smart devices,
+
+it's all the same thing.
+
+It's just an update and go for it.
+
+Now, there's a couple of other numbers
+
+that you run into on phones
+
+and I wanna make mention of them.
+
+One of them is called the IMSI,
+
+the International Mobile Subscriber Identity
+
+and the other one is IMEI,
+
+International Mobile Equipment Identity.
+
+I wanna show you both of these settings on a phone.
+
+Now, the first one I wanna show you is IMSI.
+
+So, I actually ran a program here called SIM Data Reader.
+
+So IMSI is actually built into the SIM itself.
+
+You see this number here that starts with a three.
+
+The rest of it's fuzzed out.
+
+So, the reason I'm fuzzing it folks
+
+is because this is my personal phone
+
+and my IMSI defines not only me as a subscriber
+
+but what rate plans I'm paying for.
+
+It gives a lot of personal information,
+
+so sorry, I like you, but not that much.
+
+So you're never going to see IMSI
+
+on a CDMA phone 'cause you don't have a SIM,
+
+you don't have that little card in there that defines that.
+
+Okay, now the next thing I wanna
+
+take a look at here is IMEI.
+
+IMEI defines the phone itself
+
+and it's really an important number.
+
+You should know it.
+
+There's a lot of ways to get to the IMEI.
+
+I'm gonna show you the best way.
+
+So all I did was type in *#06#
+
+and that universally gets you to your IMEI information.
+
+You'll see that right there at the top.
+
+IMEI identifies the phone
+
+and whenever you're getting a new phone,
+
+you have to go through this activation process
+
+and they already have your IMSI
+
+because you went to some carrier
+
+and they know what that number is.
+
+They need to connect the IMEI to the IMSI.
+
+So when you activate a phone
+
+that's really all you're doing to get it up and cooking.
+
+And then that way as you're going around
+
+people can charge you.
+
+You pay your bill every month.
+
+Okay, so that's one feature that you might run into.
+
+Now, the other one, interestingly enough,
+
+I'm throwing this in here 'cause CompTIA did,
+
+and that's the idea of VPNs.
+
+Now we have an entire episode that talks about VPNs
+
+but VPNs work perfectly well on phones just as well.
+
+So if you wanna set up a VPN,
+
+you're gonna have to go into your settings.
+
+And here on this Android,
+
+it's under advanced and you'll see here's a VPN.
+
+Now as I click on this, I'm gonna hit a plus sign.
+
+Mikes VPN, and I can set the VPN type I want.
+
+You can see that Android has a fairly limited number
+
+of different types of VPN, but here's the important one.
+
+Make sure you know the IP address of your server.
+
+And I'm making these numbers up, so don't try to use them.
+
+But without knowing your server's IP address
+
+you're never gonna get VPN to work.
+
+Also, keep in mind that pretty much
+
+all of the better quality VPNs,
+
+they're not going to use the built-in VPN client
+
+that comes with your phone.
+
+They're gonna go ahead and install their own VPN client
+
+that has a lot more flexibility for it.
+
+But the important thing is even those clients
+
+are still gonna have, give it some kind of name,
+
+set up what type of VPN it is,
+
+and make sure you have the server's IP address.
+
+Remember those three, you'll get through the A plus.
+
+No problem at all.
+
+Okay, the next thing I wanna talk about
+
+is the idea of remote backups.
+
+Now, we did kind of touch that in other episodes
+
+but let me at least make quick mention of it.
+
+Both Android and iOS are amazingly good at doing backups.
+
+They're either gonna back it up to Google Drive
+
+if it's Android or iCloud if it's iOS.
+
+the only thing I need to remind you is this one thing,
+
+turn it on. (snickers)
+
+If you turn it on, it's gonna work beautifully
+
+and the level of automagicness is absolutely impressive.
+
+All right, so now I'm gonna split things up a little bit
+
+between iOS and Android
+
+and the term I'm gonna use is antivirus.
+
+You can have antivirus or anti-malware installed
+
+on both iOS and on Android devices.
+
+However, the general consensus is,
+
+is because of Apple's tight control on their stores,
+
+it's not really necessary.
+
+And to be honest with you, I'm unaware
+
+of any Apple person who has installed an anti-malware
+
+on their phone.
+
+And if you go on the store
+
+you can see there's plenty to install
+
+and I'm not sure exactly why.
+
+I think it's mainly for developers
+
+and people who like to play dangerously.
+
+Now that's different on the Android devices.
+
+Android devices change things a lot.
+
+In particular, the idea of the store
+
+is going to be a trusted source of software.
+
+So whether you're on iOS going into that store
+
+or you're on Android going into the other store,
+
+you have a high degree of confidence
+
+that you can go on install these
+
+without fear of malware and that type of thing.
+
+However, with Android devices,
+
+you don't have to use the store if you don't want to.
+
+Let me give you an example.
+
+So here's some program that I want to install.
+
+Now notice I'm just on a website right here, okay?
+
+So if I hit download,
+
+notice that I'm gonna get this big warning.
+
+What it's trying to install are these files.
+
+If you look very closely, you see dot APK.
+
+That's just a Android installation file.
+
+I'm not in the store here, folks.
+
+I'm just grabbing some arbitrary website.
+
+And because Android is all about freedom,
+
+you don't necessarily have to install
+
+from untrusted sources.
+
+However, by the way, most Android devices
+
+could be configured in such a way
+
+where you would prevent them from doing this.
+
+Mine's wide open because I like showing you guys cool stuff.
+
+So make sure you're aware of the idea that inside the store
+
+versus out the outside the store.
+
+Inside is trusted, outside is untrusted.
+
+So if you're gonna be dealing with untrustworthy things
+
+that brings up the last issue and that are firewalls.
+
+Host-based firewalls are as important
+
+on a smart device as they are on a desktop system.
+
+However, again, because of Apple's strong control
+
+of their store, it's less of an issue on a Apple device
+
+as it is on an Android device.
+
+Android devices provide a broad cross section
+
+of third party firewalls that can do an excellent job.
+
+But even then, if you're the type of person
+
+who sticks to the store on Android,
+
+the chances of you needing anti-malware or a firewall,
+
+it's pretty slim.

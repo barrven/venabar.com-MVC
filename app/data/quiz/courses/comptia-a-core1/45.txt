@@ -1,0 +1,469 @@
+-: USB, USB, USB, or Universal Serial Bus
+
+is the defacto standard by which we plug stuff
+
+into our computers.
+
+I don't care if it's a camera
+
+or if it's a mouse or a keyboard,
+
+odds are good, if you have any of these devices,
+
+you're probably gonna be using USB.
+
+USB has some amazing benefits to it.
+
+We can usually take a USB device,
+
+plug it into our system,
+
+and it just works most of the time,
+
+and it really makes our lives very convenient.
+
+Now, in this episode, what I wanna do
+
+is talk about the different USB standards
+
+that are out there.
+
+USB's been around for quite a while
+
+and a number of different standards have come along,
+
+and it's important for you and for the exam
+
+that you're comfortable with those standards.
+
+So let's start off by going through
+
+all the different USB standards.
+
+USB 1.1 came out in two different speeds.
+
+It would either run at 1.5 megabits per second
+
+or 12 megabits per second.
+
+Now, in today's world, that seems so incredibly slow,
+
+but back then, that was pretty quick.
+
+And then on top of that, even in today's world,
+
+there's still plenty of devices that run at these speeds.
+
+Think about a keyboard or a mouse,
+
+I don't care how fast you type,
+
+you're never gonna be able to go faster
+
+than 12 megabits per second, I promise.
+
+Now, these standards lasted for quite a while
+
+but they were eventually superseded with USB 2.0.
+
+USB 2.0 runs at 480 megabits per second.
+
+So it was a big speed leap,
+
+and it really helped to bring in things
+
+like USB thumb drives and such
+
+where they were actually fast enough
+
+where you could pull files off of them.
+
+Now these ran for quite a while
+
+until we came into USB 3.0.
+
+The USB 3.0 standard ran
+
+at a blistering 5 gigabits per second.
+
+But USB 3.0 had a lot of compatibility issues,
+
+and in fact, I still have a beautiful motherboard I own
+
+that is USB 3.0 that simply can't boot Windows,
+
+it was just issues with hardware.
+
+So they quickly updated the standard
+
+and came up with USB 3.1,
+
+which is what we use on most systems today.
+
+USB 3.1 comes in two different speeds.
+
+Generation 1 was basically just the fix for USB 3.0
+
+and it ran at 5 gigabits per second.
+
+And then USB 3.1 Generation 2
+
+runs at our current top speed of 10 gigabits per second.
+
+Now, I cannot stress enough
+
+how important these speeds are for the exam.
+
+So what I wanna do is let me just put up a little chart here
+
+and what I need you to do is memorize this chart.
+
+Go ahead and pause it,
+
+do whatever you need to do,
+
+but memorize this chart, okay?
+
+Here you go.
+
+So you got all those speeds memorized?
+
+Fantastic, 'cause you're gonna see it on the exam.
+
+Now obviously, USB is a type of connectivity.
+
+So, we have a lot of different type of physical connectors.
+
+So what I wanna do right now
+
+is go through the most common types of USB-Connectors.
+
+Now, when we talk about USB-Connectors,
+
+you'll hear the term USB-A connector
+
+and USB-B connector.
+
+Now at this point in time,
+
+I'm gonna save a big discussion of what A and B means
+
+'cause it's really kind of cool
+
+if you understand how it works.
+
+But for right now,
+
+all I want you to do is take a look
+
+at these different types of connectors
+
+and make sure you could recognize 'em
+
+if for example, you were to take a certification exam
+
+and somebody showed you a picture,
+
+you would say things like,
+
+"Oh, that's a USB Mini-B connector,"
+
+got the idea?
+
+So let's march through all these different connectors
+
+I have right here.
+
+So we're gonna start off right here.
+
+This is the famous original USB-A connector.
+
+This connector is the first type of connector
+
+we saw with USB,
+
+and this is what we call the A connector,
+
+they're still incredibly popular today.
+
+Along with this type of connector
+
+was this guy right here.
+
+This is a USB-B connector.
+
+USB-B connectors,
+
+I'll give away a little bit from other episodes,
+
+this is where we plug into the computer,
+
+and this is where we plug into different type of devices
+
+like scanners or something like that.
+
+So, these two types of connectors
+
+were very popular for a long time,
+
+but one of the problems we ran into with USB
+
+is that smaller and smaller devices
+
+wanted to take advantage of it,
+
+and these large connectors
+
+were not exactly perfect for a lot of situations,
+
+cameras, smart devices, things like that.
+
+So we began to start seeing connectors like these.
+
+So right here,
+
+that is a USB Mini-B connector.
+
+We'd see this a lot of times people will plug
+
+into their cameras or video recorder, stuff like that,
+
+we'd see these types of connectors.
+
+I have a scanner I use at home every day
+
+that has a connector just like that.
+
+Next is right here.
+
+This is a USB Micro-B connector.
+
+Micro-B connectors are incredibly popular.
+
+If you own an Android device,
+
+odds are good you are not only familiar
+
+with this type of connector,
+
+but you have lots and lots of these cables
+
+in your car and in your house and all that kind of stuff.
+
+So, the Mini and the Micro-Bs are very, very popular.
+
+This one right here next to it on the orange,
+
+this is a USB 3 Micro connector.
+
+So the problem we have with USB 3
+
+is that it's so much faster than the other types of USB
+
+that it had to have its own proprietary type connector.
+
+What's actually interesting if you look very carefully,
+
+you'll see this larger part of the USB 3 Micro connector
+
+is exactly compatible with this.
+
+So I could actually, if I had a USB 3 Micro port
+
+to plug it in, I could take that regular USB Micro connector
+
+and plug right into it, it's backward compatibility.
+
+Now, all these connectors were great,
+
+we've used them for years and years,
+
+but it wasn't that long ago
+
+people were starting to get frustrated,
+
+particularly with that old school USB-A connector,
+
+'cause you always try to put it in backwards,
+
+and you all know what I'm talking about,
+
+'cause everybody watching this has done that
+
+where you can't plug it in, you gotta look at it,
+
+and then you finally plug it in right.
+
+That changed a couple years ago with the advent of USB-C,
+
+and that's this guy right here.
+
+The big benefit of USB-C is not only is it capable
+
+of handling extremely high speed data throughput,
+
+but more importantly, it no longer can only go in one way.
+
+You can plug it in either way
+
+and it works perfectly well.
+
+The challenge we run into with USB
+
+is that we have all these different speeds.
+
+So, if you were to take your USB thumb drive
+
+and plug it into a USB 1.1 port,
+
+it would work, but it would run incredibly slow.
+
+So, we want people to have some methodology
+
+to look at the different types of ports
+
+on the back of their computers or in the front,
+
+whatever it might be,
+
+and to be able to recognize
+
+that one port might be USB 1.1 compatible,
+
+another port might be USB 3.1 Gen 2 compatible.
+
+And what the industry has tried to do,
+
+and by the way this is not universal,
+
+it's not a law of physics,
+
+but they try pretty hard,
+
+is they put different colors on the different ports.
+
+So let's go through all of these different colors.
+
+So first, if you ever see a USB port
+
+or a connector with a little bit of a white tab in here,
+
+in this particular example, I'm using USB-A,
+
+that is probably going to be
+
+a USB 1.1 compatible port or connector.
+
+If you see one that's black like this one right here,
+
+that's gonna be USB 2.0 compatible.
+
+Now if you see a blue one,
+
+now notice this is a nice kind of a neutral blue here,
+
+that's either gonna be USB 3.0 or USB 3.1,
+
+probably USB 3.1 Gen 1.
+
+If you see a pretty teal connector like this,
+
+you can pretty much be guaranteed
+
+that that's gonna be USB 3.1.
+
+And last, if you see a connector that's going to be red
+
+or in this case I'm showing red,
+
+but it could be orange or even yellow,
+
+those are kind of unique.
+
+Those are what we call charging ports.
+
+A lot of people wanna plug into a USB
+
+simply because they wanna charge their smartphone
+
+or something like that.
+
+And what we've developed over the years
+
+is that for a lot of systems,
+
+if like for example, if I have a desktop,
+
+if I turn the desktop off,
+
+it's not charging anything.
+
+So, these specialized ports basically mean
+
+if the system is plugged in, it's working.
+
+There are exceptions to this,
+
+so you can't treat it as a law of physics.
+
+But if you see these types of colors,
+
+what we're talking about is a charging port.
+
+Now, in this example that I just showed you here,
+
+we're talking about USB-A connectors.
+
+That's usually where you're gonna be seeing this stuff,
+
+particularly if you're looking on the back of a system.
+
+But do keep in mind
+
+is that even on other types of connectors
+
+like a Micro USB 3.0 B connector,
+
+you'll often see these colors as well.
+
+Now, the important thing to remember with USB
+
+is that it has good backward compatibility.
+
+If you have a USB 3.1 thumb drive
+
+and you plug it into a USB 2.0 port,
+
+it will work, but it's only gonna run
+
+at the speed of that port.
+
+So that's where the colors really become handy
+
+because it allows you to look at whatever your device is
+
+and plug it into the right speed for your kind of device.
+
+Okay, so for the exam, number one,
+
+please make sure you memorize
+
+all of the different speeds for USB
+
+and the different versions for those speeds.
+
+Also, make sure that you can recognize the ports
+
+that we've shown you in this episode.
+
+And then third, be comfortable
+
+with the different types of colors,
+
+maybe not so much because you're gonna see it on the exam,
+
+but more importantly, in the real world,
+
+it's critical that we make sure that we plug
+
+the right speed of device into the right speed USB port.

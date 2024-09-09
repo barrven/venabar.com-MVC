@@ -1,0 +1,289 @@
+-: Folks, I've gotta be honest.
+
+My first computer build ages ago did not go so well.
+
+I'm pretty sure those parts weren't supposed
+
+to sizzle.
+
+And it can honestly be a very daunting task getting hands on
+
+with hardware for the first time.
+
+And you know, I've got a ton of equipment here,
+
+a ton of components, and two great systems,
+
+so I thought we could do a quick tour of each.
+
+Now, going forward, I want to refer to this one as open
+
+and this one as closed.
+
+And for simplicity's sake you can see why.
+
+This is a close cased environment
+
+and this is an open case environment.
+
+We're going to be building a PC together
+
+as we continue on this series with the open case,
+
+but I'm also gonna be showcasing you
+
+some new features and we might be messing
+
+with some of the components here in the closed case as well.
+
+So just remember, open and closed.
+
+Now that we've got our systems in place here
+
+and made sure we've practiced proper power handling
+
+and that's all disconnected,
+
+we can actually take a look at these.
+
+Now, first thing you're going to notice about this one
+
+is it is a serious machine.
+
+Now, a lot of these components are gonna look foreign
+
+to you 'cause you've probably never seen them before,
+
+but I'm going to point them out as we go real quick.
+
+The first thing you're going notice on this
+
+is this bad boy right here.
+
+This is the graphics processing unit or GPU.
+
+This is the thing that allows whoever owns this case
+
+to play some really high-end video games.
+
+We move over here we've got some RAM,
+
+four Rams sticks you can see right here.
+
+And this is kind of like the temporary area
+
+that the CPU has to work on things.
+
+And here's our CPU.
+
+This one is actually liquid cooled.
+
+This is a very high-end, very cool system.
+
+But you know what?
+
+It's a little hard to see everything in it.
+
+Now, let's take a look at those same components
+
+in our open case.
+
+But before we do, just remember before we get hands on
+
+with any piece of hardware,
+
+we want to make sure we practice those safety procedures.
+
+And I'm actually standing on an anti-static mat
+
+so there's no risk whatsoever
+
+of any electrical damage to this motherboard.
+
+So as we take a look here,
+
+quite a big difference from our liquid cooled CPU over
+
+in the closed case to our air cooled CPU here
+
+in the open case.
+
+So this primarily relies on air flow to keep it cool.
+
+We also have our RAM here,
+
+and you can tell these ram sticks are the old
+
+what I like to call pea soup green or nan soup green.
+
+So these probably weren't meant for gaming
+
+or anything too extensive like those over there.
+
+But a lot of similarities here,
+
+especially on the backside when we start looking
+
+into some of the connectivity ports.
+
+All right, so let's take a look at some
+
+of the back panel connectors for both of these machines.
+
+Now, if we look up here at the top,
+
+we've got something that really doesn't get used
+
+too much anymore,
+
+but this is actually a mini-DIN port or a PS/2 port.
+
+This is used for old style mother, or mouses and keyboards,
+
+excuse me.
+
+We also have some USB ports up here, a type-C USB,
+
+which is one of the new standard ports, here.
+
+We have HDMI, which most of you're probably familiar
+
+with HDMI or DVI because you have those at home connecting
+
+to your TVs or your home theater systems.
+
+This particular one actually has connectors
+
+for antennas for wifi.
+
+So this motherboard actually has wifi enabled connectivity
+
+in it.
+
+And then we have some more USB ports
+
+and some actual audio connectors here.
+
+Now this entire part that you see right here,
+
+it's a little hard to outline,
+
+but this part here is called the IO shield.
+
+And the IO shield is actually very specific
+
+to the type of motherboard made.
+
+But it kind of blocks a little bit of a view for us.
+
+So let's go over here and look at the open case.
+
+So if we take a look over here at our open case,
+
+we see that we have, again,
+
+another two USB ports right here
+
+and a mini-DIN port, just like we had on the close case
+
+or a PS/2 port.
+
+Now, you might be wondering why all these USB ports
+
+on this device have a bunch of different colors.
+
+Well, it's because they either offer various features
+
+or speeds, and we'll get into that in later on
+
+in the series.
+
+Next up here we actually have an old school VGA connection.
+
+Very cool to see.
+
+And right below it we have a DVI connection, as well.
+
+Moving over, we see that we get into a couple of clusters
+
+of USB here, and we have not only a USBC port,
+
+which is the brand new standard,
+
+it's really awesome, but we also have a couple
+
+of the old USB three or two ports here, as well.
+
+We have another HDMI connector here.
+
+Very cool.
+
+So this motherboard supports video.
+
+And then up here we have our RJ-45 ethernet connection.
+
+This is where your LAN cable,
+
+your ethernet cable is going to plug
+
+in from here to your router
+
+or to whatever's providing you internet service,
+
+so that's awesome.
+
+And we have a couple of more USB ports here.
+
+Next we have some of our audio ports.
+
+We have a couple of different,
+
+you'll notice these are color coded because a lot
+
+of manufacturers still use colors on those cables
+
+and adapters that you plug into these little audio devices.
+
+Moving along, you'll see that we actually have,
+
+well, it's a little bit older of a GPU
+
+than you saw in that other one,
+
+but it actually has a VGA adapter to it, as well.
+
+It has a S-video here and it also has a another DVI.
+
+And then you'll notice on one of our expansion slots here,
+
+we have an extra USB root hub.
+
+And this is really cool because if your device doesn't come
+
+with enough USB ports for you,
+
+you can easily add one of these expansion cards in,
+
+and look at that, instant three ports
+
+or instant four ports or however much it supports.
+
+And that's it.
+
+Here we have our closed and our open systems,
+
+and you've seen pretty much all that they entail.
+
+So going forward, we're going to strip
+
+this open system down and we're going to build it
+
+together step by step.
+
+But hopefully this little tour of a PC helps you out
+
+and helps you recognize some of those common parts,
+
+adapters, and components that we're going to get
+
+into later in the series.

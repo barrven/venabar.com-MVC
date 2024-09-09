@@ -1,0 +1,673 @@
+-: I'm gambling that most of us out here
+
+have heard the term IP address.
+
+So I'd like to start off
+
+by showing you what would be a typical IP address
+
+you might see on a computer today.
+
+So here's 192.168.5.10.
+
+Does that look familiar to you?
+
+These four digits separated by three dots.
+
+What we're looking at are the addresses
+
+that help us get information
+
+to any computer on the internet.
+
+Without these IP addresses,
+
+the internet's not going to work.
+
+But to really understand how all this started,
+
+we gotta go way back in time,
+
+back in the time when we wanted big networks
+
+but we didn't have one yet.
+
+And what we're gonna start with
+
+is here in the United States.
+
+Here's a map of the continental United States.
+
+So here, there's Maine and Florida.
+
+So if we got, you know what, wait a minute.
+
+We're gonna do this live.
+
+Forget about it.
+
+Okay, let's do this with me in front of you
+
+'cause I love talking about this stuff.
+
+So here's our map of the United States. (humming)
+
+I'm from Texas. (humming)
+
+There's Florida.
+
+All right, so here's the map of the United States.
+
+Now, all around the United States
+
+are military installations,
+
+and there was military installations,
+
+there was also a lot of universities.
+
+The idea is that we had, all over the United States,
+
+thousands of local area networks,
+
+and we wanted to interconnect these local area networks
+
+so that anybody in one LAN could talk to another LAN.
+
+Get the idea?
+
+So we would have connections, a LAN up here in Chicago,
+
+and a LAN over here in San Jose,
+
+LAN over here in Boston,
+
+LAN down here at Rice University in Houston,
+
+somewhere in northern Florida.
+
+The idea here is that we would have these individual LANs,
+
+and we wanna connect them.
+
+Now we're talking the late 1970s, early 1980s here.
+
+So these were connected
+
+through basically telephone lines back in the old days.
+
+And this was being designed
+
+by an organization called ARPANET,
+
+or ARPA is the same organization today.
+
+And the idea is that we would create multiple connections
+
+to these individual nodes,
+
+which would then act to help other nodes.
+
+And more importantly, if any of these nodes went down,
+
+if this one went kaboom, we could reroute this information,
+
+and it would still get to everybody.
+
+Now the problem is, is we need some kind
+
+of numbering system to organize all this.
+
+Now, they were coming up with this numbering system back
+
+in the late 1970s, early eighties,
+
+and they were thinking, well, you know,
+
+one day there could be, you know, 10, 20,000 computers
+
+on this thing,
+
+which we're eventually gonna call the internet,
+
+so we need to think big.
+
+Yeah, they didn't think that big.
+
+So basically, what you have is you've got four numbers.
+
+So I'm gonna say, for this example,
+
+I'm gonna say 10.11.12.13.
+
+Each one of these values called an octet
+
+can go from zero to 255.
+
+All the different combinations
+
+come up to around 4 billion addresses.
+
+And back in the late seventies, early eighties,
+
+they go, "This is gonna be great."
+
+Now keep in mind, every computer on this thing,
+
+which will eventually be called the internet,
+
+must have its own IP address,
+
+but not just its own IP address.
+
+We're gonna have all of these LANs all over the place.
+
+So this number is gonna do two things at the same time.
+
+Number one, it's going to identify
+
+which local area network you're a member of.
+
+And number two, it's gonna give you a unique,
+
+what we call, host id that's unique only to you.
+
+Got it? All right.
+
+So the whole idea between taking these
+
+and breaking them into four groups with three dots
+
+is that we would have what was called tier one
+
+of the internet.
+
+Now this was the original plan.
+
+And there would be some local area network here, a router,
+
+and he would be called the 10 router.
+
+And then this router over here
+
+in Rice University in Houston
+
+would've been called the 12 router.
+
+I am making these numbers up,
+
+but this is basically how it happened.
+
+Then over here in San Jose, this would be the six router.
+
+Well, Mike, why didn't they do one, two, three, four?
+
+Because they're computer nerds, and they,
+
+this guy over here liked the number six, there was no rules.
+
+It was wild west back then.
+
+All right, so this is kind of the basic idea.
+
+Now what I'm gonna do now is I'm gonna concentrate
+
+on Rice University.
+
+That's Galveston Bay.
+
+Here's Galveston Island.
+
+This is the southeast coast of Texas.
+
+Here's Houston.
+
+And right about here is Rice University.
+
+So Rice University is going to be 12.
+
+Now the problem here is that there's a lot of people
+
+in the Houston area who also want to be connected
+
+to this thing, which will eventually be called the internet.
+
+So what will happen at say over at University of Houston,
+
+University of Houston, instead of connecting
+
+to the big top part,
+
+they're gonna get their own little router,
+
+And Rice University is then going to call that router 12.1.
+
+Now here's the important thing.
+
+Anybody who hooks to the 12 router,
+
+their IP address will start with a 12.
+
+Now it's up to the folks here at Rice University
+
+to delegate down to whoever needs it.
+
+And back then this was all free,
+
+and everybody loved each other,
+
+and this stuff was easy to get.
+
+So now all of a sudden, University of Houston is 12.1.
+
+Well, there's a lot of computers at University of Houston.
+
+They've got the parallel processing center.
+
+They've got the engineering college.
+
+They've even got a art college,
+
+and I don't know those artsy types.
+
+They wanna have their own little local area network as well.
+
+So what we're gonna do from there
+
+is we're then gonna start passing out.
+
+So the parallel processing, they're gonna be 12.1.44.
+
+Again, nobody ever did these in order,
+
+just out of cruelty I think.
+
+And then over here is gonna be 12.1.27.
+
+And those crazy art people,
+
+well, they're gonna be 12.1.28.
+
+There we go.
+
+Now notice these numbers are all different.
+
+These are all separate local area networks.
+
+Now we've got one more digit, right?
+
+Well that last digit is for the individual computers.
+
+So what would happen is
+
+that this one little local area network here
+
+would have the network ID of 12.1.44,
+
+and then the individual computers would be 1, 2, 3, 4, 5, 6,
+
+all the way up to 254 because you cannot use zero or 255.
+
+And in other episodes, we'll explain why that happened.
+
+So there is a little bit of limitation but not much.
+
+So the whole idea behind the whole internet
+
+was gonna be what we call aggregation.
+
+And it didn't quite pan out that way
+
+because sometimes other people,
+
+like another Comcast would come in
+
+and put a different kind of numbering system in.
+
+But the bottom line is that it works.
+
+Now what's interesting is that they designed this
+
+in such a way that it had a lot of flexibility.
+
+So for example, if you needed an IP address, oh, by the way,
+
+you don't just type these into your computer.
+
+These are allocated to you
+
+by the Internet Authorized Numbering Authority,
+
+they're IANA.
+
+And the idea is that no two computers
+
+on the internet can ever have the same IP address.
+
+So you don't just magically type this in.
+
+Somebody from on high passes you down a block of addresses.
+
+So for example, you would call up,
+
+if you're at University of Houston,
+
+you'd call up the U of H people,
+
+and they would allocate something 12.1, dot whatever.
+
+If University of Houston wanted even more,
+
+then they'd call up Rice University,
+
+and Rice University would give them a 12.3,
+
+or whatever was next on the list.
+
+You get the idea?
+
+So you always came down from on high
+
+and got yourself a block of addresses.
+
+Any block of addresses where the first three numbers are set
+
+and you can do anything you want on the fourth number,
+
+we call those Class C.
+
+If you get a block of addresses,
+
+now there's another limitation here,
+
+I'm gonna avoid this for the moment.
+
+And the first two numbers are locked,
+
+it's a Class B.
+
+And then if the first number is locked
+
+and you get to do whatever you want with the last three,
+
+then we call it a Class A.
+
+If you have a Class C address,
+
+you have 254 hosts you can have in that local area network.
+
+If you have a Class B, you get 256 and 256, about.
+
+And if you've got a Class A, it's in the millions.
+
+So most of the time, the people who got class A's
+
+were people like Rice University
+
+or somebody they knew they were gonna pass it down to.
+
+The bottom line is, is that we live
+
+in a world where IP addresses are based on the idea
+
+that you're always going to be no more
+
+than four routers away from the top of the internet.
+
+And boy, did they make a mistake there.
+
+So the total address space
+
+of the IP addressing was about 4 billion IP addresses.
+
+But the problem is a lot of them were wasted
+
+on all kinds of dumb stuff.
+
+Like for example, no address can end with 255.
+
+So that gets rid of a bunch.
+
+Or you would have certain addresses,
+
+like anything that started with one was experimental.
+
+They called it reserved, and nobody could use them.
+
+So there was lots of limitations.
+
+4 billion sounds like a lot even in today's world,
+
+but it was nowhere near enough.
+
+You're gonna have to watch other episodes
+
+to see how we snuck around this limitation
+
+'cause we've done a pretty good job of it.
+
+Right now what's important to me is
+
+that you understand the nomenclature of an IP address.
+
+So let's make sure.
+
+We have four characters,
+
+and these characters go from zero to 255.
+
+You will have three dots in between them,
+
+and watch out on the exam.
+
+They will actually have examples up
+
+where they'll have an IP address,
+
+and it'll have like 257 in it or something like that.
+
+And they're gonna say, which of these four is valid?
+
+Not the one with 257.
+
+Also, keep in mind that addresses never end
+
+with a zero or a 255, and we'll save that for other episodes
+
+to make you understand why that exactly is.
+
+With IP addressing,
+
+we're gonna add something to our frame here.
+
+So what I'm gonna do is now add in
+
+the destination IP address and the source IP address.
+
+This is going to allow us to jump
+
+from local area network to local area network.
+
+So to actually watch all this in action,
+
+let's zoom in a little bit, and I'm gonna concentrate
+
+on just two small local area networks
+
+that just happen to be connected together
+
+with the same router.
+
+I've got two local area networks here.
+
+Now there's a switch in here,
+
+and I'm gonna draw some computers.
+
+I just like to draw a circle
+
+to show you what the network ID is.
+
+Inside every one of these computers
+
+I have entered a value that starts
+
+with 10 dot, 11 dot, 12 dot something.
+
+So we put a zero on the end to show that we're not talking
+
+about a computer, we're talking about a network id.
+
+So that's one of the reasons we can't put a zero
+
+on the end of an IP address,
+
+'cause it identifies an entire LAN.
+
+So this computer right here might be 10.11.12.44,
+
+and this one right here might be 10.11.12.222.
+
+Those numbers get in there because somebody typed them in.
+
+Every operating system has a place
+
+for us to enter these values.
+
+Now over here on this other network,
+
+which is 10.14.6.0,
+
+I'm just gonna draw one computer in here,
+
+and he's gonna be 10.14.6.7.
+
+So let's get some communication going.
+
+Now, if this computer over here, 10.11.12.44,
+
+wants to talk to 10.11.12.222,
+
+what's he's gonna do is he's going to take a look
+
+at the IP address where he is sending it to,
+
+and he's gonna compare it to something called a subnet mask.
+
+This is another value that you have to enter
+
+into your computer.
+
+So a subnet mask usually looks something like this.
+
+255.255.255.0.
+
+Wherever you see a 255,
+
+the numbers have to be the same.
+
+Wherever you see a zero, the numbers can be different.
+
+So let's compare these two addresses.
+
+They're both 10.11.12,
+
+and only the last digit is different, correct?
+
+So by looking at the subnet mask,
+
+that's how your computer calculates this,
+
+he knows something very important.
+
+He knows that that other address is
+
+in his local area network.
+
+That easy.
+
+Just by comparing the address he's sending it to
+
+with his own IP address.
+
+That way he could go ahead
+
+and put on the proper Mac addresses
+
+and just send it right over to that computer.
+
+It's a local call as we say.
+
+Now let's change the story a little bit.
+
+Now we've got a computer over here, 10.14.6.7,
+
+and this computer over here wants to talk to him.
+
+Now, when he takes a look at that address,
+
+which is going to be 10.14.6.7,
+
+you'll see the 10 matches, that's great,
+
+but the next two digits don't match.
+
+This means it's not on his LAN.
+
+Luckily, any computer that's connected
+
+to the internet is part of a network
+
+that also has this router thing connected to it.
+
+And a router is gonna have an IP address
+
+which is part of this network,
+
+and it's usually gonna be 10.11.12,
+
+almost always we call the router 0.1.
+
+It's just etiquette.
+
+It's not a law of physics.
+
+So what will happen is when 44 sees
+
+that he can't talk to this guy directly,
+
+what he does instead is he sends it to 10.11.12.1.
+
+So this computer, this router,
+
+acts kinda like a gateway to the internet.
+
+In fact, that's what we often call this.
+
+We call it the default gateway.
+
+So if you want a computer to be on the internet,
+
+you're, number one, gonna have to give it an IP address.
+
+Number two, you're gonna have to give it a subnet mask.
+
+And number three, you're gonna have to give it
+
+a default gateway.
+
+The subnet mask is only there to let your computer know
+
+if it's a local call or a long distance call.
+
+And if it's a long distance call,
+
+it sends it to the default gateway.
+
+Where do we type in this IP address and subnet mask
+
+and default gateway?
+
+How do I enter it?
+
+Well, you're gonna have to wait for the next episode.

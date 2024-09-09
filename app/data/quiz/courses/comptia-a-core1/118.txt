@@ -1,0 +1,373 @@
+-: This, my friends,
+
+is the printer that brought color printing to the masses.
+
+This is an inkjet printer.
+
+Now, for a long time,
+
+inkjet printers were the way that we made color printing,
+
+and we still see lots of color printers out there
+
+that use inkjet technology,
+
+although today lasers are doing a pretty good job of it.
+
+Now, when we talk about inkjets, a few terms come out a lot.
+
+Inkjets tend to be more inexpensive,
+
+although I would argue that, than laser printers.
+
+Inkjets tend to cost less
+
+to actually run than laser printers,
+
+which I would also challenge that as well.
+
+However, the big thing I wanna do in this episode
+
+is make sure you understand how inkjets work.
+
+So let's take a look at inkjet technology.
+
+The whole idea behind inkjet
+
+is that you have these ink cartridges,
+
+and connected to these cartridges,
+
+although they don't have to be connected,
+
+sometimes the cartridge can be a little bit away
+
+and there's a hose, is this little guy right here.
+
+This is where the jet comes from.
+
+What happens is that ink is brought into this
+
+and then we put some fire underneath it, we heat it up,
+
+and it actually boils and shoots the ink
+
+out of the little jet itself.
+
+So not only does the ink shoot out,
+
+but it comes out with a charge on it.
+
+So we can actually put these metal deflectors around it,
+
+which will actually point the ink in different directions.
+
+Now, the ink doesn't just stay in one spot.
+
+What we actually have is what we call a print head.
+
+So here's an example of the print head.
+
+And if it's just black and white,
+
+then we'll have just one little jet here.
+
+Otherwise, we might have C, Y, M, K.
+
+So we have Cyan, Magenta, Yellow, and Black.
+
+Might see that a lot too.
+
+In fact, a lot of times on these inkjets
+
+you can even have more colors than just that.
+
+But the bottom line is, is you've got this print head
+
+and that print head actually stores all of the jets.
+
+So what then takes place is this print head
+
+moves back and forth on the carriage,
+
+which allows it to shoot ink
+
+across an entire sheet of paper.
+
+This is being transferred.
+
+We have rollers on either side
+
+and a belt that actually moves the carriage back and forth.
+
+In fact, when inkjet first came out,
+
+they were known as bubble jet
+
+because the little heater made a bubble
+
+and, boom, shot the ink onto the paper.
+
+Now, not only do we have all of those parts,
+
+but the other thing we're gonna have is,
+
+you know, it's a printer,
+
+so it's gonna have some kind of feeding mechanism
+
+to bring in paper
+
+and as well as to bring the paper out when it's done.
+
+The nice thing about inkjets,
+
+especially compared to laser jets,
+
+is that we don't see all the scary high voltages
+
+and incredibly high heats that you would see with lasers.
+
+So they tend to be a little bit safer
+
+for people who don't do the right thing.
+
+So let's go ahead and actually take a look inside this guy.
+
+First of all, what I wanna do is I'm gonna force this guy
+
+into a mode so we can actually see some things happen.
+
+So I've put it into a maintenance mode.
+
+We'll talk about that in a minute.
+
+But what I'm more interested in showing you this.
+
+What you can actually see there is the print head
+
+on the carriage moving back and forth.
+
+And so you can actually even see the belt that's pushing it
+
+if you look closely enough.
+
+Now, he doesn't like it when I open him like that
+
+when he's in the middle of these jobs like this.
+
+Well, tough. I wanna show you guys.
+
+So that's actually moving back and forth,
+
+which is really pretty cool.
+
+The other thing we're gonna have
+
+is we're gonna have ink cartridges.
+
+And anybody who's ever messed with an inkjet
+
+knows that we have ink cartridges.
+
+These are actually kind of interesting.
+
+And we can actually see them there.
+
+So we have M, C, Y, and then Black, so M, C, Y, K,
+
+and they can be taken out individually.
+
+Which is actually nice on a lot of inkjets,
+
+especially older ones.
+
+All the colors was in a single cartridge.
+
+So if you ran out of red,
+
+you were grabbing a new cartridge.
+
+All right, so these are the basic parts,
+
+but the couple other things I wanna mention real quick,
+
+because not only is this an inkjet printer,
+
+this is actually what we call a multifunction device.
+
+In particular, it's also a scanner.
+
+So you see I've got scanner functions right here,
+
+and it even does fax as well.
+
+So these are popular in offices.
+
+So I've got a printer, I've got a scanner,
+
+and I've got a fax machine all built into one.
+
+Even have phone jacks to plug in
+
+if you still need to do old school faxing.
+
+Now when it comes to maintaining these guys,
+
+there's a couple of things we have to deal with.
+
+The big thing is,
+
+is that there's always some type of maintenance mode to do.
+
+In particular, what you're going to wanna do
+
+is that carriage, when it's not being used,
+
+and it sits in what's known as a maintenance area.
+
+In fact, I think we could probably see it on this guy.
+
+In fact, it's way over here.
+
+We see how he's kind of pushed off to one corner.
+
+The maintenance area really only has one important job,
+
+and that is to plug those inkjets.
+
+Inkjets are notorious for clogging.
+
+It's a big problem.
+
+So whenever an inkjet's not working for a living,
+
+it goes into a maintenance area and little stoppers come up
+
+so that it won't drip ink and clog.
+
+It's a big deal.
+
+All inkjets do this, no exception to that.
+
+However, you can run into problems.
+
+So one of the big things is that all of these inkjets
+
+have some kind of maintenance tools.
+
+In particular, one of the things they'll do,
+
+number one, is they'll try to clean the nozzles.
+
+So if you're ever having problem
+
+with a particular color not coming out
+
+or you're getting clipped imagery,
+
+all you do is you run through a clean the nozzles
+
+or clean the jets, it depends on the brand,
+
+and it will go in
+
+and force all of these guys to squirt ink.
+
+It actually will heat the individual jets
+
+a little bit extra, and most of the time it'll clean out
+
+any extra ink you have laying around,
+
+and it does a pretty good job.
+
+The other thing you have to worry about,
+
+and this is unique to the color ones,
+
+is you have to do some form of calibration.
+
+Because you have literally
+
+four different jets shooting over time
+
+because they're just kinda snapped in there,
+
+they can lose their calibration.
+
+And all of these printers have some kind of recalibrate mode
+
+where you can actually just force it
+
+and it will automatically double check everything
+
+and recalibrate the jets for you.
+
+I'm gonna tell you right now, from a maintenance standpoint,
+
+I'm not a big fan of inkjets.
+
+Inkjets take a lot of love
+
+in order for them to work the way you need them to work.
+
+They also tend to use a lot of ink
+
+over a relatively short time,
+
+so you're constantly replacing cartridges.
+
+Now, luckily for us, pretty much all inkjets today
+
+will have some kind of little program
+
+running on your computer.
+
+It'll let you know your inkjet,
+
+your different ink levels, and things like that,
+
+so you can replace cartridges.
+
+But be braced for some real sticker shock when you go in
+
+and find yourself having to replace just the cyan,
+
+because, well, you're running out of cyan,
+
+and it can get a little bit expensive.
+
+The other challenge we run into with inkjets,
+
+in fact this could be with almost any printing technology,
+
+inkjets tend to be pretty bad,
+
+I'm also gonna throw laser jets in here too, is paper jams.
+
+We have pickup rollers on these guys.
+
+They can pick up paper dander,
+
+they have trouble picking up paper.
+
+Or even worse, they'll partially pick it up
+
+or they'll pick up two or three sheets and you get a jam.
+
+Luckily, all these guys come
+
+with lots of little doors and access points
+
+for us to be able to clear those jams away.
+
+All right, so that's the basics of an inkjet printer.
+
+Now keep in mind, just because Mike Meyers, popular author,
+
+is saying he's not a big fan of it,
+
+don't think for a moment that the A+ isn't a fan.
+
+You're gonna see plenty of questions on these guys.

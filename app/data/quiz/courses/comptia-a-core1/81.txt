@@ -1,0 +1,489 @@
+-: Let's face it, kids.
+
+We live in a wireless world.
+
+Our phones are wireless.
+
+Our laptops are wireless,
+
+even desktop systems are wireless.
+
+Our Google home is wireless.
+
+Some cameras are wireless.
+
+Wireless, wireless, wireless.
+
+We live in a wireless world,
+
+well actually we don't.
+
+Well, it is wireless, but it is a very specific
+
+standard known as the IEEE 802.11 standard.
+
+This standard's been around now for about 20 years,
+
+and it is the primary way all of our wireless stuff talks.
+
+There's other standards, but 802.11 is the king.
+
+Now, there's lots of versions of 802.11, it's 20 years old.
+
+So, you'll hear things like, 802.11B, and G and AC,
+
+and we'll talk about that in another episode.
+
+But for right now, it doesn't matter what standard
+
+of 802.11 you have, there are certain things
+
+that are common to all of them.
+
+And the big thing and the most common thing,
+
+is this guy right here.
+
+This is a wireless access point.
+
+A wireless access point is nothing more than a bridge
+
+between, if we take a look over here,
+
+this is an Ethernet connection.
+
+And this device acts as a bridge
+
+between an Ethernet network and
+
+a wireless 802.11 network.
+
+So WAPs are really, really critical in order
+
+for us to be able to take advantage of 802.11.
+
+Now you gotta be careful here because in today's
+
+universe we have lots of these home routers,
+
+like this beast right here in front of me.
+
+Now if you take a look at this,
+
+he's got antennas, might be a clue it's wireless.
+
+Yep, it is.
+
+But, I want you to take a look at the business end
+
+of these two guys.
+
+So, notice that I've got lots of connectors
+
+in the back here.
+
+A WAP, a true WAP, and the only thing that white
+
+thing does is acts as a wireless access point,
+
+is only gonna have one Ethernet connection.
+
+This is a home router.
+
+It's a built-in router.
+
+It's a built-in switch, and it's a wireless access point.
+
+It's 3, 3, 3 devices in one.
+
+So, you always wanna be careful with that.
+
+I use the term WAP a lot when I'm talking about wireless.
+
+If I'm playing with one of these and I use the term WAP,
+
+I just mean the wireless functions within this device.
+
+Are we okay with that?
+
+Great, okay.
+
+So, we have two different kinds of modes that we work
+
+within the 802.11 world.
+
+If you have a wireless access point,
+
+or two or three or four,
+
+we are in what's known as infrastructure mode.
+
+Infrastructure mode is the most common way
+
+that we do 802.11.
+
+And if you've ever looked around
+
+at your work or at your school
+
+or at your place of worship or at your local coffee shop,
+
+if you ever actually look around the walls,
+
+and if you're a nerd you do.
+
+You probably see wireless access points all around.
+
+And those are what are providing you your connection
+
+to your internet.
+
+But there's another way to do it.
+
+Because there's another part that comes into play.
+
+Great, if you have a wireless access point.
+
+But the other thing you're gonna need is
+
+a wireless network card.
+
+And I've got a bunch of them here.
+
+So, this is a very old fashioned wireless network card.
+
+Where I would actually snap the card in.
+
+And then I've got this humongous antenna.
+
+You guys wanna take a peek at that?
+
+So you can see that it's a PCI express connection.
+
+Snap this in.
+
+Yes, it needs drivers and all that stuff.
+
+And those are still used,
+
+there's nothing wrong with that.
+
+But today we're seeing, like for example,
+
+look at this motherboard.
+
+So, you'll see that this motherboard has a built-in NIC.
+
+It even has a cute little antenna here.
+
+So, this is all built-in and it has drivers that come
+
+with a driver's disc for the motherboard itself.
+
+You'll even run into stuff like this.
+
+For example, this is just a USB to 802.11, wireless NIC.
+
+So, I just plug that in and I get a wireless that way.
+
+My laptop here.
+
+In fact, gosh, it'd be hard-pressed to find a laptop
+
+that doesn't have built-in wireless anymore.
+
+What's interesting on laptops is in almost all cases
+
+the antenna for the wireless network card is actually
+
+in the monitor itself.
+
+That's important for the A+.
+
+And certainly last, but not least,
+
+is all of our mobile devices,
+
+all of our tablets, all of our smartphones,
+
+all have 802.11 network cards built into them.
+
+And the antenna is pretty much the entire case
+
+on most of these things.
+
+So, you're always gonna have a wireless access point
+
+and then you're always gonna have a NIC.
+
+The wireless access point will be configured,
+
+and we're gonna be doing this in other episodes,
+
+to set-up what's known as a service set identifier.
+
+And anybody, you've ever tried to look
+
+for the wireless networks and all those
+
+different names you'll see?
+
+Those are the different SSIDs that are out there
+
+for you to connect to.
+
+And then your individual NICs will then connect to it
+
+through their client software.
+
+So, that's infrastructure mode.
+
+But, there is another way.
+
+It's rare, I don't wanna say terribly rare,
+
+but more rare, and it's called ad hoc mode.
+
+With ad hoc mode, there is no wireless access point.
+
+You just have a bunch of NICs.
+
+So, a bunch of guys with laptops, for example.
+
+And one person can say,
+
+"I want to set up a wireless ad hoc network."
+
+And you could do this in every operating system.
+
+Not done very often, but you can do it.
+
+And you can say, "I am going to set up a
+
+wireless network".
+
+And then all the other computers will treat your system,
+
+kind of like a wireless access point.
+
+So, ad hoc mode is handy if you wanna get a bunch
+
+of computers hooked together at 32,000 feet
+
+on a Southwest Airlines flight to play Counter-Strike.
+
+Would be one example that I've been known to do myself.
+
+So, there are these two different ways.
+
+So, infrastructure mode means you absolutely
+
+must have a wireless access point.
+
+And then ad hoc mode means no wireless access point.
+
+One of the clients has to pretend to be the boss,
+
+and set that up for you.
+
+Now the other thing that comes into play
+
+with 802.11, are antennas.
+
+Antennas are absolutely critical in terms
+
+of how we get the signal around.
+
+So, I wanna take a moment and talk about
+
+the different types of signals.
+
+Now, there's basically three types of antennas out there.
+
+There is an omnidirectional, there is a patch,
+
+and then there is a highly directional.
+
+So, with an omnidirectional,
+
+now, I'm gonna pretend for a minute that this is an omni.
+
+Omnidirectional is like the antennas that
+
+you see on automobiles.
+
+It's just one piece of metal that sticks up.
+
+Omnidirectional is distinct that
+
+because the radiation pattern looks like a big fuzzy ball.
+
+And the more power you put to the antenna
+
+the larger this fuzzy ball gets.
+
+Now, omnidirectional works fine,
+
+there's nothing wrong with it,
+
+but think about what a big fuzzy ball does for you,
+
+if say you're like on one floor of an office.
+
+A lot of times that type of fuzzy ball
+
+signal propagation, isn't what we want.
+
+So, what we tend to turn to is something like this.
+
+This is really a dipole antenna.
+
+What you're looking at are two omnidirectional
+
+antennas that are pointing exactly opposite of each other.
+
+Now, if you look at this, you go,
+
+well, Mike, this looks like an omnidirectional.
+
+Just one thing sticking up.
+
+But it's really not.
+
+At the midpoint here, there's another antenna
+
+pointing straight down.
+
+Dipole antennas create a very interesting signal
+
+that's very useful for wireless.
+
+It basically looks like somebody
+
+took a donut and stomped it.
+
+So, you get a big flat circular signal,
+
+which is absolutely perfect, like for example,
+
+if you're on the highway,
+
+or if you're on one floor of an office,
+
+or if you're in a park.
+
+Things like that where you just need a big signal going out.
+
+You don't wanna propagate up into space
+
+or down into the dirt.
+
+So, dipoles are very, very popular.
+
+On this system right here, I got three dipoles.
+
+Now, there are some other situations that come into play.
+
+Another one is what we call patch.
+
+Now, a patch antenna,
+
+and I've got one right here.
+
+So, a patch antenna is always gonna have
+
+this flat look to it.
+
+And the idea behind a patch is that
+
+the radiation signal is going to be a big fuzzy ball,
+
+but only half of one.
+
+So, if you're against a wall and you wanna propagate
+
+in one direction, but you don't want it going out
+
+the back, patches are extremely popular ways
+
+to get that type of coverage.
+
+The last type is what I call highly directional.
+
+And I've got one example right here.
+
+This is a Yagi antenna.
+
+So, a Yagi antenna is designed,
+
+is anybody old out there who remembers when antennas
+
+for your TV were? No?
+
+Okay, well, it was the television of your forefathers.
+
+Anyway, these are highly directional.
+
+And their propagation signal looks like,
+
+well take a football, an American football,
+
+and stretch it out really, really, really long.
+
+So, that type of signal, which is also known
+
+as a Fresnel lens.
+
+Is really good for shooting really long distances.
+
+So, a lot of times if you're using a highly
+
+directional antenna, you probably have another
+
+highly directional antenna pointing back at it.
+
+So, for really long throws for 802.11,
+
+these are very popular.
+
+There's another version, I don't have one on me,
+
+so I'll just show a picture to you.
+
+And that is what we call a parabolic.
+
+So, parabolic antennas are another alternative
+
+for very, very long, highly directional throws.
+
+So, make sure you're comfortable with these 802.11 basics.
+
+We have two modes.
+
+Infrastructure, which means you will be
+
+using a wireless access point.
+
+And ad hoc, which means you will not be
+
+using a wireless access point.
+
+Also, keep in mind is that if you have a WAP
+
+you're also gonna have to have some network card
+
+which connects to an SSID.
+
+Which, we'll configure on our wireless access points.
+
+And also keep in mind is that there are
+
+lots of antennas out there.
+
+There are directional antennas, like a Yagi and a parabolic.
+
+There's patch, which is kind of unique unto itself.
+
+And then there's going to be omnis and dipoles,
+
+when you need to cover a really broad area.

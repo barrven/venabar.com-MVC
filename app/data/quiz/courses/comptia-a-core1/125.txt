@@ -1,0 +1,295 @@
+-: Well, you really can't talk about printing anymore
+
+without talking about 3D printing.
+
+Now, 3D printing's been around for a while
+
+but it's only with this version of the A plus
+
+that we actually see 3D printing
+
+being brought into the exam.
+
+Now, I've played with 3D printing a little bit
+
+but I wanna go ahead and just kinda
+
+give you a rough overview of
+
+how 3D printing works and talk about some of
+
+the issues that come into play.
+
+So first of all, you gotta start with a 3D printer.
+
+Now, a 3D printer is basically a heating
+
+element that can move back and forth.
+
+There's a little table here that moves around
+
+and what it's going to do is kind of almost lay out like a
+
+imagine like a toothpaste tube of heated thermal
+
+plastic that's a lot thinner than a toothpaste tube
+
+but it's gonna squirt out and extrude a shape
+
+based on 3D images.
+
+Now you can draw almost any 3D image,
+
+almost any 3D program.
+
+I like to use the popular Blender myself
+
+and I could take that image
+
+and then I gotta bring it into a tool that's
+
+gonna go ahead and then prepare it for printing.
+
+And then we actually go through the printing process itself.
+
+But let's talk about this printer I have in front of me.
+
+So right here is my heating element, and at the very bottom
+
+although you're not gonna be able to see it down
+
+here at the very bottom is the extruder.
+
+And then I've got this feed tube.
+
+So what we're looking at, this is where,
+
+this is the filament.
+
+The filament is actually the unmelted raw material.
+
+And this is what we use to make our 3D objects from.
+
+So this filament, there's a lot of
+
+different types of filament out there.
+
+Plastics with names like PLA,
+
+for example, things like that.
+
+But they basically all have one thing in common
+
+you can melt them and they also harden really
+
+really quickly.
+
+So there's even 3D printers that do metal,
+
+and things like that.
+
+But for us it's always gonna be some type of thermoplastic.
+
+All right, so what I've done here
+
+is I've got this guy ready,
+
+one of the things I have to do to get him going
+
+is I actually gotta preheat him.
+
+So I've got the heater already preheated
+
+in there and ready to go.
+
+And what I wanna do is get an image.
+
+So let's take a look over here on my screen.
+
+And what I did is I've got this pretty little tesseract.
+
+Let me scale this up for you.
+
+Ooh, maybe not that much.
+
+There we go.
+
+So that gives you an idea
+
+of just how we can scale this any way we want.
+
+I can scale it manually if I want to.
+
+For example, if I want this to be pretty small
+
+I can knock it down to 20 millimeters
+
+and notice that it drops itself onto the bed automatically.
+
+And anyway, I take this shape
+
+and what's gonna happen here is we're going to
+
+then slice the shape to make the individual layers.
+
+And that's what the extruder is actually going to be making,
+
+so we take this 3D image.
+
+Now if we take a look here, this program,
+
+by the way is called Cura,
+
+and I'm gonna go ahead and prepare it.
+
+Now there's some interesting things in here.
+
+For example, the layer height, we can actually
+
+instead of just squeezing toothpaste around once
+
+we could kind of do a double
+
+or even a triple layer if you wanted to shape it like that.
+
+This other option here is called infill.
+
+If I had a solid object that was completely solid
+
+I could say, how much of the inside
+
+do you want me to fill in?
+
+For structural strength, things like that.
+
+We could have generate support.
+
+Generate support is like
+
+let's say I've got something a knight holding
+
+a really long spear and he'll tilt
+
+if I don't give it some support.
+
+He'll generate based on its own physics
+
+a little support on there.
+
+And then build plate adhesion.
+
+What that's talking about is you remember
+
+like those little plastic army soldiers.
+
+What they'll do is it'll make little plates
+
+underneath it so it'll stick to
+
+the moving table a little bit better.
+
+So I'm gonna go ahead and say yes to that one.
+
+Now watch here.
+
+Oh, notice I've chosen the plastic PLA
+
+'cause that's what I've got.
+
+And I'm gonna hit prepare.
+
+So it's gonna go through the slicing process
+
+and make a slice file.
+
+And that's what we actually feed into this.
+
+Now this little printer has a USB connection
+
+and I tried it with the USB
+
+but something was going wrong and it made me uncomfortable.
+
+But I can also just put an SSD in here
+
+and that works just as well.
+
+So I'm gonna save this to my SSD.
+
+I'm now going to go ahead and pull this out.
+
+I'm gonna bring it in here and start the printing process.
+
+While I'm doing that,
+
+let's take a look at this front screen.
+
+Okay, now that I've got the card into the printer
+
+on this one, I have to go to print
+
+and it actually sees my little slice file right there.
+
+It's called gcode.
+
+And I'm gonna hit enter.
+
+Now it's gonna have to warm up a little bit
+
+but let's watch the bed right here
+
+and we can watch the printing begin.
+
+(upbeat music)
+
+Ooh pretty. Take a look at this.
+
+I've just printed myself a little tesseract.
+
+Now the thing about these 3D printers
+
+the biggest thing you need to remember is
+
+that they use a lot of this filament.
+
+So make sure you've always got plenty
+
+of filament for a particular job.
+
+Most of the time, these slicing programs
+
+will give you a good idea as to how
+
+much filament you're going to be using
+
+on any individual given job.
+
+And this little guy, for him, I actually
+
+have to use a razor blade
+
+and I'm gonna go ahead and cut this off.
+
+But for the A plus, remember
+
+that 3D printing is gonna be using some form
+
+of thermoplastic filament that actually
+
+uses an extrusion process by looking at 3D programs
+
+which are then sent through a slicing process.
+
+And it's actually the slice files that make all
+
+of our pretty fun images.
+
+So that's the basics.
+
+But if you really wanna have some fun
+
+these machines are getting cheaper and cheaper,
+
+pick up a 3D printer.
+
+You'd be amazed what you could make.

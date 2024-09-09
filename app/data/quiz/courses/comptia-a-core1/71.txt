@@ -1,0 +1,403 @@
+-: I was recently teaching a person about IP addressing,
+
+in particular, static IP addressing,
+
+and that young person came up to me and said, "Mike,
+
+I don't think I've ever had to type in an IP address."
+
+So I'm like, "Well, that's right.
+
+You probably never have because a long time ago,
+
+we came up with a way to provide dynamic IP addressing
+
+known as Dynamic Host Configuration Protocol or DHCP."
+
+DHCP works simply like this.
+
+You don't type in IP addresses
+
+or subnet masks or default gateways anymore.
+
+You just fire up your computer, you plug it into a network,
+
+and something on the network will give you that information.
+
+We call that a DHCP server.
+
+Let me show you how that works.
+
+So here, I've got a local area network
+
+and I've got some computers in here.
+
+Now, one of the things that I'm gonna add
+
+is a DHCP server.
+
+What's interesting is that, most of the time,
+
+these home routers that we have on our networks
+
+will also act as a DHCP server.
+
+So what it does is actually quite simple.
+
+When any of the computers inside your local area network,
+
+when they first get turned on, or if you reboot them,
+
+they will automatically start yelling
+
+saying, "I need an IP address. Is there a DHCP server?"
+
+The DHCP server will hear their call
+
+and hand them all of the IP address information.
+
+This is done automatically and it makes it a real benefit,
+
+especially at a wireless network where you've got a laptop
+
+and you're doing something at your house, you close it,
+
+then you go over to the coffee shop and turn it back on,
+
+it's gonna have a completely different LAN,
+
+it's gonna have completely different settings.
+
+So without DHCP, I'd be talking to the coffee shop owner
+
+going, "What IP address should I use?
+
+What's your subnet mask?"
+
+We don't do that.
+
+All we have to do is fire it up,
+
+connect to our wireless network,
+
+and all of this is automatically configured for us.
+
+What I'd like to do now is take you into these settings
+
+in a typical Windows system.
+
+So once again, we're gonna have to head over
+
+to Network and Sharing Center,
+
+and once again, go into Change your Adapter Settings.
+
+And this time, when we go into Properties,
+
+I want you to notice something.
+
+When we go down to Internet Protocol Version 4
+
+and hit Properties,
+
+you'll notice on this one,
+
+it says Obtain an IP address automatically.
+
+If I wanted to, I could still type in a static IP address,
+
+but most of the time, we just leave it here.
+
+What you've done is by making these choices,
+
+you've said, "I want to use DHCP."
+
+Now, you can get a little more detail on this.
+
+I'm gonna run Command real quick,
+
+and we're gonna type ipconfig, and I'm gonna do a slash all.
+
+Now, this time, you'll notice
+
+that it actually shows our DHCP server.
+
+So on this particular network, my router is 192.168.4.1.
+
+My DHCP server is a different computer.
+
+So on this one network, my router is not the DHCP server.
+
+Most of the time, DHCP is just that easy.
+
+You go into your settings for your network card
+
+and you say, "Just do it for me automatically,
+
+and life is good."
+
+However, there are situations that come up.
+
+For example, DHCP servers are computers within your LAN,
+
+so there's a chance it might be down one day,
+
+or the cable running between the switch and that DHCP server
+
+got cut by the cleaning people, or I don't know what.
+
+The bottom line is sometimes DHCP servers go down.
+
+So if you don't have a DHCP server,
+
+then you don't have an IP address, right?
+
+Wrong.
+
+What we have on pretty much all operating systems
+
+is called the Automatic Private IP Addressing or APIPA.
+
+Basically, APIPA is your fallback
+
+in case you can't find a DHCP server.
+
+Let me show you your APIPA setting.
+
+So once again, here we are on Properties for my network card
+
+and you could see the Obtain an IP address.
+
+It's right here.
+
+Do you see this where it says Alternate Configuration?
+
+When we click on that,
+
+it's gonna say Automatic Private IP Address
+
+or User Config'd.
+
+By default, APIPA will always give a, remember this,
+
+a 169.254 address,
+
+then the next two digits are spun up randomly.
+
+Now, think about this for a minute.
+
+Oh, and by the way, it's a Class B, 255.255.0.0.
+
+Now, imagine that we're in a local area network
+
+and the DHCP server just dies for some reason.
+
+As the computers start to boot back up,
+
+they're all going to first call out to the DHCP server.
+
+Nobody responds,
+
+and finally, they're like, "Okay, fine, I'm gonna go APIPA,"
+
+and they all suddenly start getting 169.254 addresses.
+
+Now, with luck, the other two numbers are always different.
+
+They have 65,536 out of 1 chances.
+
+So suddenly, interesting things take place
+
+when APIPA kicks in.
+
+For example, say you're sharing a printer,
+
+you can still get to the printer.
+
+Say you're sharing somebody's folder,
+
+you can still get to the folder
+
+because you all have 169.254 addresses.
+
+Get that?
+
+But you can't get on the internet
+
+because your router doesn't use APIPA.
+
+It's got a fixed address on it.
+
+So whenever you run into a situation
+
+with limited connectivity, where you can really,
+
+like I can get to everybody else in the office,
+
+but I can't get to Google,
+
+one of the first things you need to do
+
+is run ipconfig and see if you have an APIPA address.
+
+So on this computer, I'm gonna type ipconfig.
+
+Now, if you look way down in the right-hand corner,
+
+you see I've got an exclamation point.
+
+So it's already giving me a clue something's wrong.
+
+But when I type ipconfig here,
+
+notice that my address is 169.254.
+
+My friends, you have a DHCP server problem.
+
+Maybe the DHCP server's down, maybe somebody unplugged you,
+
+maybe somebody unplugged the DHCP server.
+
+But in order for you to fix this problem,
+
+you're gonna have to try to reconnect to the DHCP server.
+
+So what I'm gonna do now, I'm gonna plug,
+
+all I did is I unplugged myself from the switch.
+
+I'm gonna plug back into the network,
+
+and what we're gonna do
+
+is try to get back on to the proper IP address.
+
+So now that I'm plugged back in,
+
+you'll notice I've still got an exclamation point.
+
+So what I'm gonna do, I'm gonna do an ipconfig slash renew.
+
+Now, you'll notice the exclamation point disappears,
+
+and you'll see that I'm right back
+
+to having a proper IP address for this local area network.
+
+You can use the ipconfig command
+
+whenever you're having problems with the DHCP server.
+
+You can run ipconfig slash release
+
+and that will disconnect you from a DHCP server,
+
+and you can run ipconfig slash renew
+
+to connect you to a DHCP server.
+
+But to be honest with you, I'm a bit of a cheater.
+
+I'm gonna show you a little bit faster way
+
+to take care of all these problems.
+
+On a Windows 10 system, just right-click on your connection
+
+and click on Troubleshoot.
+
+This really is a handy-dandy tool.
+
+It's going to disable your network card, then re-enable it,
+
+so it's kind of hitting Ctrl + Alt + Delete
+
+on the network card.
+
+It's gonna do a release and a renew,
+
+and then it's even gonna make some queries to the internet
+
+to verify that you have internet connectivity.
+
+So the built-in troubleshooter,
+
+and it's not just Windows 10,
+
+you have a number of other ones that do the same thing.
+
+It's an absolute lifesaver
+
+when it comes to dealing with these issues.
+
+Now, there's one other thing about APIPA I wanna show you.
+
+By default, you're gonna get a 169.254.
+
+But if for some reason, you were to say,
+
+"Well, if I can't get a DHCP server,
+
+I need some alternate IP address,"
+
+let me show you how we can do that
+
+through those Alternate Configuration settings.
+
+Once again, zooming over to my Network and Sharing Center.
+
+Once again, going over to my Adapter,
+
+right-clicking, selecting Properties.
+
+You think I've done this a couple of times before?
+
+IPV 4, hit Properties.
+
+Now, Alternate Configuration, you see it right here?
+
+Now, if I leave it as APIPA, I'm always gonna get a 169.254.
+
+But let's say for a reason.
+
+Now, remember, my network ID for this is 192.168.4.
+
+So I could, if I wanted to,
+
+in essence, give myself a static IP address.
+
+So I could just type in the IP address,
+
+by default, it gives me the right subnet mask.
+
+I type in my default gateway,
+
+and some other information.
+
+And what's gonna happen now is if my DHCP server disappears,
+
+it's going to give me a non-APIPA address,
+
+an alternate configuration that I set up myself.
+
+This would not be something you'd wanna do
+
+unless there was a very specific situation.
+
+For example, I've now taken that IP address
+
+from the 192.168.4 network ID
+
+that might be used for other things.
+
+So you need to be really, really careful when you do that.
+
+Personally, I'd like to know it if my DHCP server is down,
+
+and that way, I'm gonna just stick with APIPA.
+
+And if I've got a 169.254,
+
+I know it's time to head over to that DHCP server
+
+and start fixing.

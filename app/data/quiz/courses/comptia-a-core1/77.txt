@@ -1,0 +1,527 @@
+-: Routers, routers, routers!
+
+Everything I have in front of me right now is a router.
+
+Routers are devices that filter and forward traffic
+
+based on IP addresses.
+
+Routers are the magic tools that we use
+
+to interconnect local area networks.
+
+So let's take a moment
+
+and think about how routers really work.
+
+So I've got one little router here.
+
+Now, this router has two connections.
+
+One of the connections connects to a network
+
+called 192.168.7.0
+
+and he's got a built-in NIC
+
+and his NIC is 192.168.7.1.
+
+The other side will say,
+
+this comes from a internet service provider,
+
+also has an IP address,
+
+but this comes from the internet service provider,
+
+and in this particular example
+
+it's connected to 11.12.13.0 network,
+
+and he's 11.12.13.44.
+
+If we zero in on the router itself,
+
+what we're gonna have,
+
+I'll have my router and here are my two connections
+
+with their IP addresses.
+
+Rule number one,
+
+routers don't care where any packets come from.
+
+So let's say a packet's coming in from the internet
+
+and it's coming in on 11.12.13.44.
+
+The moment that comes in,
+
+your router has built into it,
+
+or you program it in, called a routing table.
+
+The routing table tells the router where to send stuff.
+
+So in this particular example this incoming packet
+
+is designed for the network 192.168.7.0,
+
+so there's a computer in there called 192.168.7.59.
+
+So what's gonna happen here
+
+is he's going to send that out on this particular one.
+
+Equally, I might have a outgoing packet
+
+that's going to something like 44.99.60,
+
+pick any numbers you want.
+
+In that particular case,
+
+all routing tables have what we call a default gateway
+
+and that means if I don't specifically list the network ID,
+
+send it out, and he's 11.12.13.44
+
+is going to be my default gateway
+
+and that's all routers do for a living.
+
+All routers do is look at the destination
+
+on incoming IP packets and sends it out to some other port.
+
+That's their only job.
+
+Now, routers are what make the internet work.
+
+Without routers, we wouldn't have a way
+
+to separate all of our different local area networks
+
+and we'd have a mess.
+
+Speaking of messes,
+
+look what I have in front of me right now.
+
+Every single one of these boxes is a router
+
+but we have to be careful
+
+because we have very much an enterprise type router
+
+versus a small office, home office router.
+
+So if we take a look back here, for starters,
+
+what I've got is a beast of an old
+
+and I mean old router here,
+
+and I want you to take a look right there.
+
+Do you see those two yellow connections?
+
+These are the only two connections it has.
+
+It's a two-connection router.
+
+Now take a look at this little beastie right here.
+
+This router has five connections.
+
+If I wanted to, I could connect this
+
+to five totally different local area networks.
+
+I could set it up to four local area networks
+
+and one to an internet service provider.
+
+So don't let size fool ya.
+
+Routers are going to have lots of different power
+
+based on their size.
+
+The problem we run into is that,
+
+especially in small office and home office scenarios,
+
+we tend to combine routers with other devices.
+
+So take a look at this fella right here.
+
+Ignore that blue connection,
+
+it's the yellow ones that I'm interested in.
+
+This is a two-port router.
+
+One port goes out to what it calls the WAN
+
+or the, yeah, the WAN.
+
+And then it has a built-in four port switch.
+
+So this is really a router, a two-port router,
+
+and a four-port switch built in.
+
+When we get into smaller offices and home offices,
+
+this is more common than anything else.
+
+So let's take a look at this.
+
+This is an older router, still works great, by the way.
+
+Take a look at this guy.
+
+So this is again, a two-port router with a four-port switch.
+
+What's also interesting is not only is this a router,
+
+not only is this a switch,
+
+but it's also a wireless access point
+
+all built into one little box.
+
+There's nothing wrong with that.
+
+The danger that we run into,
+
+especially when we start configuring these things,
+
+is you start messing with wireless stuff
+
+and things like that,
+
+and you go, oh, all routers have wireless.
+
+No, no, no.
+
+The home ones that you're gonna be seeing on the A+ do.
+
+But in an enterprise, if you need wireless,
+
+you get wireless access points.
+
+If you need a router, you get a router.
+
+Now, this other one I wanna show you real quick.
+
+On this particular router,
+
+we have one connection to our local area network
+
+that'll plug into a switch
+
+and then the upstream connection is using DOCSIS.
+
+That's cable modem.
+
+That's the other real power of our routers.
+
+Routers don't really care about their connections.
+
+You can connect to them using ethernet,
+
+you can connect to them using cable modem DOCSIS
+
+You can connect to them using
+
+all kinds of other types of bizarre connections.
+
+It will always keep that IP packet in good shape.
+
+Okay, now that we're comfortable
+
+with the fact that there's gonna be different ways
+
+to get to it,
+
+trust me when I tell you,
+
+you're gonna have to go into a router
+
+and you're gonna have to do some configuration.
+
+Configuring routers can be a real challenge sometime.
+
+I wanna go back and take a look at this guy one more time.
+
+You see that port right there?
+
+That's what we call a console port.
+
+A console port is actually a serial port
+
+using the RS-232 language to act as a connection.
+
+So take a look at this.
+
+So to configure this guy, I plug one into the console port,
+
+and this one gets plugged into a laptop
+
+or whatever I might have.
+
+And once I plug in, I'll use some type of terminal program.
+
+And this terminal program PuTTY is a very common one
+
+will actually allow us to talk to the router.
+
+This is often done for initial configuration.
+
+So here's an example of a scary looking terminal connection
+
+that I have to a router.
+
+Yeah, it's pretty interesting language.
+
+What you're looking at there is called the Cisco IOS,
+
+and if you wanna learn more about that,
+
+start taking some Cisco courses.
+
+I just wanna make sure you know what a router is.
+
+So this is one way we can connect.
+
+And by the way, this little connection right here,
+
+let's make sure we know that guy,
+
+that is a DB-9 connector.
+
+So you're either gonna see,
+
+I know that looks like an RJ-45.
+
+I mean technically it is RJ-45, but they've stolen it,
+
+and they use it as this type of serial connection.
+
+This is a very common way
+
+to connect on these types of boxes.
+
+Here I've got a picture of a number of different boxes.
+
+These are all using console ports.
+
+Notice some of them look like RJ-45s
+
+and some of them look like DB-9s.
+
+The bottom line is for me to communicate with these,
+
+I'm gonna grab some kind of cable,
+
+I'm gonna plug it on one end,
+
+gonna plug the other end into a laptop,
+
+and I'm gonna use some type of terminal program
+
+to get the initial configuration.
+
+By the way, this blue cable, it's almost always blue,
+
+it's called a Yost cable, Yost or Rollover.
+
+Those terms are interchangeable.
+
+It's got a DB-9 on one end
+
+and it's got that RJ-45 looking connector.
+
+These were made famous by Cisco Corporation
+
+although a lot of other boxes use these as well.
+
+Luckily for us, in a small office, home office environment,
+
+the primary way that we connect to a device
+
+is through a web interface.
+
+So I've got this box right here.
+
+Now, this is a very classic small office, home office router
+
+four-port switch,
+
+and you can tell by the antennas,
+
+this is also a wireless access point.
+
+So what I wanna do is plug in and connect to this.
+
+When I initially make a connection to these devices,
+
+number one, it's going to probably be passing out
+
+via DHCP a DHCP range.
+
+So that means it's probably gonna be,
+
+these are pretty common.
+
+It'll be 192.168.1.1, 192.168.0.1
+
+and it'll be passing out to any computer
+
+that hooks on the land side,
+
+on the yellow connection side,
+
+it'll go ahead and send out a DHCP
+
+for the individual devices.
+
+The other thing it's gonna have
+
+is a default username and password.
+
+It's really, really important
+
+that whenever you plug any of these devices in,
+
+probably about the first thing you do
+
+is change the default username and password.
+
+So what I've got set up right now is I went ahead
+
+and plugged this home router
+
+into the back of my computer right here.
+
+Now, I'm not on the internet or anything.
+
+I don't need to be on the internet.
+
+I just need to be talking to the router itself.
+
+Let's make sure we can get some good communication
+
+going with this router.
+
+So the first thing I'm gonna do is I'm gonna run ipconfig.
+
+Now you'll see that I get a 192.168.0 address.
+
+That's really, really important.
+
+If I was getting an APIPA address,
+
+a 169.254 address,
+
+I know automatically that this router
+
+is not passing out DHCP.
+
+And I'm gonna go into the user's manual
+
+and I'm going to find out what his default IP address is.
+
+Then I'm gonna go into my system
+
+and statically set an IP address that matches his range.
+
+If I were to go in, I would see it does 192.168.0.1.
+
+That's how it comes from the factory.
+
+And if I wanted to, I would go into my system
+
+and statically type in 192.168.0. anything but one,
+
+and then I would be able to access this.
+
+The fact that I'm seeing, I'm getting a 192.168.0 address
+
+tells me that this is a DHCP server
+
+and he's passing me out a legit address.
+
+That's important.
+
+So let's take another peak here.
+
+So the default gateway is 192.168.0.1.
+
+The default gateway is your router.
+
+The default gateway is your router.
+
+The default gateway is your router.
+
+Knowing that, I could just come into a browser,
+
+yeah, I'm not on the internet, who cares?
+
+Watch this.
+
+And I am now talking to this particular router.
+
+Now, normally I would go ahead
+
+and just type in the default username and password
+
+but I already changed it because I'm a clever guy
+
+and I'm now into the router configuration itself.
+
+When it comes to that initial connection with your router,
+
+remember, it's well-documented.
+
+It's gonna have a default IP address.
+
+It's gonna have a default username and password.
+
+If you wanna keep the default IP address,
+
+it's on your land side, who cares?
+
+But you definitely wanna change the username and password.
+
+Also, keep in mind, with a lot of these routers
+
+they're going to try to set up your wireless.
+
+They're gonna try to do all kinds of extra configuration.
+
+A lot of people find that convenient.
+
+I personally find it wildly irritating.
+
+It's a matter of personal choice.
+
+And as we go, we're gonna be looking at a lot of routers
+
+in these episodes.
+
+You're gonna see where sometimes it's convenient
+
+and sometimes it isn't.
+
+What we wanna talk about for these episodes though
+
+are what are the router configuration issues?
+
+So I'm gonna ignore wireless
+
+and things like that just for a little bit.

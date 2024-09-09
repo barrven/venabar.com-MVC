@@ -1,0 +1,303 @@
+-: When we're buying a power supply,
+
+we buy it based on watts.
+
+Now, before I get into a lot of detail on watts
+
+I want to kind of correct something I said
+
+that wasn't a hundred percent true earlier
+
+when we talk about electricity
+
+we always say volts, times, amps equals watts.
+
+Well, that is absolutely true, but only
+
+in a perfect world where we have 100% perfect efficiency.
+
+what's really happening is that power supplies
+
+like anything on earth, are not perfectly efficient.
+
+So when you plug into your wall outlet
+
+only a percentage of that electricity that you're getting
+
+from the wall outlet is being converted
+
+into the DC voltages that your PC needs.
+
+The rest is lost through heat, friction
+
+other things like that that prevent you getting
+
+all the electricity goodness that you need.
+
+And this has been a big problem
+
+with power supplies over the years.
+
+So first of all
+
+when you're looking at power supplies in the store
+
+you can see they've all got these wattage ratings on 'em.
+
+So on these two in particular,
+
+you could see one of these is a 460 watt
+
+and the other one is 750 watt.
+
+So the big first question I get
+
+from everybody is, well, Mike, how much wattage do I need?
+
+And I refuse to answer that question.
+
+In fact, you will not be quizzed on that question
+
+on the CompTIA exams because everybody understands
+
+that this is a very subtle question.
+
+There are wonderful websites that you can go
+
+to all over the internet that help you figure this out.
+
+So basically, how much does your motherboard need?
+
+What kind of video cards are you using?
+
+That's a big one in terms of your total wattage.
+
+How many hard drives do you have installed on your system?
+
+It's surprising how little wattage
+
+that most systems need today
+
+unless you're doing something like, for example
+
+using a really high-end processor or using
+
+really, really high-end video cards.
+
+So don't worry about the wattage you need for your system
+
+in terms of a A+ plus question, but do be aware
+
+that that can be an issue for anybody buying a system.
+
+And the answer is do like I do, go online
+
+find one of these wattage calculators
+
+and then make your best guess, add 10, 20%.
+
+So that's the other thing to keep in mind.
+
+So let's just say you go through these calculations
+
+and you decide that your system needs 700 watts of power.
+
+Well, you're only gonna need 700 watts
+
+of power when everything's running.
+
+With a power supply he can provide up to these wattages
+
+but the vast majority of the time on your computer
+
+unless you're constantly playing really high-end video games
+
+and constantly accessing your hard drive is only
+
+gonna be a percentage of that particular number.
+
+So what, it's always fun, guys like me
+
+I wanna buy like super high-end wattage power supplies.
+
+Like right now about the highest commonly
+
+found power supply would be be about 1500 watts.
+
+And they're huge and they look cool I guess
+
+but I probably never ever need that kind of wattage.
+
+So the important thing to take
+
+from this is that get the wattage that you need.
+
+Give yourself a little buffer.
+
+The one problem that you can run into is not having enough.
+
+So don't be afraid to turn that up a little bit.
+
+And if you're like me
+
+I buy just almost nothing pretty much
+
+but 750 to 1500 watt power supplies
+
+and I've never seemed to run into that problem.
+
+Okay, so going back to the efficiency issue.
+
+Now, this is a big problem on older power supplies
+
+like this one right here.
+
+If I had even a 60% efficiency, that would be good.
+
+So this one was rated at 575 watts.
+
+So at 575 watts
+
+that is only at, you ready, room temperature, okay?
+
+And I assure you that inside this power supply
+
+after running for 30 seconds
+
+it's a lot hotter than room temperature
+
+and heat reduces efficiency in a big, big way.
+
+Also, in terms of the quality
+
+of electronics can be a big issue.
+
+And the bottom line is, is that if this thing's only putting
+
+out 60% efficiency, probably gonna be just a little bit
+
+over 300 watts when everything's hot
+
+and it's working really hard
+
+and when it's at less than optimal situation.
+
+So you need to be careful with that.
+
+In fact, it was such a big problem
+
+that the power supply industry on its own came
+
+up with what they call the 80 plus rating system.
+
+If you look right here, you'll see
+
+that it has an 80 plus rating on there.
+
+The 80 plus ratings are an absolute godsend for people
+
+like me who want good high efficiency power supplies.
+
+Now, there's a number of rankings within this 80 plus.
+
+Let me show you those.
+
+So if you take a look at this chart, you can see we
+
+have a number of different types of 80 plus.
+
+So at the very base we have what's just known as 80 plus.
+
+And if you take a look, you'll see it's talking about
+
+the percentage of rated loads.
+
+So that means if I'm only using 10% of the watts
+
+that this guy could provide to me, or 20% or 50
+
+or all the way up to a 100%
+
+what is my efficiency?
+
+So with 80 plus, which is the most base one they have
+
+they guarantee that you get an 80% efficiency.
+
+And as you see, we go higher with our efficiencies, bronze
+
+silver, gold, platinum, and titanium, where the efficiencies
+
+continue to improve.
+
+Keep that in mind when you're choosing a power supply
+
+you need to make sure that you've got one that, whatever
+
+it's peak wattage it shows, take a look at the 80
+
+plus efficiency, and that's the real wattages
+
+that you're going to get out of that system.
+
+Thank goodness for 80 plus, it's really made our lives
+
+a lot easier when it comes to choosing power supplies.
+
+Now for me, the only other
+
+big issue when it comes
+
+to choosing a power supply is going to be the modular
+
+versus the soldered.
+
+With modular where we can plug
+
+in and choose our different types of cables.
+
+I really like those, although many people claim
+
+that you actually reduce efficiency.
+
+That that connection knocks your efficiency
+
+down a little bit.
+
+So the purists say that you should always
+
+use the soldered permanent connections
+
+versus the modular because they're more efficient.
+
+Me personally, I love the convenience
+
+of modular power supplies, and if I lose 0.005% efficiency
+
+I'm gonna be perfectly happy with that.
+
+The last thing I wanna mention when it comes
+
+to power supplies is that the standard ATX
+
+size covers the vast majority of systems.
+
+Even a lot of the small form factor systems still fit
+
+that full size power supply that you've seen.
+
+However, do be aware
+
+that there are smaller power supplies out there.
+
+They still are underneath the ATX standard
+
+but they're for very, very small form factor systems.
+
+There's a bunch of 'em on there, they're not on the exam.
+
+But be aware, if you're looking for a small system
+
+there could often be a smaller sized ATX power
+
+supply that will be perfect for your needs.

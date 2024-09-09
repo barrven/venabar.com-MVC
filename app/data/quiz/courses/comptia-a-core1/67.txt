@@ -1,0 +1,399 @@
+-: I think it's an important skill for any nerd
+
+to be able to cut and crimp their own cable.
+
+You should be able to take a chunk of Cat-whatever,
+
+and crimp it up,
+
+and make yourself a nice piece of network cable from that.
+
+Personally, I carry around a 100 foot piece
+
+of unshielded twisted pair cable
+
+for all kinds of network testing.
+
+Okay, well it's not in my pocket, but it's in my car.
+
+So let's go ahead and talk about what it takes
+
+to cut and crimp your own cable.
+
+So take a look here.
+
+I've got a little tiny short length of, this is Cat5E,
+
+which is just a little bit easier
+
+to show in front of a camera.
+
+And what we have here are crimps. These are RJ-45 crimps.
+
+Now, one thing you need to be aware of
+
+when it comes to crimps is that they also have a Cat rating.
+
+So if you're gonna be cutting and crimping Cat5E cable,
+
+make sure you go to the store and get Cat5E crimps,
+
+because you have to match them up.
+
+Also, I need to warn you right now.
+
+Some of the more advanced types of cable, like Cat6A,
+
+are really, really challenging to crimp.
+
+You can do it, but it takes a little bit of work.
+
+So anyway, let's dive in.
+
+So the first thing I'm gonna do
+
+is I've got this handy dandy. (tool clicking)
+
+Well, here, take a look at this.
+
+This is a cable crimper and cutter.
+
+It will cut the different cables.
+
+You can see that piece of razor.
+
+And it also has a crimping tool for RJ-45 and RJ-11.
+
+So this one tool is about all I need to get myself started.
+
+So first of all, I'm gonna cut this thing.
+
+(tool clicking)
+
+Now keep in mind, there's Kevlar in there,
+
+and it can be a real pain.
+
+So what I'm gonna do is I'm gonna cut down about an inch.
+
+It's hard to see, but it actually has a place
+
+where I can cut the jacket away,
+
+as well as something to absolutely cut it.
+
+So first of all, I'm gonna cut
+
+about an inch of this blue jacket off.
+
+(tool clicking)
+
+Nice.
+
+So you can see I've gone ahead,
+
+and I've cut away the blue jacket.
+
+So I've got some Kevlar here. I'm gonna pull that back.
+
+And you can see, here are my four pairs.
+
+You'll notice that it's orange, blue, green, and brown.
+
+These colors are important.
+
+Because what we're gonna have to do
+
+is untwist each of these, slide them into our crimp
+
+in a very specific order.
+
+There are two different standards here.
+
+One's called TIA 568A, and the other is called TIA 568B.
+
+Now before I show those to you, what I want you to do
+
+is take a really close look at this crimp.
+
+So you'll notice I've got a little tab on the bottom.
+
+And based on that tab, starting on your right,
+
+that's pin number one.
+
+And then counting from your right over to your left,
+
+that's 1, 2, 3, 4, 5, 6, 7, 8.
+
+Make sure you got this orientation right.
+
+So when we're talking about colors,
+
+with each pair, you have two colors in the pair.
+
+You have a solid brown,
+
+and then a brown white, or a lot of times,
+
+you'll hear people say "brown white stripe."
+
+Then we're gonna have green, green white,
+
+blue, blue white, orange, orange white.
+
+Get the idea?
+
+So what we need to do is we have to be very careful,
+
+because each standard defines exactly
+
+what hole in the crimp we put each particular color.
+
+So let me go ahead
+
+and show you right now TIA 568A and TIA 568B.
+
+So the nice thing about TIA 568A and TIA 568B,
+
+four of the wires go in the exact same place.
+
+So if it starts with a B, it stays in the same place.
+
+So down in position eight, that's gonna be brown.
+
+In position seven, that's brown white.
+
+And then, blue is in position four.
+
+And then, blue white is in position five.
+
+So that leaves one, two, three, and six open.
+
+Now the trick is A stands for alphabetical.
+
+We've got green and orange, right?
+
+So green now comes before orange.
+
+So we go ahead and do white green and green
+
+into position one and two, and then white orange and orange
+
+into the two remaining positions.
+
+TIA 568B is exactly the same,
+
+except we simply swap out the orange and the green.
+
+So I need to warn you right now.
+
+Mike Meyers may be a popular trainer,
+
+but that doesn't mean that I'm really good
+
+or fast at crimping these cables.
+
+So bear with me a minute while I get the crimps on.
+
+(energetic upbeat music)
+
+So this is an intermediate step.
+
+What I've done is I've untwisted all of the different ones,
+
+and I'm slowly flattening and laying them out.
+
+So you can see I'm doing 568A,
+
+because I'm doing the greens before the orange.
+
+So I'm gonna keep slowly working this
+
+and create a nice broom shape.
+
+(energetic upbeat music)
+
+Mm, look how pretty that is.
+
+Notice I've got a death grip on these.
+
+If I let this go, they're gonna go everywhere,
+
+but I've got them laid out nice and flat.
+
+The challenge we have here
+
+is that in order to stay within any Cat rating,
+
+the distance from the last twist
+
+to where you actually punch down
+
+in the crimp has to be half an inch.
+
+I am personally incapable of doing that,
+
+but I can get pretty close.
+
+And here's where I'll cheat
+
+and actually use a pair of scissors
+
+instead of the cutter on my crimper.
+
+And I make a nice straight cut.
+
+Look how pretty that is.
+
+And I'm gonna take one more eyeball
+
+and make sure I've got it set to 56A.
+
+It looks good.
+
+And then, I just push it into the back of the crimp,
+
+and I shove it in.
+
+Now there's vampire punches in here.
+
+So what I'm gonna do is hold it up to the light
+
+and make sure that they've gone all the way up.
+
+I don't know if we can catch this. Let's take a look.
+
+You see how the colors
+
+are going almost to the end of the crimp?
+
+So that tells me I'm probably in good shape.
+
+Notice I've also got the Kevlar pushed to the back.
+
+(tool clicking)
+
+Okay, so now I put it into the crimper.
+
+(tool clicking)
+
+And I am halfway done. Let's do it again.
+
+(energetic upbeat music)
+
+(energetic upbeat music)
+
+So be careful with these crimpers.
+
+Notice that there's a notch for the actual little tab.
+
+On the other side, there's no notch.
+
+If you try to shove it in here,
+
+you've probably not only ruined your cable,
+
+but you probably ruined the crimper just as much.
+
+(tool clicking)
+
+Okay, well here's the moment of truth.
+
+Now it's time to actually test the cable.
+
+So what you need is some kind of cable tester.
+
+I use the Fluke Networks Microscanner Pro,
+
+but you can use a lot of other ones.
+
+Basically, you're checking for, number one, continuity.
+
+Is it connected from one end to the other?
+
+And the other thing you're checking is wire map.
+
+Do I have the right color in pin one to pin one?
+
+And you get the idea? They have to be in the right spots.
+
+By the way, if you've got them wired properly,
+
+this is what we call a Straight-through cable.
+
+So let's go ahead and test this thing.
+
+So this is a pretty cable.
+
+You'll notice, "1 2 3 4 5 6 7 8,
+
+1 2 3 4 5 6 7 8."
+
+So this is telling me I've got a good wire map
+
+and I have good continuity.
+
+What I want to do this time
+
+is I'm gonna mess this up a little bit on purpose,
+
+and I want to show you what an error might look like.
+
+These are easily abused. That should do it.
+
+Let's see what happens.
+
+In this particular example, I'm missing continuity.
+
+We'll see that 3, 6, 7, and 8 are not connected.
+
+Now if I were to plug these in,
+
+and I saw something like, "1 2 3 4 5 6 7 8,"
+
+and on the other side it said, "8 7 6 5 4 3 2 1,"
+
+or something like that,
+
+that's gonna tell me that I've got them backwards.
+
+And that's actually a very interesting type of cable.
+
+If you wire one side 568A and you wire the other side 568B,
+
+you're creating a very special type of cable
+
+known as a Crossover cable.
+
+Crossover cables are actually kind of handy.
+
+One of the things you can do with them
+
+is you can actually plug two computers directly together,
+
+no switch, no nothing, and they will actually be able
+
+to talk to each other most of the time.
+
+It depends on the network card.
+
+So make sure you're comfortable with the difference
+
+between a Straight-through,
+
+which is wired the same on each side,
+
+and then a Crossover,
+
+which is gonna be A on one side and B on the other.
+
+Take your time when you're playing with cables.
+
+It's not the easiest thing to do,
+
+and it's not uncommon to try over and over again,
+
+cutting off a crimp, and just keeping practicing.
+
+And one day you'll be as good as me.

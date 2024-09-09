@@ -1,0 +1,182 @@
+-: You know, the motherboard really is the backbone of a PC
+
+and the type and model of motherboard that you choose
+
+can have a profound impact on your system and oftentimes,
+
+determines exactly which components you are able to use,
+
+but what should you look for when picking out a new one
+
+and how do you find that information?
+
+Let's explore that and more as we learn
+
+about choosing the right motherboard.
+
+Now, real quick, I don't know if you remember back
+
+during the chapter on CPUs, we learned that a CPU
+
+can be called a central processing unit
+
+and all sorts of other names.
+
+The same thing rings true for motherboards.
+
+So as you research your options and you go out there online,
+
+you may hear them referred to as mainboards
+
+or system boards or backplane boards
+
+or really, my personal favorite, the mobo
+
+and you'll notice this happens with many things
+
+in the IT industry, but as we encounter those,
+
+I'll do my best to point 'em out to you.
+
+So first of all, let's go ahead and figure out
+
+what type of usage do we need out of this motherboard.
+
+Are we trying to do something simple
+
+like a desktop build or a laptop build
+
+or do we need something that has that multi socket
+
+capability such as a server, right?
+
+The ability to have multiple processors physically installed
+
+on the motherboard itself, but for purposes
+
+of this demonstration, we're gonna do something simple.
+
+We're gonna do a nice gaming build.
+
+We're gonna continue on with what we started with the CPU
+
+and let's go back into PC Part Picker.
+
+So the great thing to hear about PC Part Picker,
+
+I know we demonstrated earlier to make sure
+
+to save this URL, but over here, as we go along,
+
+there's two things I want you to take notice of.
+
+One is the compatibility. Second is the estimated wattage.
+
+These are really cool features that as we start
+
+choosing PSUs and actually start completing our system,
+
+this is gonna give us a very good indicator
+
+if we have enough power to meet the needs of this equipment.
+
+Also, the great thing about PC Parts Picker
+
+is it actually chooses your options for you
+
+and what I mean by that is since we've already chosen
+
+the Intel Core i9 CPU, PC Parts Picker already knows
+
+that only show us motherboards that have LGA slots, right,
+
+that land grid array.
+
+So let's go ahead and take a look at that real quick
+
+and I take a look. I see all the information
+
+is beautifully organized for me to make a decision.
+
+Now, couple things I need to decide on.
+
+We've already got the CPU which kind of helped define
+
+which motherboards we're able to choose,
+
+but what about form factors?
+
+You know, we talked about there's various sizes
+
+like we could have a full size ATX
+
+or a slightly smaller micro-ATX or even a mini-ITX board
+
+and run it through and you can actually just sort that
+
+right here on PC Parts Picker.
+
+I'm gonna search for an ATX board
+
+simply because I like full-size systems.
+
+Now, once we've chosen a board and this one
+
+has pretty good ratings, it has everything I need, I think.
+
+Let me go ahead and verify and I can click on that link,
+
+go in here and if I look down, scroll down here
+
+on PC Parts Picker, I can see literally every bit
+
+of information about this motherboard.
+
+I can see the part numbers that come out of it.
+
+I can see the exact socket size. Here's that LGA.
+
+I can see the chip set, the maximum amount of memory
+
+it supports, all sorts of stuff.
+
+So what you're gonna need to do is just really figure out,
+
+hey, what's the maximum RAM capacity I need?
+
+You know, do I need a certain amount of expansion ports?
+
+Do I need the the motherboard to have built-in wifi?
+
+Lots of little considerations there
+
+and last but not least, is, you know, what Mike calls
+
+"'cause it's cool", we need to decide, hey,
+
+is this gonna meet the aesthetic value of our build, right?
+
+That earlier build we showed you with all the LEDs
+
+and the lights and the red cables, that has a very positive
+
+and very beautiful aesthetic feel.
+
+Some people care about that, some might not,
+
+but that's another consideration that you need to have.
+
+Are you gonna choose plain green PCB?
+
+Are you gonna go with something dark and mysterious
+
+or maybe something like this with all these silver
+
+and white shrouds? Do you want LEDs?
+
+These are all things to consider and PC Parts Picker
+
+makes it absolutely easy for you to figure out
+
+the ideal motherboard for your new system.
+

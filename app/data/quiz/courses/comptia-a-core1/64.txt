@@ -1,0 +1,305 @@
+-: The computer world is full of binary,
+
+and it should be full of binary.
+
+Everything we do is wires going on and off
+
+or storage areas going on and off.
+
+So 1 and 0 is the normal way that computers speak.
+
+And often, we don't talk about just a 1 or a 0,
+
+but we talk about a width of them.
+
+Sometimes we talk about 32-bit CPUs or 64-bit CPUs,
+
+or sometimes we talk about 8-bit external data buses
+
+or 16-bit registers.
+
+Or if you get into graphics cards, we have 256-bit memory.
+
+The important thing that all of these different chunks
+
+of 1s and 0s have
+
+is that they all have a least common denominator of four.
+
+All of the numbers I just told you are divisible by four:
+
+8, 16, 32, 64, 128.
+
+And if we know that,
+
+we can actually do something kind of cool.
+
+Let me show you something over here on my computer.
+
+So I'm gonna run a command called ipconfig,
+
+which we go over in great detail in other episodes,
+
+and I want you to take a look at this.
+
+All over the place,
+
+we see these numbering systems where we see 0s and 1s,
+
+and then we also see letters of the alphabet.
+
+But notice that we never see a letter of the alphabet
+
+that goes beyond the letter F.
+
+It always stops at F.
+
+Well, what in the world is going on here?
+
+Well, the problem is,
+
+and when we're talking about big, long strings
+
+of 1s and 0s,
+
+it's really hard for me as a human being
+
+to talk to another human being and saying,
+
+"Oh, well, the MAC address for my network card
+
+is 1001 0101 0110 0011.
+
+You get the idea?
+
+It's really hard for us as human beings
+
+to talk in raw binary.
+
+So what we need is a shorthand,
+
+an easy way to talk about long strings of 1s and 0s
+
+using something that makes it a little bit easier.
+
+So what we use is a nomenclature called hexadecimal.
+
+Now, listen,
+
+hexadecimal is a complete base 16 numbering system,
+
+and in fact,
+
+if we had been born with 16 fingers instead of 10,
+
+this would be the normal way for us to count.
+
+However, it has some real benefits
+
+when you're dealing with big, long strings of binary,
+
+and it has to do with how many different patterns
+
+you can have on four 1s and 0s.
+
+Let's say I've got four 1s and 0s.
+
+I don't really care what this is.
+
+This could be part of a MAC address,
+
+this could be part of a address coming through on my CPU.
+
+I don't really care what it is.
+
+This is just a nomenclature.
+
+So we could have...
+
+All of the 1s and 0s could be all 0s.
+
+That's one possibility.
+
+Then the first 1 or the last 1 could be turned on.
+
+Now, I'm gonna give you a clue right now.
+
+If there were a whole bunch of combinations,
+
+I wouldn't be trying to write them in real-time for you.
+
+Okay.
+
+So what I've just done
+
+is I've written down every possible combination there is
+
+for a string of four binary values.
+
+Get the idea?
+
+So they could be all off, they could be all on,
+
+and a whole bunch of combinations in between.
+
+What we're gonna do here
+
+is we're going to replace four characters
+
+with a single character.
+
+We're creating a shorthand nomenclature,
+
+so it's a little bit easier to deal
+
+with long strings of 1s and 0s.
+
+So here's the question.
+
+How many different combinations are there?
+
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+
+16 different combinations.
+
+What we're going to use is a base 16 counting system
+
+called hexadecimal
+
+to basically replace any four binary characters
+
+with a single character.
+
+Get the idea?
+
+So let's go ahead and do this.
+
+So anytime we have four 0s,
+
+we'll just replace it with a 0.
+
+Now, we'll put a little h at the end.
+
+So you know it's a hexadecimal value.
+
+If we have this, we'll replace it with 1.
+
+I'm too lazy to write all the hs in there.
+
+2, 3, 4, 5, 6, 7, 8, 9.
+
+Wait a minute, I can't write 10.
+
+The whole reason we're doing this
+
+is to replace all four binary combinations
+
+with a single character.
+
+So if I write 10,
+
+somebody will think I meant 00010000.
+
+Get the problem?
+
+So what we gotta do is we gotta replace it with one value.
+
+So what I propose we do
+
+is replace it with the letter A and be like, "Why A?"
+
+Well, because somebody chose this a long time ago,
+
+I could put a smiley face in there if I wanted to.
+
+Doesn't matter, as long as everybody agrees
+
+that this value represents 1010.
+
+Get the idea?
+
+So let's keep going down the line.
+
+I can represent any string of four 1s and 0s
+
+with the numbers 0 through 9
+
+and the letters A through F.
+
+Get the idea? So let's practice this.
+
+So what is this value in hexadecimal?
+
+So it's 11011101.
+
+So this would equal DD in hexadecimal.
+
+Get the idea?
+
+And we always put the little h on there
+
+as a nice way to remind people that we're talking in hex
+
+and we're not talking letters of the alphabet
+
+or something like that.
+
+So this, my friends, is hexadecimal.
+
+The whole goal behind hexadecimal
+
+is simply a way to prevent us
+
+from having to write in big, long strings of 1s and 0s
+
+and to recompress that a lot into smaller values.
+
+Now that you know that, and this is important,
+
+every single hexadecimal value equals four binary values.
+
+So I'm gonna have a question for you.
+
+We're gonna take a look at something called a MAC address
+
+on my computer,
+
+which Windows calls it a physical address.
+
+I need to know how many bits long
+
+is this particular address.
+
+Let's go back over to the computer and take a look.
+
+So here's something called a physical address right here.
+
+Do you see that?
+
+And these are hexadecimal characters.
+
+See the letter C? That's our clue.
+
+So it's 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.
+
+If you have 12 hexadecimal characters
+
+and each hexadecimal character
+
+represents four binary values,
+
+that means that a MAC address is going to be 4 times 12,
+
+or a 48-bit address.
+
+Remember, hexadecimal is simply used as a shorthand
+
+for things like us human beings
+
+to represent long strings of binary values.
+
+I'm not saying it's a perfect representation,
+
+but we get to write 1/4 as many things on the screen.
+
+And for me, that makes hexadecimal worth it.

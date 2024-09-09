@@ -1,0 +1,377 @@
+-: So I've got a problem.
+
+I've got a bunch of these voiceover IP phones
+
+that I need to get plugged into my network.
+
+Now, at every workstation, I've got two connections,
+
+and these are basically just network devices,
+
+but I don't want them to be on the same network
+
+as all my computers and everything.
+
+So what I kind of need is two networks.
+
+So all these cables
+
+are running into my main distribution frame,
+
+but I don't wanna just plug everybody into one switch
+
+because I want them to be separated.
+
+So I could buy another switch.
+
+That would be one thing I could do,
+
+but I could also do something very, very cool.
+
+And that's called a VLAN, or a virtual local area network.
+
+A VLAN takes one physical switch
+
+and electronically turns it into two or more switches.
+
+It literally separates the local area network
+
+into two local area, or three, or however many you need.
+
+In this way, I'm gonna keep my voiceover IP phones
+
+on their own separate network
+
+without having to buy an extra switch.
+
+VLANs are incredibly popular, and we see them all the time,
+
+so I'm gonna have to get in
+
+and configure this switch for a VLAN.
+
+We're also gonna do a couple other things
+
+while we're in there.
+
+So if I'm gonna configure a switch,
+
+well, how do I get into it, okay?
+
+Because that's a problem
+
+because with all the routers we've been playing with,
+
+we have a webpage.
+
+And in order to get to that webpage,
+
+we need an IP address, right?
+
+Well, switches don't need IP addresses.
+
+They don't use IP addresses at all.
+
+They use MAC addresses.
+
+So what we're going to do
+
+is we're gonna give this switch an IP address
+
+not because the switch needs an IP address,
+
+but because it gives us a way to get to the switch
+
+so we can configure it.
+
+This is what we call a managed switch.
+
+You can get two otherwise identical switches.
+
+One is an unmanaged switch.
+
+There is no interface,
+
+you just plug in and use it and it works great.
+
+Managed switches,
+
+well, they're gonna be more expensive, for one thing,
+
+but they're gonna have a lot of features.
+
+This VLAN is one of them.
+
+So we need to get into this.
+
+So to get into this particular guy,
+
+I had to actually go online.
+
+I looked at the model number and I said,
+
+"Where does it get its IP address?"
+
+And the answer was, is it will get it through DHCP.
+
+So that's why I have it plugged into my router,
+
+which is passing out DHCP.
+
+Once I got that, I was able to get the IP address
+
+by just going into the status of my router,
+
+and I saw that there was something there,
+
+and I just opened up a web browser
+
+and I typed in its IP address.
+
+All I did was type in 192.168.1.114.
+
+And because I knew the password,
+
+I was able to get in,
+
+and now I'm actually talking to the switch.
+
+Isn't that kind of cool?
+
+We don't think about talking to switches.
+
+We talk to routers all the time, but rarely switches.
+
+Okay, first of all, I wanna set up a VLAN.
+
+So VLANs will get a number.
+
+So we just call them VLAN 1, VLAN 2, VLAN 3.
+
+These are the defaults
+
+that come with this particular system.
+
+So by default, it has a VLAN 1,
+
+which every port is a member of.
+
+And then we have this VLAN 2.
+
+So the goal here is, is we define our VLANs.
+
+It's kind of nice that this particular switch
+
+already makes two important VLANs for us.
+
+The default, VLAN 1, which everybody's a part of,
+
+and then this other VLAN 2.
+
+The trick now is we've gotta go in here
+
+and assign, say, I don't know how many phones I've got.
+
+Let's say I've got eight phones, I'm gonna assign ports.
+
+And they actually have numbers, 1 through 24.
+
+And I'm going to assign the first eight ports to this VLAN 2
+
+so I can plug all my phones in there
+
+and keep it physically separated from all the other ports.
+
+It's gonna take a little while.
+
+Let's see if we can figure this out.
+
+So we've already got a VLAN 2.
+
+Now, the trick is, is how do we go in
+
+and set those?
+
+All right, so I've got VLAN ID 1, let's go to VLAN 2.
+
+This is my voice VLAN, and I think it's gonna be right here.
+
+So all I have to do is go through
+
+and select those ports and apply.
+
+The moment I do this, if I plug somebody into VLAN 1,
+
+some of these other ports,
+
+and I plug another computer into VLAN 2,
+
+they won't be able to talk to each other.
+
+It's as though
+
+they're two totally physical separate switches.
+
+There's no interconnectivity at all.
+
+VLANs are very, very powerful.
+
+And as a matter of fact, you can do things,
+
+like put in four or five switches,
+
+and you can set up six VLANs that will actually span.
+
+It gets really crazy.
+
+The important thing for the exam
+
+is to make sure that you're aware that VLANs exist.
+
+If you're handed a switch
+
+and you start plugging devices into it
+
+and they're not seeing each other,
+
+there's a good chance
+
+you might have some VLAN configurations there.
+
+All right, there's more to play with in a managed switch
+
+in just the VLANs.
+
+Another big thing that we like to play with a lot
+
+is port security.
+
+So let me show you what we have on these particular ones.
+
+So I'm gonna come in here
+
+and I'm going to start up port security.
+
+So I'm gonna select port security for everybody,
+
+but the one I'm currently working on,
+
+Set that to Enable and hit Apply.
+
+Oh, it's gonna take a long time.
+
+Okay, we're gonna let it run.
+
+Port security does a couple of things.
+
+Number one, I can tell this switch to go listen.
+
+Whatever computers that are plugged into you right now,
+
+you memorize those MAC addresses.
+
+And if anybody else,
+
+other than the MAC addresses that are on here right now,
+
+try to plug in, just turn the port off,
+
+just disable the port.
+
+Or send me a note saying, "Ooh,
+
+there's a unauthorized MAC address,"
+
+or something like that to let me know that there are devices
+
+that shouldn't be playing on this switch trying to come in.
+
+So port security is a big issue when it comes to these guys.
+
+There's a lot more to do with switches,
+
+but again, come take my Net+
+
+so we can play with these a lot more deeply
+
+than we do within the A+ exam.
+
+Instructor: Thanks for that, Mike.
+
+Now, another network technology
+
+that I'd like to take a moment to talk about is SDN,
+
+or software-defined networking.
+
+If you think about our traditional network
+
+and its equipment,
+
+all the routers, and switches, and gateways, and ASAs,
+
+and everything that actually routes the data,
+
+every single one of those devices,
+
+if they're a traditional device,
+
+has to be manually configured, right?
+
+And it also has to be manually reconfigured
+
+if there's updates or changes to network schemas.
+
+And along with those manual configurations
+
+or reconfigurations also comes a possibility
+
+of good old-fashioned human error, right?
+
+We are error-prone people and that can happen,
+
+and that can be actually devastating
+
+when it's on one of these critical pieces of routing
+
+or switching equipment.
+
+So what we've come up with as an industry is SDN,
+
+whereby we actually separate the control plane
+
+from the data plane on these devices.
+
+So for instance,
+
+we still have the switches that are programmable
+
+and have the data flowing through them,
+
+but we have a separate server or a separate device
+
+that does all the controlling of the devices,
+
+so that we have the reduction in manual configuration
+
+and reconfiguration we would have to do.
+
+We have ease of access to central management
+
+of all of our network devices,
+
+and we have a very large and dynamic scalability
+
+to our network as well.
+
+So SDN is one of those buzzwords
+
+you're gonna hear more and more about.
+
+It's most likely on the exam,
+
+but it is a very cool technology
+
+that is slowly being grown more and more each day,
+
+and it's something you definitely should keep your eye on.

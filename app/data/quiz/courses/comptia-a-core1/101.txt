@@ -1,0 +1,271 @@
+-: If there's one place where cloud computing
+
+has made a huge impact, it's in the world of applications.
+
+For decades, guys like me had to drive to the software store
+
+and buy a box and pull out floppy disks
+
+or later, optical disks, or later, thumb drives.
+
+And we went through this process of installing our software
+
+and then we ran our software.
+
+We bought the software, and it was okay.
+
+I mean, it worked, but because of the cloud
+
+we could do some new things
+
+with applications we hadn't even considered before.
+
+One of the big areas that really have changed things
+
+is in the world of synchronization.
+
+Today, we use cloud storage like crazy.
+
+Every operating system has their own cloud storage solution.
+
+iCloud for Macs, OneDrive for Windows systems,
+
+Google Drive for everybody, and even third parties
+
+like Dropbox have made a huge impact
+
+in your ability to just put stuff on the cloud.
+
+What a convenience that I don't have to worry
+
+about being with one particular laptop or one desktop.
+
+I put something on the cloud, I log in, and I can get to it.
+
+That's fantastic.
+
+But if you're gonna be doing that
+
+you have a big issue of synchronization.
+
+Lemme show you what I'm talking about.
+
+Okay, so I've actually installed the Dropbox tool
+
+on my system here, but I'm gonna go ahead
+
+and sign in and it's gonna ask for a confirmation.
+
+I got my phone here, don't worry about it.
+
+And it loves me.
+
+So I could open my Dropbox,
+
+but what I'm more interested in doing
+
+is getting it to update.
+
+So I want you to watch right down here.
+
+Do you see the little Dropbox right here?
+
+You'll see the little circle in blue there?
+
+This is the big deal
+
+when it comes to any form of cloud storage,
+
+as synchronization is key.
+
+Now, if I'm the only person using a particular folder
+
+in the cloud, it's not that big of a deal,
+
+but it can be a huge deal
+
+if multiple people are accessing something at the same time.
+
+And different types of systems
+
+have different ways of dealing with it.
+
+Dropbox, for example, if two people open up the same file,
+
+if one person saves it,
+
+it will be saved as what is called a conflicted copy.
+
+Now, other ones will have different ways to do it.
+
+You can even configure it.
+
+Like for example, with OneDrive
+
+you can say whoever saves last wins.
+
+Little things like that.
+
+So it's always a bit of a variance.
+
+So we have to be careful
+
+when it comes to the different types of synchronization
+
+that are gonna be taking place.
+
+The other big thing that comes into play
+
+with applications is the concept of a lot of things
+
+that we used to do locally, we now do offsite.
+
+Probably the biggest single one is email.
+
+For years I was always working
+
+with my local email server that was in my office
+
+and that was where we took care
+
+of all our email and stuff like that.
+
+Those days are pretty much gone.
+
+For example, I'm a big believer in Office 365
+
+and if you take a look, this is actually my email.
+
+Yep, that's me.
+
+Michael Emmet totalsim.com.
+
+This is, you can see it's in a webpage.
+
+So that makes my life a lot easier.
+
+I still have the configuration issues
+
+but now if I wanna configure my server
+
+I go online and I set up configuration in there,
+
+creating new email accounts, whatever I might need to do
+
+and I don't have to deal with a physical server.
+
+I throw it up on the cloud and my life is a lot easier.
+
+Now, it's not just email.
+
+For example, if you wanna get groovy on offsite,
+
+here is an example of a offsite domain controller.
+
+My actual domain,
+
+instead of running my own local domain controller,
+
+I just throw that up on the cloud as well
+
+and it actually saves me
+
+a tremendous amount of money by doing that.
+
+I'm just up on the cloud, I got everything I need,
+
+I can log in.
+
+It's absolutely magical
+
+in terms of the amount of workload
+
+it takes for me by just putting these things offsite.
+
+The last one, if you really want to get cool
+
+when it comes to offsite, is a offsite virtual desktop.
+
+In this case,
+
+what we're talking about is opening up a web browser
+
+and actually getting to your desktop itself.
+
+So if I wanted to see a virtual desktop,
+
+probably looks something kinda like this.
+
+So you can see I'm in a web browser,
+
+but it's still a Windows desktop.
+
+Pretty cool, huh?
+
+So that'd be the case,
+
+I don't even care what device I have.
+
+I can always get to my desktop on a tablet,
+
+on a Mac machine, it doesn't matter.
+
+I can get to my Windows desktop using virtual desktops.
+
+The other place where applications really come into play
+
+is the concept of streaming applications.
+
+So traditionally the cloud has been nice
+
+because at least I could have an application
+
+that's gonna be showing up as a web app
+
+or I could download applications from the internet.
+
+That was true, but streaming kind of comes between the two.
+
+So probably a best example
+
+of a streaming app would be something like,
+
+for example, take a look right here.
+
+So here is actually PowerPoint Online.
+
+Now it's streaming because I don't have the full app here.
+
+It only pulls down what it needs as it needs it.
+
+Streaming applications just aren't for things like desktops
+
+and laptops running Windows and OS 10 and stuff like that.
+
+It also works in the world of smart devices.
+
+So smartphones and tablets also have streaming.
+
+Now, how the streaming manifests
+
+will be different depending on your OS.
+
+But for example, if we take a look right here,
+
+on my Android machine, here's a popular game, Clash Royale.
+
+Now I can go ahead and install it as you see there.
+
+Or if I want to
+
+I can just click on try it now, and oh, it's a noisy game.
+
+I'm gonna turn down the noise.
+
+And it will just go ahead and start the game.
+
+So there's no actual installation involved.
+
+So streaming works both for desktop and laptops
+
+as well as in your smartphone and in your tablet world.

@@ -1,0 +1,451 @@
+-: This, my friends, are the inner workings
+
+of a classic hard disk drive.
+
+These big, round,
+
+shiny things you're looking at are platters.
+
+And while you can't see it,
+
+they actually store ones and zeros
+
+through little, teeny-tiny bits of magnetism.
+
+Incredibly small.
+
+We read this, and if I give it a little electricity,
+
+you can actually see this happen
+
+by this little arm that's gonna go back and forth.
+
+This arm is going back and forth.
+
+It is within nanometers of contact,
+
+but it isn't actually touching the platters themselves.
+
+So that little read/write head picks up the ones and zeros
+
+or sets them down depending on where your needs are.
+
+Now, you can't see this because you can't see magnetism.
+
+But if you could see magnetism,
+
+you'd see that it stores in the little atom.
+
+The most smallest amount it can store
+
+is what we call a sector,
+
+and it would look something like this.
+
+Hard disk drives have been around for ages,
+
+and one of the things that's challenging about it
+
+is that they've gone through a lot of different iterations,
+
+and shapes, and sizes.
+
+So let's at least get the idea
+
+of physical sizes out of the way.
+
+So if you take a look right here,
+
+you'll see I've got two hard disk drives.
+
+By the way, you see the term HDD used a lot.
+
+Remember, a hard disk drive
+
+has to have something spinning on the inside.
+
+So if you take a look, even on this 2 1/2-inch,
+
+you'll see there's a little motor in there,
+
+and that's spinning little tiny platters as well.
+
+There's even a smaller size, 1.8 physical size drives.
+
+I can't find one.
+
+I want one, if you know where one is,
+
+contact me, I'll buy it from you.
+
+Okay, so when it comes to physical size,
+
+3 1/2 and 2 1/2 are gonna be your big sizes.
+
+We have capacities
+
+back in the early '90s when these came out,
+
+they would have capacities as low as maybe 20 megabytes.
+
+Today, single hard drives can have capacities
+
+in excess of 16 terabytes.
+
+So that just gives you an idea
+
+of how long this particular type of drive has been around.
+
+Now, if we're going to talk to these drives,
+
+we need to have a language.
+
+If we wanna talk to the guy at the gate,
+
+we need to speak LBA's language.
+
+To do that, we first of all have a number of terms
+
+we gotta get clear.
+
+The first term is the language itself.
+
+The language is called Advanced Technology Attachment,
+
+or ATA.
+
+The original hard disk drive spoke this language.
+
+And the latest ones
+
+that we can go out to the store and buy today
+
+still speak this language.
+
+However, the physical interface has changed.
+
+The original one was something called parallel ATA, or PATA,
+
+and you're never gonna see it on a system,
+
+unless you work with really, really old computers.
+
+What we do see today
+
+is something called Serial ATA, or SATA.
+
+So, let me give you some examples of SATA.
+
+Now, right here,
+
+in fact, we can do this on the 2 1/2-inch drive.
+
+These little connectors are SATA connectors.
+
+Interestingly enough,
+
+this larger connector is the power connector
+
+and this smaller connector is the data connector.
+
+So if you wanna use this drive,
+
+you're gonna have to give it electricity
+
+and then you're gonna have to plug it
+
+into the computer itself.
+
+So let's go ahead and just plug in the power part.
+
+So I've got a power connector right here
+
+and you can see it's got a little tiny L key,
+
+in this case on the right,
+
+and I just plug it in,
+
+and I've now successfully plugged in the power.
+
+Now, when it comes to the data side,
+
+this is one example of a SATA cable.
+
+The SATA cable has just one connection on each end
+
+and it's got a little L connector.
+
+And for me to plug this guy in,
+
+now I've got everything plugged in on the hard drive side.
+
+Well, that's only half of the equation.
+
+The other part we've gotta do
+
+is get this plugged into the motherboard.
+
+Pretty much all motherboards today
+
+have built-in SATA controllers.
+
+If you need to,
+
+you can actually buy an expansion card and get more SATA.
+
+But right now, pretty much any motherboard you're gonna want
+
+is gonna have SATA built right in.
+
+Let me show you what we're talking about there.
+
+On this motherboard right here,
+
+you'll see I've got six white SATA connectors
+
+and then a blue one.
+
+The extra connector is,
+
+well, I'm gonna have to check the motherboard book.
+
+I'm not sure why it's there.
+
+It's probably just a seventh connector.
+
+Anyway, the bottom line is,
+
+is I can plug into any one of these.
+
+This has a handy little 90-degree angle
+
+that a lot of people like to use.
+
+They're not required.
+
+And what I can do here is if, let's get this all pretty,
+
+and you can see that I'm plugged into the motherboard
+
+and the cable comes over into the drive,
+
+and then we have power.
+
+That's all there is to the physical connectivity
+
+of this type of drive.
+
+They're really, really easy to use and they're a lot of fun.
+
+In fact, SATA was so popular that a few years ago,
+
+they came out with a version of SATA
+
+that's designed for external devices.
+
+There's nothing in here, but a bunch of SATA drives,
+
+and they're interface together
+
+through a little connection known as eSATA.
+
+Let show you how this works.
+
+So on this motherboard right here, if you take a look,
+
+this is an eSATA connection.
+
+It's just a SATA connection,
+
+but it's designed to be used externally.
+
+It has a special cable.
+
+It's a little more reinforced, a little more grounded,
+
+and let me go ahead and plug in here,
+
+and I've got that in plugged in.
+
+And then I take whatever device I'm using
+
+and I can plug in there.
+
+And if we take a look at this,
+
+I've now plugged in an external device,
+
+eSATA is on the exam.
+
+But do be aware that
+
+because of great advances in the last few years with USB,
+
+eSATA has kind of taken a back seat.
+
+So for a lot of people,
+
+they don't use eSATA anymore except for people like me
+
+because I've got this wonderful eSATA external drive.
+
+I still need it.
+
+So what I'm gonna do is I can go buy something like this,
+
+and this is just an eSATA expansion card.
+
+The nice part about a card like this
+
+is I can just snap it into a motherboard,
+
+a more modern motherboard that doesn't have eSATA,
+
+and I can still continue to use
+
+my favorite external eSATA storage device,
+
+even though my new motherboards don't support eSATA anymore.
+
+Okay.
+
+If you've plugged everything in the right way,
+
+all you need to do at this point
+
+is boot your computer up and go into your system setup.
+
+And that hard drive should be visible.
+
+So I'm gonna go ahead and take a minute
+
+and get this white box up and cooking.
+
+I'm gonna plug in one of these SATA drives
+
+and I'll meet you in system setup.
+
+Whew! Okay, man.
+
+I'll tell you, today's modern systems,
+
+with all their extra lighting and all that
+
+makes it a lot harder to plug in a hard drive
+
+than it used to be.
+
+All right, anyway, so it's physically plugged in,
+
+and I've gone ahead and I've booted up the system.
+
+So let's go ahead and take a look in the system setup
+
+and see that hard drive.
+
+Now, that I've booted into my system setup,
+
+I'm gonna have to try to find
+
+where the hard drives are located.
+
+Every one of these system setups is different.
+
+On this one, I'm gonna look under Boot,
+
+and I can see right here that it says,
+
+"Plugged into port number 6 is WDC."
+
+Now, that stands for Western Digital
+
+just 'cause I've read a lot of these.
+
+And here's the actual model number itself.
+
+The fact that it shows up in my system setup
+
+says that I have done everything physically correct
+
+to get this drive installed.
+
+There's nothing else that I have to do
+
+in terms of plugging or connecting.
+
+All we're gonna have to do now
+
+is boot into an operating system
+
+and go ahead and set it up
+
+so that the operating system itself can use that drive.
+
+So good job.
+
+Instructor: Thanks for that, Mike.
+
+But since we're talking about magnetic disk drives
+
+or spindle drives,
+
+I also thought I'd point out
+
+that their main classification these days,
+
+as far as efficiency,
+
+is typically done through their speed,
+
+their RPM or revolutions per minute.
+
+And if you look at the top of this disk drive here,
+
+you'll notice that it actually says Barracuda 7200.
+
+This one is a 7,200 RPM hard drive.
+
+But what does that mean?
+
+Well, let's take my handy torque screwdriver here
+
+and take the lid off and look at the insides.
+
+So you'll notice here with this mechanical hard drive,
+
+as we have a lot of moving parts,
+
+thus the name mechanical hard drive,
+
+we have our platter here where the information is stored.
+
+We have our read arm, and our access drive,
+
+and all sorts of cool stuff.
+
+Now, following proper power handling and safety procedures,
+
+let's go ahead and plug this in with SATA power
+
+and take a look at how fast that platter
+
+can actually spin up.
+
+Now, keep in mind, this is a 7,200-RPM platter,
+
+but you'll also have ones that are 5,400 RPM,
+
+or 10,000, or 15,000, and even higher than that.
+
+But these are mechanical hard drives
+
+and this is how it works.
+
+That platter spins very fast,
+
+and that read arm seeks and finds its data
+
+and pulls it up and brings it into your computer for you.
+
+Pretty, pretty neat.

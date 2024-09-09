@@ -1,6 +1,11 @@
 <main class="container">
     <h1>Infini Quiz</h1>
     <div id="inputGroup"></div>
+    <div id="btnGroup">
+        <button onclick="handleSubmit()">Submit</button>
+        <button onclick="handleNextClick()">Next</button>
+    </div>
+
 </main>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -36,32 +41,59 @@
             $('#inputGroup').append(label, br);            
         });
 
-        const btnAnswer = $('<button>', {
-            text: 'Submit',
-            click: ()=>{
-                const selectedOption = document.querySelector('input[name="options"]:checked');
-                console.log('guessed', selectedOption.value);
+        // const btnAnswer = $('<button>', {
+        //     text: 'Submit',
+        //     click: ()=>{
+        //         const selectedOption = document.querySelector('input[name="options"]:checked');
+        //         console.log('guessed', selectedOption.value);
 
-                let resultText = '';
+        //         let resultText = '';
 
-                if(selectedOption.value == data.correct_answer) {
-                    resultText = 'Correct!'
-                    // todo: log result
-                } else {
-                    resultText = 'Incorrect.'
-                }
-                const pResult = $('<p>', {
-                    text: resultText
-                })
+        //         if(selectedOption.value == data.correct_answer) {
+        //             resultText = 'Correct!'
+        //             // todo: log result
+        //         } else {
+        //             resultText = 'Incorrect.'
+        //         }
+        //         const pResult = $('<p>', {
+        //             text: resultText
+        //         })
 
-                const pExplanation = $('<p>', {
-                    text: `${data.answerExplanationText}`
-                })
+        //         const pExplanation = $('<p>', {
+        //             text: `${data.answerExplanationText}`
+        //         })
 
-                $('#inputGroup').append(pResult, pExplanation);
-            }
+        //         $('#inputGroup').append(pResult, pExplanation);
+        //     }
+        // })
+        // $('#inputGroup').append(btnAnswer);
+    }
+
+    function handleNextClick(){
+        document.location.reload();
+    }
+
+    function handleSubmit(){
+        const selectedOption = document.querySelector('input[name="options"]:checked');
+        console.log('guessed', selectedOption.value);
+
+        let resultText = '';
+
+        if(selectedOption.value == data.correct_answer) {
+            resultText = 'Correct!'
+            // todo: log result
+        } else {
+            resultText = 'Incorrect.'
+        }
+        const pResult = $('<p>', {
+            text: resultText
         })
-        $('#inputGroup').append(btnAnswer);
+
+        const pExplanation = $('<p>', {
+            text: `${data.answerExplanationText}`
+        })
+
+        $('#inputGroup').append(pResult, pExplanation);
     }
 
     function isValidData(){

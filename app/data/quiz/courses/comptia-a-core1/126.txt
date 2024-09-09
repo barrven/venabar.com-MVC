@@ -1,0 +1,273 @@
+-: Hi, my name is Dudley Lehmer.
+
+I'm co-founder and CEO of Total Seminars.
+
+Our job is to help you pass
+
+the CompTIA exams the first time.
+
+And to do that we have some tips to share with you.
+
+Also, we wanna make it a little easier on your bank account
+
+so we're offering some discounts
+
+which we'll get to later on in this presentation.
+
+Students are always asking us for study tips.
+
+The CompTIA exams cover lots of topics,
+
+and whether you're new or even a seasoned pro,
+
+you don't want the added expense
+
+of having to take the exam more than once.
+
+As you know, they're expensive.
+
+So first, make yourself familiar
+
+with the topics and objectives.
+
+As you begin watching the videos, make sure you review
+
+and keep handy the objectives so you can check
+
+through them as you go and follow along
+
+and make sure you cover all the topics and objectives.
+
+The objectives are included in the resources
+
+with the first video in the course.
+
+Also, take notes.
+
+The action of taking notes helps you remember the material.
+
+People are always asking us, "Can you provide notes?"
+
+We don't for a reason, because the action
+
+of you taking them helps you remember the concepts
+
+and helps you commit the key points to memory.
+
+Next is practice.
+
+We know people have different learning styles.
+
+Most of us learn best with a mix of learning resources.
+
+Some people are visual or auditory and the videos
+
+will do a great job of helping with those people.
+
+Some learners learn better from reading,
+
+some people learn from doing,
+
+but one thing that's universal is practice.
+
+Everyone benefits from practice, practice, practice.
+
+Total Seminars has some materials to help you
+
+with each of these learning styles.
+
+For our visual or audio learners
+
+we have the videos which are designed
+
+to teach you the topics that are covered
+
+on the exam and all of the objectives.
+
+You already have the videos here on Udemy.
+
+All of the materials use the same building block
+
+knowledge approach designed to make you a great tech first,
+
+and in the process make sure
+
+you're ready to pass the CompTIA exam.
+
+For our readers, Total Seminars has eBooks available
+
+on our website for you to follow along with the videos.
+
+The A+ videos are based on Mike Meyer's bestselling
+
+All In One Exam Guide published by McGraw Hill.
+
+The video courses follow the book chapter by chapter.
+
+For our doers, Total Seminars has TotalSims,
+
+a product that gives you online learning exercises
+
+and labs that reinforce the concepts you're learning.
+
+There are four different kinds of TotalSims.
+
+Shows are a video walkthrough demonstrating
+
+a concept or how to perform a task.
+
+Clicks are simulations that give you the opportunity
+
+to perform the same task yourself.
+
+Challenges are exercises that give you practice
+
+matching concepts or performing a setup or a configuration.
+
+And Types are labs that you perform using the command line.
+
+TotalSims lets you practice what you're learning
+
+and also gives you practice for the performance-based
+
+questions you'll see on the exams.
+
+Finally, for practice, practice, practice,
+
+we have Total Tester, which is a practice test software
+
+with hundreds of practice questions in a pool.
+
+You can create custom exams covering individual chapters
+
+or groups of chapters or individual objectives or domains.
+
+The practice mode allows you to get hints,
+
+references to the chapter where the topic is covered,
+
+You can check your answers, see explanations,
+
+see why the right answer is right
+
+and the wrong answer is wrong.
+
+I suggest you watch two or three chapters of the video,
+
+read the books as needed for additional details,
+
+then do the TotalSims for those particular chapters
+
+that'll reinforce what you're learning.
+
+Then you can take custom practice exams covering
+
+only those chapters that you've been studying.
+
+Then move on to the next few chapters
+
+and repeat until you've covered the entire course.
+
+Be sure and go through the explanations
+
+and review all the questions you missed.
+
+When you're complete and you're done with all the chapters
+
+take a test in exam mode.
+
+This mimics the actual CompTIA exam,
+
+covers all the objectives weighted in the same way
+
+that CompTIA weights them on the exam.
+
+When you grade your exams, you'll see an overall score
+
+and you'll also see how you did by each exam objective.
+
+Select Review and go through the questions
+
+and the explanations to review
+
+all the questions that you've missed.
+
+If you have one or two objectives
+
+that are giving you trouble, you can create custom exams
+
+covering only those objectives.
+
+You can select History to see the tests you've taken
+
+and your score on each one.
+
+You can even drill down and see
+
+all the questions on those history exams.
+
+So when you can consistently score 85 or better
+
+on three or four exams in Exam mode, you can be confident
+
+that you're ready to pass the CompTIA exam.
+
+Now, the parts you've been waiting for.
+
+The money saving part.
+
+The first money saving offer we have for you
+
+is an offer at a reduced price for our TotalSims,
+
+Total Tester and ebook bundles.
+
+Use the discount code below at checkout.
+
+The best deals are our bundles, such as TotalSims
+
+and Total Tester, or eBook and Total Tester bundles.
+
+These are already discounted, but if you use a discount code
+
+below, you can save even more.
+
+Now for a second money saving offer.
+
+You can save an extra $15 on the cost of the exams
+
+with Total Voucher Discount CompTIA exam vouchers.
+
+Go to the URL below,
+
+purchase a voucher for any CompTIA exam.
+
+We sell US and Canada vouchers
+
+as well as international vouchers.
+
+When you purchase a voucher
+
+you'll get an email with a voucher code
+
+and instructions for signing up for the exam
+
+using the discount code.
+
+Use the discount code just like a credit card
+
+when you check out.
+
+You can use the voucher code to pay for the exam
+
+and you'll save the 10%, plus the $15 extra.
+
+CompTIA exams are delivered at testing centers,
+
+at View testing centers, or you can take your exam online.
+
+Most people do it online to be honest.
+
+I hope you find these resources helpful
+
+and good luck on your exam.

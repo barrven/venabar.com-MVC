@@ -1,0 +1,151 @@
+-: After looking at all the instructions,
+
+I'm going to have to pop a battery on this thing.
+
+All right, there's the battery.
+
+No great excitement there.
+
+Alright.
+
+And then after reading the instructions,
+
+it says I have to pry this off using a spud ger.
+
+Now I could use a spud ger,
+
+or I could just use my
+
+(clicking sound)
+
+-: drudgery fingers. Okay, HP, that's how we do it.
+
+Got it. Wow.
+
+Nooky here, kids.
+
+I can already see there's a lot of stuff in here
+
+that's gonna be interesting to me.
+
+I guarantee you that that's a hard drive.
+
+So let's go with that one 'cause he's gonna be easy.
+
+(cheerful music playing)
+
+(whirring sound of drill)
+
+So as I pull this drive out
+
+I can see it's a regular old SATA drive,
+
+but it has this weird little proprietary SATA connector.
+
+So regular old SATA drive, no big deal there.
+
+Just go ahead and go get another 2 1/2 SATA drive.
+
+Slide this in.
+
+Now this has its own little heat shield.
+
+I'll have to pull this off,
+
+put the new drive in the shield
+
+and you've just replaced a hard drive.
+
+How hard is that?
+
+So this is RAM.
+
+This is just an SODIMM, so I'm gonna pry that guy out.
+
+This is unfortunate.
+
+On this particular HP, it only takes a single stick
+
+so that could be pretty limiting.
+
+What I wanna show you is something
+
+you'll see that's more common on laptops.
+
+Take a look at this guy right here.
+
+So this actually has two sticks.
+
+Now, I'm not gonna say you're gonna buy a laptop based
+
+on the number of RAM slots it provides,
+
+but this is a big issue when it comes
+
+to expandability and something that I actually
+
+do consider when I'm getting myself a laptop.
+
+Okay, so back to this guy.
+
+All right, so real time clock in.
+
+See if I can pry that guy out.
+
+I actually read the instructions and it said
+
+it used double-sided tape
+
+and it does.
+
+A little bit of sticky.
+
+So these little tiny connectors are real common in laptops
+
+and you just pull.
+
+So if you need to replace a battery in your laptop
+
+that's easy enough to do.
+
+All right, so the next thing, oh yeah, right over here.
+
+If you take a look right here, that is
+
+a mini PCI Express slot.
+
+Now, it's an expansion slot and you can put all kinds
+
+of stuff in here.
+
+On almost any of these laptops you're gonna see
+
+mini PCI for WAN cards. You're gonna see 'EM
+
+for Bluetooth controllers, even cellular WANs
+
+can be plugged into these things.
+
+So out it goes.
+
+Now, I pretty much guarantee that this one is a wireless
+
+network card, 80211, and these are antennae.
+
+Now there's one I wanna show you on this guy over here.
+
+This is something you don't see nearly as much as
+
+you used to, but this is an optical drive.
+
+And if you wanna replace an optical drive,
+
+I already took, there were three screws I had to take out.
+
+And it's even got the part number right on here.
+
+I'll probably go on eBay, I'll bet there's a few hundred
+
+of these out there for sale right now
+
+if I need to ever replace optical drives on a laptop.

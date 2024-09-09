@@ -1,0 +1,709 @@
+-: Setting up a wireless network
+
+in an enterprise environment is very different
+
+but also very much the same
+
+as it would be within a small office or a home office.
+
+You still have SSIDs, you still have encryption, WPA,
+
+WPA2, none of that stuff changes.
+
+The bands are there, the versions of 802.11 are there
+
+but it gets a little bit bigger.
+
+One of the big differences we have
+
+in an enterprise environment
+
+versus a small office home office is we tend to
+
+use dedicated wireless access points.
+
+These are real WAPs.
+
+These are not routers, they're not switches,
+
+all they are or wireless access points.
+
+And we tend to have lots and lots
+
+of these wireless access points laying around.
+
+Now, if you've ever looked at the walls
+
+and if you're a nerd you're gonna start
+
+looking at walls a lot.
+
+One of the things you go, Hey,
+
+I see these wireless access points laying around
+
+but they don't have any AC adapters.
+
+Well, there's a very good reason for that
+
+and that's because the vast majority of these types
+
+of devices are what we call power over ethernet
+
+in that these devices actually get their electricity
+
+from the ethernet cable that they connect to.
+
+In order to take advantage of power over ethernet,
+
+number one, you have to have devices that are PoE capable.
+
+And you gotta be careful here.
+
+There's two versions of PoE.
+
+There's first generation PoE and PoE+.
+
+PoE+ provides a lot more electricity
+
+for individual devices.
+
+And so you have to have either PoE and PoE+
+
+wireless access points.
+
+You need a good chunk of cable.
+
+And here's the big one, you have to have a PoE switch.
+
+So this switch has to be designed to actually
+
+send out not only all the communication
+
+but also the electricity.
+
+So you'll see these switches that are PoE and PoE+.
+
+PoE+ is very dominant these days.
+
+And if you run into PoE, it's a rare thing.
+
+The nice part about PoE is that you don't have to plug any
+
+of your access points into a wall.
+
+Now, if you don't have a PoE switch
+
+you can use something like this.
+
+This is a PoE injector.
+
+I can plug an AC adapter into this.
+
+I can plug this into my switch
+
+and then plug the other end
+
+into a PoE wireless access point.
+
+And I get the same benefit
+
+of having an actual PoE switch itself.
+
+Okay.
+
+Now, once you've got this configured
+
+and whether you're using PoE or not,
+
+in an enterprise environment, a few things change.
+
+The first thing that you really start
+
+needing to talk about is where are my wireless access points
+
+and their antennas going to go.
+
+So let's draw up a little diagram.
+
+Using, this is more of a heavy duty enterprise tool
+
+that's going to be helping me figure out
+
+where to put my WAPs.
+
+So here's a typical office environment.
+
+I've got a really big office.
+
+On one side, I got this long hallway, and then
+
+I have some small offices on the other side.
+
+Where we place WAPs can really be important.
+
+So like for example,
+
+do I wanna provide coverage in the hallway?
+
+If that's the case,
+
+I'm probably going to put very directional antennas
+
+on one or both ends of this to provide coverage.
+
+Remember, they provide a big, long narrow football shape.
+
+If I want to do individual offices,
+
+I could put a dipole right in the middle.
+
+But another alternative is just to put patches on one side.
+
+And that way with patches, it's putting out information
+
+out into the room, but it's not sending stuff
+
+outside where other people can get ahold of it.
+
+In larger areas, I might wanna just consider using dipoles
+
+or omnis, depending on the actual coverage of the space.
+
+That will give me some idea
+
+of how much coverage I actually need.
+
+Now one of the things you can do, and again
+
+this is with more enterprise type wireless analysis tools,
+
+is you can actually start placing wireless access points
+
+and they'll do what's called a heat map.
+
+So let's put some heat on this.
+
+So you can see where the red is.
+
+That's where the highest coverage is
+
+and then it dissipates out in a rainbow,
+
+giving you a good idea of where you might have dead spots
+
+or spots that are actually shooting out
+
+outside of what you're interested
+
+in providing wireless coverage to.
+
+Now, I need to warn you,
+
+the type of wireless analysis tools that do stuff
+
+like this are not free.
+
+You're gonna be spending a couple of grand
+
+on something like that.
+
+Or actually more often than not,
+
+you're gonna be hiring wireless professionals to come in
+
+and they're gonna go ahead
+
+and do a really aggressive site survey
+
+with heat maps and all this stuff to help you get
+
+not only your wireless access points, but the types
+
+of antennas placed in the right spot for your environment.
+
+The other big change that takes place when you go
+
+from SOHO Wireless to Enterprise Wireless is AAA.
+
+AAA stands for authorization, authentication and accounting.
+
+What we're talking about here is basically
+
+you're gonna be using WPA2,
+
+but you're not gonna be using personal shared key.
+
+What you're gonna be using are either
+
+radius or TACACS+ boxes that will actually
+
+provide the authentication you need.
+
+So when someone logs into a network,
+
+they're not just going to suddenly know
+
+the private shared key.
+
+Their client is gonna make them sign in
+
+with a username and a password, and assuming they get that
+
+then they're assigned their WPA2 information
+
+and they're in good shape, and then they actually connect.
+
+So when you're talking about AAA, you're talking about
+
+very, very aggressive authentication and authorization
+
+and make sure we don't want just anybody jumping on this.
+
+And you could add things like smart cards
+
+and all kinds of extra stuff, but in general
+
+it's usually just a username and a password.
+
+Now, if you're gonna go through all this
+
+you still have to go through the process
+
+of configuring your wireless access points.
+
+So what I've got right here is I've got two
+
+wireless access points and I went ahead
+
+and figured out what their IP addresses are.
+
+Most of the time when you get enterprise level WAPs
+
+like these, they're gonna come with this
+
+and you basically plug any computer into this switch
+
+and it will go out and query them as a group.
+
+In this case, we're gonna do them individually.
+
+All right, so here I am
+
+in one of these two wireless access points.
+
+First of all, the big thing you're gonna notice
+
+there's nothing in here but wireless.
+
+There's not gonna be any firewall settings
+
+or DHCP servers.
+
+That's not what these are for.
+
+It's just a WAP.
+
+So I've got a quick summary here
+
+and I can check my LAN status, for example.
+
+I can see what my IP address is,
+
+my default gateway, all that type of stuff.
+
+My wireless status right now,
+
+I don't have anything turned on.
+
+It's all turned off for the moment
+
+and I obviously I won't have any wireless clients.
+
+So I could do a quick start but what fun is that?
+
+Let's go to configuration.
+
+Now the first thing is, is I'm gonna have user accounts.
+
+These are accounts that can actually log in and do stuff
+
+to these wireless access points.
+
+So for now, I'm just gonna keep the default
+
+which is Admin Admin, but you would normally change this.
+
+So the next thing I'd be doing
+
+on the LAN side is I'd probably wanna give it
+
+some kind of descriptive name
+
+because if I have 500 of these,
+
+I'm gonna want some kind of name
+
+that helps me remember all of them.
+
+Now the other thing we're gonna do is probably
+
+set static IP addresses.
+
+I'm gonna leave it as DHCP for right now.
+
+But if these were my wireless access points,
+
+I would start, for example, 10.11.12.10, .11, .12, .13.
+
+I would have a bunch of these all preset
+
+on static IP addresses 'cause I don't want this address
+
+to change at any time.
+
+Now on the wireless side
+
+a lot of this stuff should look pretty familiar.
+
+Let's go ahead and set up a basic SSID.
+
+So I've got a radio one and it says N only, G only,
+
+BG and N.
+
+So we know just because we know
+
+our different 802.11 extensions
+
+that this is a 2.4 gigahertz radio.
+
+So what I'm getting ready to do is set up SSIDs
+
+for each one of these individual devices
+
+but that rarely happens in an enterprise environment.
+
+In an enterprise environment, what we're setting
+
+up is called an ESSID.
+
+An ESSID is a single SSID name, whatever you wanna call it.
+
+Call it Mike24, Mike50.
+
+But it's the same SSID on all of the different WAPs.
+
+If you set up the same SSID on a bunch of different WAPs,
+
+and if all these WAPs plug into the basic
+
+same local area network,
+
+you'll create an ESSID and magic things happen.
+
+For example, by setting this up
+
+I could be closer to this WAP
+
+and I'll be connected there on my Google or whatever
+
+but as I walk across campus or whatever it might be
+
+and get closer to this one, it will automatically hand off.
+
+I don't have to do anything.
+
+There is nothing to configure, it just works.
+
+And I'll just pick up from this guy right here
+
+as though I never disconnected from anything.
+
+There is actually a millisecond handover
+
+but it's really, really quick.
+
+So the secret to an ESSID is make the same SSID
+
+on all of the different devices
+
+and make sure they're all a member of the same LAN.
+
+Got the idea?
+
+Okay, so 'cause we're gonna do this the hard way first
+
+then I'm gonna show you an easier way.
+
+So I'm gonna enable this one
+
+and because I know this is the 2.4
+
+I'm gonna call it Mike24 and I'm gonna broadcast it.
+
+Now here's another setting I want you to be aware of.
+
+This is called isolation.
+
+In a wireless isolation, what's taking place,
+
+normally with a wireless network,
+
+if you've got your network discovery turned on and stuff
+
+you can share folders and files and do anything you want.
+
+It works great.
+
+However, if you do isolation
+
+what's gonna take place is that the only computer
+
+on the network your wireless colleagues can talk to
+
+is the actual wireless access point.
+
+They won't even be able to share folders or files.
+
+They wouldn't be able to ping each other.
+
+So it's a really powerful way, if you want
+
+like a coffee shop where you want people to be able
+
+to get on the internet
+
+but you don't want them passing folders and files.
+
+So isolation is very convenient.
+
+And we can set this up to be on a particular vLAN.
+
+I'm gonna leave it at the default from here.
+
+You can even set the maximum number of clients.
+
+So I'm gonna go ahead and save this.
+
+Now I'm gonna go over to radio two
+
+and you'll see it says AC only.
+
+So I instantly know that this is my five gigahertz radio.
+
+I'll enable that.
+
+Call this one Mike50, turn on the broadcast,
+
+can leave isolation alone as it is for right now
+
+and hit save.
+
+So while I'm in here, I can even set up security.
+
+So for example, by default it goes to WPA2 personal
+
+with AES, I've got a pre-shared key set up.
+
+Let's check the other radio.
+
+And that's Mike5.0.
+
+So one more thing back here.
+
+Notice how many different SSIDs you can make.
+
+This could be really convenient.
+
+Like this could be the office
+
+and this could be guest for example.
+
+So in the office one, I could keep isolation turned off,
+
+whereas in the guest one
+
+I would turn isolation on, that type of thing.
+
+So I can really have some powerful tools.
+
+Anyway, the next one I wanna talk about
+
+is rogue AP detection.
+
+One of the most frustrating aspects to a wireless network is
+
+if somebody walks up and fires up their own access point.
+
+It happens all the time.
+
+What we can do is we can set this up,
+
+all of these access points have a MAC address
+
+and they'll all know each other's MAC address.
+
+That way, if any other device tries to act as a WAP
+
+and it's not on the list of known MAC addresses,
+
+they'll simply block it.
+
+They won't use it, it'll be ignored.
+
+And in fact, on more advanced systems
+
+we can do things like set up jammer systems
+
+and bring in guys in helicopters.
+
+Okay, maybe I'm kidding about the last part
+
+but rogue APs are a real problem.
+
+So we're always looking
+
+about ways to get out of trouble with those.
+
+One of the most important things we can do is
+
+if you know what you are passing out.
+
+For example, I've got a DHCP server somewhere.
+
+It might be passing out 10.11.12s
+
+and suddenly one day I fire up my network
+
+and I'm on the wireless network
+
+but suddenly I'm getting 44.66.8.
+
+Hey, wait a minute, that's not an APIPA
+
+but that's not my proper network ID.
+
+This is why I yell at people all the time
+
+know your network ID for the networks you dwell upon.
+
+And that way when weird stuff happens, you're ready for it.
+
+So rogue access points, a big problem.
+
+But there's more, let's check it out.
+
+So one other option you'll see a lot of times
+
+is what we call a rate limit.
+
+I can actually throttle the speed that
+
+that particular SSID might be doing,
+
+either upstream or downstream.
+
+So that can be pretty handy.
+
+Okay, well we've got one setup, but now
+
+if we want an ESSID, we've gotta do this all over again.
+
+Every single wireless access point on my ESSID
+
+needs to be configured.
+
+I'm gonna have to go back into each one of the radios
+
+and set that Mike24 and the Mike50.
+
+I've gotta set a bunch of these up
+
+in order to have an ESSID.
+
+Well, all right, well, I'm made of tougher stuff.
+
+I can do this.
+
+But there's one more thing I wanna show you
+
+and that's what we call a captive portal.
+
+Everybody's seen a captive portal.
+
+A captive portal is one of those things
+
+where you click on it and all of a sudden
+
+it makes you log in or type in your room number
+
+or something like that.
+
+So for example, on this, I can actually customize a page.
+
+We can get a little peek what it looks like,
+
+where I can make them type in a username and password.
+
+This is not a radius or a TACACS username and password.
+
+This is something where we create our own users
+
+for our own ESSID.
+
+We're already starting to run into a problem here.
+
+I'm setting up all of these individual WAPs
+
+and if I start putting users on 'em
+
+they better be identical.
+
+Same name, same password.
+
+What we do instead is we start running
+
+into special wireless LAN switches.
+
+A wireless LAN switch is a switch.
+
+It's got PoE in it.
+
+But what we do is instead of configuring a whole bunch
+
+of wireless access points, we go into the switch
+
+and we set up one ESSID, which is then propagated
+
+out to all of the different wireless access points.
+
+Or if we wanna set up a captive portal,
+
+we set up one captive portal
+
+and all the usernames are propagated
+
+out to all the different wireless access points.
+
+And that's where the real big difference comes into play.
+
+The individual cost of a wireless access point
+
+these days is sub-hundred dollars for a pretty good one,
+
+a couple of hundred for a very good one.
+
+But where they get you is with these specialty switches
+
+that, well, they're switches
+
+but there's switches that are designed to work
+
+with wireless access points.
+
+They're expensive and they're powerful.
+
+And the only place you're gonna be seeing those
+
+is at an enterprise wireless network.

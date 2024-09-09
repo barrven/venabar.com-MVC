@@ -1,0 +1,395 @@
+-: 802.11 is a very old standard, but just because it's old,
+
+that does not mean we are not constantly updating it
+
+to get it faster and support more systems
+
+and do better all the time.
+
+Now, the original 802.11 standard
+
+actually defined a networking speed
+
+of about one megabit per second,
+
+and nobody ever saw that one, and that's okay.
+
+So what we've seen over the years
+
+are what we call extensions to the standard.
+
+They have names like 802.11a or 802.11g, or 802.11ac.
+
+So it's still the 802.11 standard,
+
+but they extend the standard to support newer technologies,
+
+faster speeds, able to support more systems,
+
+that type of thing.
+
+Now, the A+ exam is going to really hit you hard
+
+on making sure that you know all of the 802.11 extensions,
+
+so let's get 'em covered right here.
+
+Now, before we get into the individual extensions,
+
+let's get one thing clarified.
+
+The beautiful part of 802.11
+
+is that it's based on
+
+the unlicensed industrial, scientific, and medical bands,
+
+ISM bands.
+
+Now there's a lot of ISM bands,
+
+but these are gonna use one or two or both
+
+of two different bands.
+
+Number one is gonna be the 2.4 gigahertz band,
+
+and number two is gonna be the five gigahertz band.
+
+So let's talk about what does band mean for a minute, okay?
+
+Now I'm not talking about a band with horns and drums.
+
+I'm talking about a band being a range of radio frequencies.
+
+So if we're gonna have a range of radio frequencies,
+
+well, that's important.
+
+We could do this entire thing on just one exact frequency,
+
+but the idea is that lots of people
+
+are gonna wanna use 802.11.
+
+There's gonna be wireless access points all over the place,
+
+and if we just have one frequency,
+
+your plumber and the hairdresser upstairs and Bob next door
+
+are all gonna stomp on each other, and it's not gonna work.
+
+So that's why we use the concept of a band.
+
+Now, the 2.4 gigahertz band runs from about 2.412 gigahertz
+
+up to about 2.84 gigahertz.
+
+So we've got this whole range of frequencies to work with.
+
+So different wireless access points can use different ranges
+
+so we don't stop on each other.
+
+Well, now we got a problem.
+
+The idea behind 802.11,
+
+it's supposed to be fairly user-friendly.
+
+So unless we want you to go into your wireless access point
+
+and everybody has to tune to 2.438.
+
+Now, nobody wants to do that, okay?
+
+So what they did instead is they made pre-made channels.
+
+So in the 802.11 2.4 gigahertz band,
+
+there are really 14 different channels,
+
+and each channel takes a different piece of this band.
+
+And the idea is,
+
+is that you can tune your wireless access point
+
+to use one channel
+
+while your plumber uses a different channel,
+
+and Bob next door uses a different channel,
+
+and we don't stomp on each other,
+
+is the whole idea behind this.
+
+Now there are officially 14 channels,
+
+but only if you're in Japan.
+
+Japan's a very crowded place, so they need lots of channels.
+
+If you're in Europe, you get up to 13 channels,
+
+and here in the United States, you only get up to 11,
+
+which is actually plenty for the stuff that we do.
+
+On the five gigahertz band,
+
+now, that's gonna run from 5.15 gigahertz
+
+to about 5.875 gigahertz,
+
+and the channels are a lot more complicated here.
+
+In this case, we have channel numbers
+
+that start with like the number around 36 up to about 64,
+
+and it doesn't actually even span out very well.
+
+The other challenge
+
+is that there aren't any odd-numbered channels.
+
+They just skip a lot of channel numbers.
+
+This is their choice
+
+'cause they're inventing these standards.
+
+And then it even continues up to around 100
+
+to up to about channel 165.
+
+So if you look at the entire five gigahertz band,
+
+you've got a whole bunch of channels in there.
+
+We've skipped a lot of numbers,
+
+but the nice part is that it's a very, very powerful band
+
+and we can really dial it down very, very nicely.
+
+Okay, now that we understand
+
+that there's two different bands
+
+and each of these bands use channels,
+
+let's go ahead and talk about the different extensions.
+
+The first one is gonna be 802.11a.
+
+802.11a was one of the earliest extensions to 802.11.
+
+It ran at a blistering 54 megabits per second,
+
+which was pretty fast in those days,
+
+and it ran on the five gigahertz range.
+
+Second, and it came out really about the same time
+
+that 802.11a did, was 802.11b.
+
+802.11b ran at 11 megabits per second,
+
+which back then sounded like, wow, crazy fast,
+
+and it ran on the 2.4 gigahertz band.
+
+Now, they came up with another standard,
+
+and probably the one that really put 802.11 on the map,
+
+and that was 802.11g.
+
+802.11g took all the goodness of 802.11a and 802.11b
+
+and put it into one standard.
+
+So 802.11g ran at 54 megabits per second
+
+and it ran on the 2.4 gigahertz band.
+
+Now, I want you to think about this for a minute.
+
+If I've got a wireless access point
+
+that is running 802.11g,
+
+that means it's running on the 2.4 gigahertz band.
+
+That means I am backwardly compatible with 802.11b.
+
+Inside a wireless access point is a radio,
+
+and this radio is either a 2.4 gigahertz radio
+
+or a five gigahertz radio.
+
+Backward compatibility is a big deal.
+
+So if you've got 802.11g,
+
+you are automatically backward compatible with 802.11b.
+
+However, you are absolutely not backward compatible
+
+with 802.11a,
+
+'cause you don't have a five gigahertz radio in there.
+
+Got the idea?
+
+Okay.
+
+Next is 802.11n.
+
+802.11n was a very interesting standard.
+
+First of all, it actually ran on both bands.
+
+So 802.11n ran both on the 2.4 gigahertz
+
+as well as the five gigahertz.
+
+The nice part about 802.11n wireless access points
+
+is they were backwardly compatible
+
+with any wireless NIC out there.
+
+You had an old 802.11b.
+
+It ran on your 802.11n.
+
+You have an old 802.11g.
+
+It runs on your 802.11n.
+
+802.11a runs on your 802.11n.
+
+So in that aspect, it was pretty nice.
+
+The other thing that 802.11n introduced
+
+is something called MIMO.
+
+MIMO is kind of an interesting thing.
+
+What it does
+
+is that it allows a single wireless access point
+
+to use multiple antennas to change its radiation signal
+
+in such a way that it almost kind of zeroes in on a device.
+
+So if you have a wireless device that doesn't move a lot,
+
+MIMO can be a really powerful feature
+
+and there's nothing to configure.
+
+You just make sure you have an 802.11n wireless NIC,
+
+and you have an 802.11n wireless access point
+
+and you get the chocolatey goodness of MIMO.
+
+The next step
+
+and the one that we're enjoying these days is 802.11ac.
+
+802.11ac is incredibly fast.
+
+Not only does it split the channels up,
+
+but it improves the concept of MIMO
+
+that we saw in 802.11n
+
+and creates what's known as multi-user MIMO, or MU-MIMO,
+
+where instead of just having one client
+
+that we can kind of zoom in at a time,
+
+it can zoom in on multiple clients at a time
+
+simply depending on the number of radios it has put in it,
+
+so it's absolutely fascinating.
+
+The other thing about 802.11ac that is important
+
+is that a lot of 802.11ac WAPs
+
+will have a 2.4 gigahertz radio in there
+
+that is just for backward compatibility.
+
+It has absolutely nothing to do with the ac standard itself,
+
+so people get a little confused.
+
+Now, us nerds, we love talking about,
+
+like 802.11a and g and ac and that stuff,
+
+'cause well, we're cool,
+
+but the Wi-Fi Alliance, the people who make this stuff,
+
+decided not that long ago
+
+to come up with another terminology.
+
+So what they'll do
+
+is they'll call it Wi-Fi 4, for example, for 802.11n,
+
+and Wi-Fi 4 for 802.11ac.
+
+I think the reason they're doing that
+
+is because if you go out and buy
+
+an 802.11ac wireless access point,
+
+you're not gonna get the benefits of 802.11ac
+
+until you get 802.11ac capable wireless sticks.
+
+You've got a laptop and it's only 802.11n?
+
+You're not gonna get 802.11ac
+
+until you replace the wireless stick, if you even can.
+
+If you've got a smartphone and it only does 802.11n,
+
+you're not gonna get 802.11ac.
+
+It's just not in there.
+
+You're gonna have to buy a new smartphone.
+
+Now the other thing is, is that for a lot of other devices,
+
+particularly desktops, most of the time,
+
+you can do upgrades or at least snap in a new card
+
+to take advantage of these different powers.
+
+So be careful with your different extensions to 802.11
+
+and make sure that your NIC matches your WAP.
