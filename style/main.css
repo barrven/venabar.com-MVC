@@ -1,6 +1,4 @@
-:root {
-    --accent-color: #007bff;
-}
+@import url('master.css');
 
 .bg-honeycomb{
     background-image: url(../assets/abstract-honeycomb-crop.jpg);
@@ -49,9 +47,9 @@ body{
 }
 
 .border-grey-round{
-    border-left: 1px solid #ced4da;
-    border-bottom: 1px solid #ced4da;
-    border-right: 1px solid #ced4da;
+    border-left: 1px solid var(--panel-border-color);
+    border-bottom: 1px solid var(--panel-border-color);
+    border-right: 1px solid var(--panel-border-color);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     overflow: auto;
@@ -59,9 +57,9 @@ body{
 }
 
 .border-primary-round{
-    border-left: 1px solid #007bff;
-    border-bottom: 1px solid #007bff;
-    border-right: 1px solid #007bff;
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     overflow: auto;
@@ -69,8 +67,8 @@ body{
 }
 
 .item-pill{
-    background-color: #f8f9fa;
-    border-radius: 5px;
+    background-color: var(--panel-color);
+    border-radius: var(--border-radius);
     border: 1px solid #dee2e6;
     padding: 0.4rem;
     margin: 0.2rem;

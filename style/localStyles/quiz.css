@@ -1,8 +1,4 @@
-:root{
-    --border-radius: 8px;
-    --element-bg-color: #f0f0f0;
-    --accent-color: #007bff;
-}
+@import url('../master.css');
 
 ul {
     list-style-type: none;
