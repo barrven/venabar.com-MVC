@@ -2,7 +2,7 @@
     <h1 class="mb-2">Infini Quiz</h1>
     <div id="inputGroup"></div>
     <div id="btnGroup" class="mt-3">
-        <button class="btn btn-primary" onclick="handleSubmit()">Submit</button>
+        <button id="btnSubmit" class="btn btn-primary" onclick="handleSubmit()">Submit</button>
         <button class="btn btn-success" onclick="handleNextClick()">Next</button>
     </div>
 
@@ -121,6 +121,7 @@
         })
 
         $('#inputGroup').append(pResult, pExplanation);
+        $('#btnSubmit').hide();
     }
 
     function isValidData(){

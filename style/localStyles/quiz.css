@@ -94,13 +94,22 @@ main > select option{
     color: white;
 }
 
-#inputGroup{
+#inputGroup, #btnGroup{
     max-width: 400px;
     min-width: 250px;
 }
 
 #btnGroup{
     min-width: 250px;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#btnGroup button {
+    width: 6rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
 }
 
 .result-text{
