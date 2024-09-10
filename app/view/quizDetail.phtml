@@ -1,17 +1,25 @@
 <main class="container">
-    <h1>Infini Quiz</h1>
+    <h1 class="mb-2">Infini Quiz</h1>
     <div id="inputGroup"></div>
-    <div id="btnGroup">
-        <button onclick="handleSubmit()">Submit</button>
-        <button onclick="handleNextClick()">Next</button>
+    <div id="btnGroup" class="mt-3">
+        <button class="btn btn-primary" onclick="handleSubmit()">Submit</button>
+        <button class="btn btn-success" onclick="handleNextClick()">Next</button>
     </div>
 
 </main>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+    // add the local stylesheet
+    $('<link>', {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'style/localStyles/quiz.css' 
+    }).appendTo('head');
+
+
     const data = <?php echo $response; ?>;
-    console.log(data);
+    // console.log(data);
 
     renderInputGroup();
 
@@ -19,20 +27,37 @@
         if(!isValidData) return;
         
         $('#inputGroup').empty();
-        const question = $('<h5>', { text: `${data.questionText}`});
+        const question = $('<h5>', { 
+            text: `${data.questionText}`,
+            class: 'mt-3 mb-3'
+        });
         $('#inputGroup').append(question);
         
         // $('#inputGroup')
 
         data.options.forEach((item)=>{
             const label = $('<label>',{
-                text: `(${item.id}) ${item.optionText} `
+                text: `${item.id}. ${item.optionText} `,
+                class: 'rdoInput-label'
             });
             
             rdoInput = $('<input>', {
                 type: 'radio',
                 name: 'options',
-                value: `${item.id}`
+                value: `${item.id}`,
+                hidden: true,
+                change: ()=>{
+                    console.log('hello');
+                    let rs = document.querySelectorAll('input');
+                    rs.forEach((i)=>{
+                        if(i.checked){
+                            i.parentElement.classList.add('rdoInput-label-selected');
+                        } else {
+                            i.parentElement.classList.remove('rdoInput-label-selected');
+                        }
+
+                    })
+                }
             });
             
             const br = $('<br>');
@@ -75,22 +100,24 @@
 
     function handleSubmit(){
         const selectedOption = document.querySelector('input[name="options"]:checked');
-        console.log('guessed', selectedOption.value);
+        // console.log('guessed', selectedOption.value);
 
-        let resultText = '';
+        const pResult = $('<p>', {
+            class: 'result-text mt-3 text-center'
+        });
 
         if(selectedOption.value == data.correct_answer) {
-            resultText = 'Correct!'
+            pResult.text('Correct!')
+            pResult.addClass('text-success');
             // todo: log result
         } else {
-            resultText = 'Incorrect.'
+            pResult.text('Incorrect.')
+            pResult.addClass('text-danger');
         }
-        const pResult = $('<p>', {
-            text: resultText
-        })
-
+        
         const pExplanation = $('<p>', {
-            text: `${data.answerExplanationText}`
+            text: `${data.answerExplanationText}`,
+            class: 'mt-3'
         })
 
         $('#inputGroup').append(pResult, pExplanation);

@@ -21,6 +21,6 @@ if ($courseFiles === false) {
     }
 }
 
-echo "<br><br><br><br><br>";
+// echo "<br><br><br><br><br>";
 
 $courseListJson = json_encode($courseList);

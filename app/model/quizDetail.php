@@ -39,9 +39,13 @@ $data = [
 
 $temp = callAPI($data, 'raw');
 
+//temp file for testing without calling api
+// $temp = file_get_contents("$basePath/exampleRes.json");
+
 if(isset($temp['error'])){
     $response = json_encode($temp);
 } else {
 
     $response = $temp['choices'][0]['message']['content'];
+    // $response = $temp;
 }

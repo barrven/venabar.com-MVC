@@ -21,11 +21,12 @@ ul {
     width: 100%;
     height: 3rem;
     border-radius: var(--border-radius);
+    border-width: 1px;
     align-items: center;
     border-color: var(--accent-color);
     border-style: solid;
     min-width: 300px;
-
+    font-weight: bold;
 }
 
 .section-button:active, .ss-button:active{
@@ -33,15 +34,26 @@ ul {
     transform: scale(0.98); 
 }
 
+.section-button i {
+    color: var(--accent-color);
+}
+
 .ss-button{
     display: flex;
     justify-content: space-between;
     height: 3rem;
     border-radius: var(--border-radius);
+    border-width: 1px;
+    border-color: var(--accent-color);
     align-items: center;
-    width: 100%;
+    width: 80%;
+    min-width: 200px;
+    background-color: white;
 }
 
+.ss-button i {
+    color: var(--accent-color);
+}
 
 li p {
     margin: 1rem;
@@ -51,9 +63,10 @@ main > select {
     margin-bottom: 1rem;
     height: 3rem;
     border-color: var(--accent-color);
-    border-width: 2px;
+    border-width: 1px;
     border-radius: var(--border-radius);
     background-color: var(--element-bg-color);
+    font-weight: bold;
 }
 
 main > select:focus, main > select:active{
@@ -68,6 +81,34 @@ main > select option{
     color: black;
 }
 
+.rdoInput-label{
+    padding: .5rem;
+    background-color: var(--element-bg-color);
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.rdoInput-label-selected{
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#inputGroup{
+    max-width: 400px;
+    min-width: 250px;
+}
+
+#btnGroup{
+    min-width: 250px;
+}
+
+.result-text{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
 @media (min-width:426px ) {
     ul li > button {
         width: 400px;
@@ -77,4 +118,6 @@ main > select option{
     #sections, .section-title{
         max-width: 800px;
     }
+
+    
 }

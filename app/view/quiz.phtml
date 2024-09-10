@@ -1,5 +1,6 @@
 <main class="container" id="main">
-    <h1>Infini Quiz</h1>
+<br>    
+<h1 class="">Infini Quiz</h1>
     <select id="courseSelect" onchange="dropDownChange(this, 'course')">
         <option value="">Select Course</option>
         <option value="comptia-a-core1">Comptia A+ Core 1</option>
@@ -19,8 +20,8 @@
     $('<link>', {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'style/localStyles/quiz.css' // URL to your stylesheet
-    }).appendTo('head'); // Append it to the head of the document
+        href: 'style/localStyles/quiz.css' 
+    }).appendTo('head');
 
     const cs = document.getElementById('courseSelect');
     const sections = document.getElementById('sections');
