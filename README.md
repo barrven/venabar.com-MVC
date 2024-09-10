@@ -22,9 +22,6 @@ Follow these steps to set up the project locally:
    git clone https://github.com/barrven/venabar.com-MVC.git
 
 3. **Copy the Project to XAMPP's htdocs**:
-   - Navigate to the XAMPP installation directory (default is C:\xampp\htdocs on Windows).
-   - Copy the cloned venabar.com-MVC folder into the htdocs directory.
-3. **Copy the Project to XAMPP's htdocs**:
    - Navigate to the XAMPP installation directory (default is `C:\xampp\htdocs` on Windows).
    - Copy the cloned `venabar.com-MVC` folder into the `htdocs` directory.
 
@@ -60,7 +57,11 @@ venabar.com-MVC/
 │   │   ├── home.phtml
 │   │   └── projects.phtml
 │   ├── config.php
-│   └── functions.php
+│   |── functions.php
+|   └── data/quiz/
+|            |──/courses
+|            |──quizPrompt.txt
+|            └──responseSchema.json
 ├── assets/
 ├── examples/
 ├── js/

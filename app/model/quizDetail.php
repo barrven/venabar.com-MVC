@@ -13,10 +13,9 @@ $file = explode(".", $file)[0];
 // var_dump($file);
 
 $basePath = 'app/data/quiz';
-// $srcDataFilePath = APP.DS.'data'.DS.'quiz'.DS.'courses'.DS.$course.DS.$file.'.txt';
+
 $srcData = file_get_contents("$basePath/courses/$course/$file.txt");
 // $courseInfo = file_get_contents("$basePath/courses/$course.json");
-
 $sysPrompt = file_get_contents("$basePath/quizPrompt.txt");
 $schema = file_get_contents("$basePath/responseSchema.json");
 
