@@ -33,7 +33,7 @@
         <!-- List each item -->
         <?php foreach($projects as $project): ?>
             <?= isEven($row++)? "<div class='row mx-auto' style='max-width: 800px;'>" : ""?>
-                <div class="col-md card-link bg-light rounded m-2">    
+                <div class="col-md card-link  rounded m-2">    
                     <div class="m-2 pl-3">
                         <a class="btn btn-outline-primary btn-lg float-right hover-special" target="_blank" href="<?= $project['url'] ?>"><span class="fas fa-arrow-right"></a>
                         <h5><?= $project['title'] ?></h5>

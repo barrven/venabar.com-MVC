@@ -7,6 +7,7 @@
 .card-link:hover{
     box-shadow: 0 0 10px;
     transition: 0.3s;
+    /* background-color: var(--panel-hover-color); */
 }
 
 .card-link{
@@ -15,6 +16,9 @@
     margin-left: 5px !important;
     padding: 10px;
     cursor: pointer;
+    background-color: var(--panel-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--panel-border-color);
 }
 
 .col-sm{
@@ -69,7 +73,7 @@ body{
 .item-pill{
     background-color: var(--panel-color);
     border-radius: var(--border-radius);
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--panel-border-color);
     padding: 0.4rem;
     margin: 0.2rem;
     float: left;
@@ -78,8 +82,7 @@ body{
     cursor: pointer;
 }
 .item-pill:hover{
-    background-color: #ebeef5;
-    /* border: 1px solid #ebeef5; */
+    background-color: var(--panel-hover-color);
 }
 .trigger-hover-special{
     background-color: #047bfb;

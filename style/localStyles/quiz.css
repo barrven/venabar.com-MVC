@@ -12,6 +12,17 @@ ul {
     padding: 0;
 }
 
+#courseSelect{
+    min-width: 20rem;
+
+    /* Remove default arrow */
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+
+    padding: .8rem;
+}
+
 .section-button {
     display: flex;
     justify-content: space-between;
@@ -20,19 +31,20 @@ ul {
     border-radius: var(--border-radius);
     border-width: 1px;
     align-items: center;
-    border-color: var(--accent-color);
+    background-color: var(--panel-color);
+    border-color: var(--panel-border-color);
     border-style: solid;
     min-width: 300px;
     font-weight: bold;
 }
 
 .section-button:active, .ss-button:active{
-    border-color: var(--accent-color);
-    transform: scale(0.98); 
+    /* border-color: var(--accent-color); */
+    transform: scale(0.99);
 }
 
 .section-button i {
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
 }
 
 .ss-button{
@@ -41,15 +53,20 @@ ul {
     height: 3rem;
     border-radius: var(--border-radius);
     border-width: 1px;
-    border-color: var(--accent-color);
+    border-color: var(--panel-border-color);
     align-items: center;
     width: 80%;
     min-width: 200px;
-    background-color: white;
+    background-color: var(--panel-color);
 }
 
-.ss-button i {
+.ss-button:hover i {
     color: var(--accent-color);
+}
+
+.ss-button:hover{
+    box-shadow: 0 0 4px;
+    transition: 0.3s;
 }
 
 li p {
@@ -59,10 +76,10 @@ li p {
 main > select {
     margin-bottom: 1rem;
     height: 3rem;
-    border-color: var(--accent-color);
+    border-color: var(--panel-border-color);
     border-width: 1px;
     border-radius: var(--border-radius);
-    background-color: var(--element-bg-color);
+    background-color: var(--panel-color);
     font-weight: bold;
 }
 
