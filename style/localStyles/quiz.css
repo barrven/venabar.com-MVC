@@ -97,12 +97,20 @@ main > select option{
 
 .rdoInput-label{
     padding: .5rem;
-    background-color: var(--element-bg-color);
+    background-color: var(--panel-color);
     border-radius: var(--border-radius);
+    border: 1px solid var(--panel-border-color);
     width: 100%;
 }
 
-.rdoInput-label-selected{
+.rdoInput-label:hover{
+    background-color: var(--panel-hover-color);
+    cursor: pointer;
+    box-shadow: 0 0 4px;
+    transition: 0.3s;
+}
+
+.rdoInput-label-selected, .rdoInput-label-selected:hover{
     background-color: var(--accent-color);
     color: white;
 }
