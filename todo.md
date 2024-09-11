@@ -1,4 +1,6 @@
 update style
+  - add standard border to projects page items
+  - update buttons on quiz to match the pills on cv using variables
 
 normalize stylesheets with variables
 
