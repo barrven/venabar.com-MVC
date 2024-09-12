@@ -1,7 +1,7 @@
 <main class="container">
     <h1 class="mb-2">Infini Quiz</h1>
     <div id="inputGroup"></div>
-    <div id="btnGroup" class="mt-3">
+    <div id="btnGroup" class="mt-3" hidden>
         <button id="btnSubmit" class="btn btn-primary" onclick="handleSubmit()">Submit</button>
         <button class="btn btn-success" onclick="handleNextClick()">Next</button>
     </div>
@@ -9,6 +9,7 @@
 </main>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/quiz-detail.js"></script>
 <script>
     // add the local stylesheet
     $('<link>', {
@@ -17,14 +18,28 @@
         href: 'style/localStyles/quiz.css' 
     }).appendTo('head');
 
-
-    const data = <?php echo $response; ?>;
-    // console.log(data);
-
+    let data = {status: 'loading'};
     renderInputGroup();
+    loadQuiz();
+
+    async function loadQuiz(){
+        data = await callAPI();
+        data.status = 'loaded';
+        console.log(data)
+        renderInputGroup();
+    }
 
     function renderInputGroup(){
-        if(!isValidData) return;
+        if(data.status === 'loading'){
+            $('#inputGroup').text('...Loading')
+            // $('#btnGroup').hide();
+            $('#btnGroup').attr('hidden', true);
+        }
+        
+        if(!isValidData()){
+            console.error('No valid data to render.');
+            return;
+        }
         
         $('#inputGroup').empty();
         const question = $('<h5>', { 
@@ -32,8 +47,6 @@
             class: 'mt-3 mb-3'
         });
         $('#inputGroup').append(question);
-        
-        // $('#inputGroup')
 
         data.options.forEach((item)=>{
             const label = $('<label>',{
@@ -47,7 +60,6 @@
                 value: `${item.id}`,
                 hidden: true,
                 change: ()=>{
-                    console.log('hello');
                     let rs = document.querySelectorAll('input');
                     rs.forEach((i)=>{
                         if(i.checked){
@@ -66,32 +78,8 @@
             $('#inputGroup').append(label, br);            
         });
 
-        // const btnAnswer = $('<button>', {
-        //     text: 'Submit',
-        //     click: ()=>{
-        //         const selectedOption = document.querySelector('input[name="options"]:checked');
-        //         console.log('guessed', selectedOption.value);
+        $('#btnGroup').removeAttr('hidden');
 
-        //         let resultText = '';
-
-        //         if(selectedOption.value == data.correct_answer) {
-        //             resultText = 'Correct!'
-        //             // todo: log result
-        //         } else {
-        //             resultText = 'Incorrect.'
-        //         }
-        //         const pResult = $('<p>', {
-        //             text: resultText
-        //         })
-
-        //         const pExplanation = $('<p>', {
-        //             text: `${data.answerExplanationText}`
-        //         })
-
-        //         $('#inputGroup').append(pResult, pExplanation);
-        //     }
-        // })
-        // $('#inputGroup').append(btnAnswer);
     }
 
     function handleNextClick(){
@@ -100,8 +88,6 @@
 
     function handleSubmit(){
         const selectedOption = document.querySelector('input[name="options"]:checked');
-        // console.log('guessed', selectedOption.value);
-
         const pResult = $('<p>', {
             class: 'result-text mt-3 text-center'
         });
@@ -110,6 +96,7 @@
             pResult.text('Correct!')
             pResult.addClass('text-success');
             // todo: log result
+
         } else {
             pResult.text('Incorrect.')
             pResult.addClass('text-danger');
@@ -125,13 +112,13 @@
     }
 
     function isValidData(){
-        if(isset(data.error)){
+        if(data.hasOwnProperty('error')){
             console.log(data.error);
             const p = $('<p>', { class: 'error-msg', text: data.error});
             return false;
         }
 
-        if(!isset(data.options)){
+        if(!data.hasOwnProperty('options')){
             return false;
         }
 

@@ -12,6 +12,16 @@ $page = getParam('page', 'home'); //default is home
 $model = $paths['MODEL'].DS.$page.'.php';
 $view = $paths['VIEW'].DS.$page.'.phtml';
 
+$mode = getParam('mode');
+if($mode == 'api'){
+    
+    if(file_exists($model)){
+        require $model;
+    }
+    
+    exit();
+}
+
 if (file_exists($model)) {
     require $model;
 }
