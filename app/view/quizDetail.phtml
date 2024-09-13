@@ -18,6 +18,13 @@
         href: 'style/localStyles/quiz.css' 
     }).appendTo('head');
 
+    // for loading bar animation
+    $('<link>', {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'style/widgets.css' 
+    }).appendTo('head');
+
     let data = {status: 'loading'};
     renderInputGroup();
     loadQuiz();
@@ -31,9 +38,22 @@
 
     function renderInputGroup(){
         if(data.status === 'loading'){
-            $('#inputGroup').text('...Loading')
-            // $('#btnGroup').hide();
+        // if(true){
+            
+            
+            
+            // $('#inputGroup').text('...Loading')
+            $('#inputGroup').html(`
+                <div class="loader-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            `);
+            
             $('#btnGroup').attr('hidden', true);
+
+            return;
         }
         
         if(!isValidData()){

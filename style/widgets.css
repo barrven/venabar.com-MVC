@@ -1,0 +1,36 @@
+@import url('master.css');
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.progress-bar {
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: 3px solid var(--panel-border-color);
+    /* box-shadow: 0px 0px 4px 1px #000000; */
+    box-shadow: 0px 0px 3px 1px #a5a4a4;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--accent-color);
+    animation: fill 4s infinite;
+}
+
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
