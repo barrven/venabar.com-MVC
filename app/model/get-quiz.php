@@ -12,9 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $postData = json_decode(file_get_contents('php://input'), true);
 
 // Validate POST data
-if (!isset($postData['name']) || empty($postData['name'])) {
+if (!isset($postData['history']) || empty($postData['history'])) {
     http_response_code(400); // Bad Request
-    echo json_encode(["error" => "quizId is required."]);
+    echo json_encode(["error" => "No history object was passed."]); //todo: log errors
     exit();
 }
 

@@ -32,14 +32,14 @@
     async function loadQuiz(){
         data = await callAPI();
         data.status = 'loaded';
-        console.log(data)
+        console.log('loadQuiz: loaded.', data);
         renderInputGroup();
     }
 
     function renderInputGroup(){
         if(data.status === 'loading'){
         // if(true){
-        
+
             $('#inputGroup').html(`
                 <div class="loader-container">
                     <div class="progress-bar">
@@ -54,7 +54,10 @@
         }
         
         if(!isValidData()){
-            console.error('No valid data to render.');
+            console.log('renderInputGroup isValidData? ','No valid data to render.');
+            if(data.hasOwnProperty('error')){
+                renderErrorMsg(`An error occurred: "${data.error}"`);
+            }
             return;
         }
         
@@ -99,6 +102,13 @@
 
     }
 
+    function renderErrorMsg(msg){
+        console.error('renderErrorMsg: ',msg);
+        $('#inputGroup').empty();
+        const p = $('<p>', { class: 'error-msg', text: msg});
+        $('#inputGroup').append(p);
+    }
+
     function handleNextClick(){
         document.location.reload();
     }
@@ -129,11 +139,6 @@
     }
 
     function isValidData(){
-        if(data.hasOwnProperty('error')){
-            console.log(data.error);
-            const p = $('<p>', { class: 'error-msg', text: data.error});
-            return false;
-        }
 
         if(!data.hasOwnProperty('options')){
             return false;

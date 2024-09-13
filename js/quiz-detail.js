@@ -1,6 +1,3 @@
-let temp = {
-    error: 'this is response from quiz-detail.js'
-}
 
 
 async function callAPI() {
@@ -14,8 +11,10 @@ async function callAPI() {
     
 
     const data = {
-        name: 'John Doe',
-        email: 'john@example.com'
+        history: [
+            {role: 'system', content: 'some content'},
+            {role: 'user', content: 'please  give me another question.'}
+        ]
     };
   
     try {
@@ -28,11 +27,13 @@ async function callAPI() {
         });
 
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            // console.log('API call completed', response);
+            // throw new Error('Network response was not ok');
+            return {error: `API call returned HTTP status code: ${response.status}`};
         }
 
         const result = await response.json();
-        console.log('Success:', result);
+        // console.log('API call completed', result);
 
         // const rawResponse = await response.text();
         // console.log('Raw Response:', rawResponse);
