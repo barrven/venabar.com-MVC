@@ -1,0 +1,8 @@
+Here is a history of the questions you have asked so far:
+<history>
+<question>What is the main purpose of the Power-On Self-Test (POST) in a computer?</question>
+<question>What do beep codes during the Power-On Self-Test (POST) signify?</question>
+<question>What is the primary use of a POST card in computer diagnostics?</question>
+<question>What role do POST error codes play in the boot process of a computer?</question>
+</history>
+Please ask another question.

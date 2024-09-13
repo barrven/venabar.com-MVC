@@ -43,9 +43,10 @@ $data = [
     'model' => 'gpt-4o-mini',
     'messages' => [
         ['role' => 'system', 'content' => $sysPrompt],
-        ['role' => 'user', 'content' => 'Begin!']
+        // todo: here we input the $postData['history'] object
+        ['role' => 'user', 'content' => 'Begin!'] 
     ],
-    'max_tokens' => 3000,
+    'max_tokens' => 10000,
     'response_format' => [
         "type" => "json_schema",
         "json_schema" => json_decode($schema, true)
