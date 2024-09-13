@@ -45,7 +45,7 @@ $data = [
         ['role' => 'system', 'content' => $sysPrompt],
         ['role' => 'user', 'content' => 'Begin!']
     ],
-    'max_tokens' => 800,
+    'max_tokens' => 3000,
     'response_format' => [
         "type" => "json_schema",
         "json_schema" => json_decode($schema, true)
