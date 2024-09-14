@@ -32,3 +32,16 @@ function loadEnv($filePath) {
         // }
     }
 }
+
+function writeJsonToFile($phpAssocArray, $filePath) {
+    $currentDateTime = date('Y-d-m H:i:s');
+    $phpAssocArray['timeStamp'] = "$currentDateTime";
+    $jsonString = json_encode($phpAssocArray, JSON_PRETTY_PRINT);
+
+    // Will append to the file
+    if (file_put_contents($filePath, $jsonString.PHP_EOL, FILE_APPEND) === false) {
+        return false;
+    }
+
+    return true;
+}
