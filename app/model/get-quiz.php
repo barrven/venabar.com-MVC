@@ -11,12 +11,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $postData = json_decode(file_get_contents('php://input'), true);
 
+writeJsonToFile($postData['history'], 'app/logs/get-quiz-log.txt');
+
 // Validate POST data
-if (!isset($postData['history']) || empty($postData['history'])) {
-    http_response_code(400); // Bad Request
-    echo json_encode(["error" => "No history object was passed."]); //todo: log errors
-    exit();
-}
+// if (!isset($postData['history']) || empty($postData['history'])) {
+//     http_response_code(400); // Bad Request
+//     echo json_encode(["error" => "No history object was passed."]); //todo: log errors
+//     exit();
+// }
 
 //parse url into its components: path, query 
 $urlComponents = parse_url($_SERVER['REQUEST_URI']);
@@ -26,12 +28,10 @@ parse_str($urlComponents['query'], $urlArgs);
 $course = $urlArgs['course'];
 $file = $urlArgs['detail'];
 $file = explode(".", $file)[0];
-// var_dump($file);
 
 $basePath = 'app/data/quiz';
 
 $srcData = file_get_contents("$basePath/courses/$course/$file.txt");
-// $courseInfo = file_get_contents("$basePath/courses/$course.json");
 $sysPrompt = file_get_contents("$basePath/quizPrompt.txt");
 $schema = file_get_contents("$basePath/responseSchema.json");
 
@@ -39,12 +39,22 @@ $sysPrompt .= "\n<course>$course</course>\n";
 $sysPrompt .= "<description></description>\n";
 $sysPrompt .= "<transcript>$srcData</transcript>";
 
+if(count($postData) == 0){
+    $userMessage = 'Begin!';
+} else {
+    //format the user message with the question history to avoid duplicate questions.
+    $userMessage = "Here is a history of the questions you have asked so far:\<history>";
+    foreach($postData['history'] as $i){
+        $userMessage .= "<q>$i</q>";
+    }
+    $userMessage .= "</history>Do not repeat any of the questions listed in the history. Please ask a new question.";
+}
+
 $data = [
     'model' => 'gpt-4o-mini',
     'messages' => [
         ['role' => 'system', 'content' => $sysPrompt],
-        // todo: here we input the $postData['history'] object
-        ['role' => 'user', 'content' => 'Begin!'] 
+        ['role' => 'user', 'content' => $userMessage]
     ],
     'max_tokens' => 10000,
     'response_format' => [

@@ -1,5 +1,3 @@
-
-
 async function callAPI(history) {
     
     const url = new URL(window.location);
@@ -35,4 +33,3 @@ async function callAPI(history) {
         console.error(error);
     }
 }
-

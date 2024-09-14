@@ -10,6 +10,7 @@ function callAPI($data, $resFormat='message'){
         "Authorization: Bearer $apiKey"
     ];
 
+    // writeJsonToFile($data, 'app/logs/chatGPT-log.txt');
     curl_setopt_array($curl, [
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
