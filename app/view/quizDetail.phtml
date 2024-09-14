@@ -26,13 +26,20 @@
     }).appendTo('head');
 
     let data = {status: 'loading'};
+    const quizHistory = { history: ['Begin!']}
     renderInputGroup();
     loadQuiz();
 
     async function loadQuiz(){
-        data = await callAPI();
+        data = await callAPI(quizHistory);
         data.status = 'loaded';
-        console.log('loadQuiz: loaded.', data);
+        console.log('loadQuiz: loaded questionText.', data);
+        if(!data.hasOwnProperty('questionText')){
+            renderErrorMsg(data, 'No questionText');
+            return;
+        }
+        quizHistory.history.push(data.questionText);
+        // console.log('API completed, history: ', quizHistory);
         renderInputGroup();
     }
 
@@ -53,11 +60,9 @@
             return;
         }
         
-        if(!isValidData()){
+        if(!data.hasOwnProperty('options')){
             console.log('renderInputGroup isValidData? ','No valid data to render.');
-            if(data.hasOwnProperty('error')){
-                renderErrorMsg(`An error occurred: "${data.error}"`);
-            }
+            renderErrorMsg(`An error occurred: "${data}"`);
             return;
         }
         
@@ -102,16 +107,22 @@
 
     }
 
-    function renderErrorMsg(msg){
-        console.error('renderErrorMsg: ',msg);
+    function renderErrorMsg(dataObj, extraMsg=''){
+        let msg = `renderErrorMsg, ${extraMsg}`;
+        if(data.hasOwnProperty('error')){
+            msg += `, ${data.error}`;
+        }
+        console.error(msg);
         $('#inputGroup').empty();
         const p = $('<p>', { class: 'error-msg', text: msg});
         $('#inputGroup').append(p);
     }
 
     function handleNextClick(){
-        // document.location.reload();
         console.log(data.questionText);
+        data.status = 'loading';
+        renderInputGroup();
+        loadQuiz();
     }
 
     function handleSubmit(){
@@ -137,15 +148,6 @@
 
         $('#inputGroup').append(pResult, pExplanation);
         $('#btnSubmit').hide();
-    }
-
-    function isValidData(){
-
-        if(!data.hasOwnProperty('options')){
-            return false;
-        }
-
-        return true;
     }
     
 </script>

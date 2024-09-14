@@ -1,21 +1,11 @@
 
 
-async function callAPI() {
-    // const currUrl = new URL(window.location);
-    // const url = `${currUrl.origin}${currUrl.pathname}?page=get-quiz&mode=api`;
+async function callAPI(history) {
+    
     const url = new URL(window.location);
-    // const params = new URLSearchParams(url.search);
     url.searchParams.delete('page');
     url.searchParams.set('page', 'get-quiz');
     url.searchParams.set('mode', 'api');
-    
-
-    const data = {
-        history: [
-            {role: 'system', content: 'some content'},
-            {role: 'user', content: 'please  give me another question.'}
-        ]
-    };
   
     try {
         const response = await fetch(url, {
@@ -23,7 +13,7 @@ async function callAPI() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(history)
         });
 
         if (!response.ok) {
@@ -34,7 +24,6 @@ async function callAPI() {
 
         const result = await response.json();
         // console.log('API call completed', result);
-
         // const rawResponse = await response.text();
         // console.log('Raw Response:', rawResponse);
         // const result = JSON.parse(rawResponse);
