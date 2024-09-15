@@ -44,6 +44,8 @@
     }
 
     function renderInputGroup(){
+        $('#inputGroup').empty();
+
         if(data.status === 'loading'){
         // if(true){
 
@@ -66,7 +68,6 @@
             return;
         }
         
-        $('#inputGroup').empty();
         const question = $('<h5>', { 
             text: `${data.questionText}`,
             class: 'mt-3 mb-3'
