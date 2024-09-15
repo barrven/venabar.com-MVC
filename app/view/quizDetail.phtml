@@ -45,7 +45,8 @@
 
     function renderInputGroup(){
         $('#inputGroup').empty();
-        $(window).trigger('resize');
+        // $(window).trigger('resize');
+        adjustFooter();
 
         if(data.status === 'loading'){
         // if(true){
@@ -59,7 +60,7 @@
             `);
             
             $('#btnGroup').attr('hidden', true);
-
+            adjustFooter();
             return;
         }
         

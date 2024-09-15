@@ -33,3 +33,34 @@ async function callAPI(history) {
         console.error(error);
     }
 }
+
+// Adjust footer position on load
+$(document).ready(()=>{
+    adjustFooter();
+});
+
+// Adjust footer position whenever the window resizes 
+//(including address bar hide on scroll)
+$(window).on('resize',()=>{
+    adjustFooter();
+});
+
+function adjustFooter() {
+    // Get the viewport height
+    let windowHeight = window.innerHeight;
+    let footerHeight = $('.footer').outerHeight();
+    let mainContentHeight = $('main').outerHeight();
+    
+    // Calculate total height and see if we need to push the footer down
+    if (mainContentHeight + footerHeight < windowHeight) {
+        $('.footer').css({
+            position: 'absolute',
+            bottom: '0',
+            width: '100%',
+        });
+    } else {
+        $('.footer').css({
+            position: 'static',
+        });
+    }
+}
