@@ -35,15 +35,15 @@ async function callAPI(history) {
 }
 
 // Adjust footer position on load
-$(document).ready(()=>{
-    adjustFooter();
-});
+// $(document).ready(()=>{
+//     adjustFooter();
+// });
 
 // Adjust footer position whenever the window resizes 
 //(including address bar hide on scroll)
-$(window).on('resize',()=>{
-    adjustFooter();
-});
+// $(window).on('resize',()=>{
+//     adjustFooter();
+// });
 
 function adjustFooter() {
     // Get the viewport height
