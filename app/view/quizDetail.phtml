@@ -45,6 +45,7 @@
 
     function renderInputGroup(){
         $('#inputGroup').empty();
+        $(window).trigger('resize');
 
         if(data.status === 'loading'){
         // if(true){
