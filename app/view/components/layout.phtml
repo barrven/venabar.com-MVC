@@ -22,26 +22,26 @@
 
 <body>
 
-    <!-- navbar -->
-    <?php
-        // these pages should have no navbar
-        $noNavbar = ['home', 'test'];
-        if(!in_array($page, $noNavbar)){
-            include 'navbar.phtml';
-        }
-    ?>
-    
-    <!-- page content here. for it to bahave properly, wrap in a <main> element-->
-    <div>
-        <?php include $view; ?>
-    </div>
-
-    <!-- footer (obviously) -->
-    <footer class="footer bg-dark text-white">
-        <div class="container text-center">
-            &copy; <?php echo date('Y'); ?> Barrington Venables
+        <!-- navbar -->
+        <?php
+            // these pages should have no navbar
+            $noNavbar = ['home', 'test'];
+            if(!in_array($page, $noNavbar)){
+                include 'navbar.phtml';
+            }
+        ?>
+        
+        <!-- page content here. for it to bahave properly, wrap in a <main> element-->
+        <div>
+            <?php include $view; ?>
         </div>
-    </footer>
+
+        <!-- footer (obviously) -->
+        <footer class="footer bg-dark text-white">
+            <div class="container text-center">
+                &copy; <?php echo date('Y'); ?> Barrington Venables
+            </div>
+        </footer>
     
     <script src="js/combine-hover.js"></script>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
