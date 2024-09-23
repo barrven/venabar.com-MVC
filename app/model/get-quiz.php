@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $postData = json_decode(file_get_contents('php://input'), true);
 
-writeJsonToFile($postData['history'], 'app/logs/get-quiz-log.txt');
+// writeJsonToFile($postData['history'], 'app/logs/get-quiz-log.txt');
 
 // Validate POST data
 // if (!isset($postData['history']) || empty($postData['history'])) {
@@ -26,8 +26,9 @@ $urlComponents = parse_url($_SERVER['REQUEST_URI']);
 //extract url arguments in to array
 parse_str($urlComponents['query'], $urlArgs);
 $course = $urlArgs['course'];
-$file = $urlArgs['detail'];
-$file = explode(".", $file)[0];
+$detail = $urlArgs['detail'];
+$file = explode(".", $detail)[0];
+$section = $urlArgs['section'];
 
 $basePath = 'app/data/quiz';
 
@@ -36,8 +37,12 @@ $sysPrompt = file_get_contents("$basePath/quizPrompt.txt");
 $schema = file_get_contents("$basePath/responseSchema.json");
 
 $sysPrompt .= "\n<course>$course</course>\n";
-$sysPrompt .= "<description></description>\n";
-$sysPrompt .= "<transcript>$srcData</transcript>";
+// $sysPrompt .= "<description></description>\n";
+$sysPrompt .= "<section>$section</section>\n";
+$sysPrompt .= "<detail>$detail</detail>\n";
+// $sysPrompt .= "<transcript>$srcData</transcript>";
+
+// writeJsonToFile(["sysPrompt"=> $sysPrompt], 'app/logs/get-quiz-log.txt');
 
 if(count($postData) == 0){
     $userMessage = 'Begin!';
