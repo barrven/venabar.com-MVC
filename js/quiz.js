@@ -9,7 +9,6 @@ function renderSections(arr, filterName) {
     const params = new URLSearchParams(url.search);
     const filterStr = params.get(filterName);
     
-
     // Flatten the array of sections from the filtered items
     const sections = arr
     .filter((item) => filterStr === item.folder)
@@ -26,12 +25,6 @@ function renderSections(arr, filterName) {
             class: 'section-item',
         });
 
-        // const span = $('<span>', {
-        //     class: 'text-cont',
-        //     text: section.title
-        // });
-        // itemElement.append(span);
-
         let sectionTitle = formatSectionTitle(section.title);
 
         const btnExpand = $('<button>', {
@@ -43,14 +36,6 @@ function renderSections(arr, filterName) {
         });
  
         itemElement.append(btnExpand);
-
-        // const btnRandom = $('<button>', {
-        //     class: 'section-button',
-        //     click: () => { handleButtonClick(section, itemElement); },
-        //     html: '&#11208;' //left facing arrow
-        // });
- 
-        // itemElement.append(btnRandom);
 
         const divElement = $('<div>', {
             class: 'section-div',
@@ -67,7 +52,7 @@ function renderSections(arr, filterName) {
 }
 
 function handleButtonClick(item, e){
-    console.log('clicked', e);
+    // console.log('clicked', e);
 }
 
 function handleExpandClick(item, e){
@@ -77,26 +62,25 @@ function handleExpandClick(item, e){
 }
 
 function attachSubSections(item, e){
-    // console.log(item.subSections[0]);
+    
     item.subSections.forEach((ss) => {
         const p = $('<p>', {});
         
         const btn = $('<button>', {
             class: 'ss-button',
-            click: () => { handleQuizClick(ss); },
+            click: () => { handleQuizClick(ss, formatSectionTitle(item.title)); },
             html: `
             <span>${ss}</span>
             <i class="fas fa-arrow-right"></i>
             `
         });
- 
-        // const s = $('<span>', {text: `${ss}`})
+
         p.append(btn);
         e.append(p);
     });
 }
 
-function handleQuizClick(title){
+function handleQuizClick(title, section=''){
     
     const url = new URL(window.location);
     const params = new URLSearchParams(url.search);
@@ -108,9 +92,10 @@ function handleQuizClick(title){
 
     url.searchParams.delete('page');
     url.searchParams.set('page', 'quizDetail');
+    
+    url.searchParams.set('section', section);
     url.searchParams.set('detail', title);
 
-    // console.log('go to quiz', 'new url',url.href);
     window.open(url.href, '_blank');
 
 }
