@@ -7,4 +7,4 @@
 500.shtml
 error_log
 app/logs
-/examples/pictionary/data/custom*
+examples/pictionary/data/custom*
