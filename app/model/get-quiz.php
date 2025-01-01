@@ -24,7 +24,7 @@ $postData = json_decode(file_get_contents('php://input'), true);
 //parse url into its components: path, query 
 $urlComponents = parse_url($_SERVER['REQUEST_URI']);
 
-//extract url arguments in to array
+//extract url arguments into array
 parse_str($urlComponents['query'], $urlArgs);
 $course = $urlArgs['course'];
 $detail = $urlArgs['detail'];

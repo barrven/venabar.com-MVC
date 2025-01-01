@@ -10,8 +10,6 @@
 
 </main>
 
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-<script src="js/quiz-detail.js"></script>
 <script>
     // add the local stylesheet
     $('<link>', {
@@ -155,5 +153,58 @@
         $('#inputGroup').append(pResult, pExplanation);
         $('#btnSubmit').hide();
     }
+
+    function adjustFooter() {
+        // Get the viewport height
+        let windowHeight = window.innerHeight;
+        let footerHeight = $('.footer').outerHeight();
+        let mainContentHeight = $('main').outerHeight();
+        
+        // Calculate total height and see if we need to push the footer down
+        if (mainContentHeight + footerHeight < windowHeight) {
+            $('.footer').css({
+                position: 'absolute',
+                bottom: '0',
+                width: '100%',
+            });
+        } else {
+            $('.footer').css({
+                position: 'static',
+            });
+        }
+    }
     
+    async function callAPI(history) {
+        const url = new URL(window.location);
+        url.searchParams.delete('page');
+        url.searchParams.set('page', 'get-quiz'); //loads with page=get-quiz (get-quiz.php)
+        url.searchParams.set('mode', 'api'); //mode tells the controller to just load the model with no view
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(history)
+            });
+
+            if (!response.ok) {
+                // console.log('API call completed', response);
+                // throw new Error('Network response was not ok');
+                return {error: `API call returned HTTP status code: ${response.status}`};
+            }
+
+            const result = await response.json();
+            // console.log('API call completed', result);
+            // const rawResponse = await response.text();
+            // console.log('Raw Response:', rawResponse);
+            // const result = JSON.parse(rawResponse);
+            return result;
+            
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
 </script>
