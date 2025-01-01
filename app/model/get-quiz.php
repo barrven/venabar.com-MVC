@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: application/json');
 require APP.DS.'connections'.DS.'chatGPT.php';
-
+$APP_MODE = getenv('APP_MODE'); //get this from the .env file
+// writeJsonToFile(['message'=>$APP_MODE], 'app/logs/get-quiz-log.txt');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405); // Method Not Allowed
@@ -68,20 +69,24 @@ $data = [
     ]
 ];
 
-$temp = callAPI($data, 'raw');
+if($APP_MODE == 'test'){
+    //temp file for testing without calling api
+    $response = file_get_contents("$basePath/exampleRes.json");
+    http_response_code(200);
+    echo $response;
 
-//temp file for testing without calling api
-// $temp = file_get_contents("$basePath/exampleRes.json");
-
-if(isset($temp['error'])){
-    $response = json_encode($temp);
 } else {
-
+    $temp = callAPI($data, 'raw');
+    
+    if(isset($temp['error'])){
+        $response = json_encode($temp);
+        http_response_code(500);
+        echo $response;
+        exit();
+    }
+    
+    //doesn't need the json_encode function if reading direct from from the api response or json file
     $response = $temp['choices'][0]['message']['content'];
-    // $response = $temp;
+    http_response_code(200);
+    echo $response;
 }
-
-http_response_code(200);
-//doesn't need the json_encode function if reading direct from the json file
-// or from the api response
-echo $response;
