@@ -17,22 +17,29 @@
         <ul class="navbar-nav mr-auto">
             
 
-            <li class="nav-item <?php echo $page == 'about'? 'active' : ''; ?>">
+            <li class="nav-item reg <?php echo $page == 'about'? 'active' : ''; ?>">
                 <a class="nav-link" href="?page=about">About Me</a>
             </li>
 
-            <li class="nav-item <?php echo $page == 'projects'? 'active' : ''; ?>">
+            <li class="nav-item reg <?php echo $page == 'projects'? 'active' : ''; ?>">
                 <a class="nav-link" href="?page=projects">My Projects</a>
             </li>
 
-            <li class="nav-item <?php echo $page == 'cv'? 'active' : ''; ?>">
+            <li class="nav-item reg <?php echo $page == 'cv'? 'active' : ''; ?>">
                 <a class="nav-link" href="?page=cv">Resume / CV</a>
             </li>
 
-            <li class="nav-item <?php echo $page == 'academic'? 'active' : ''; ?>">
+            <li class="nav-item reg <?php echo $page == 'academic'? 'active' : ''; ?>">
                 <a class="nav-link" href="?page=academic">Academic</a>
             </li>
         </ul>
     </div>
 </nav>
 <br>
+<script>
+    $('<link>', {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'style/localStyles/navbar.css' 
+    }).appendTo('head');
+</script>
