@@ -95,6 +95,12 @@ main > select option{
     color: black;
 }
 
+.centered{
+    max-width: 400px;
+    min-width: 250px;
+    margin: auto;
+}
+
 .rdoInput-label{
     padding: .5rem;
     background-color: var(--panel-color);
@@ -116,8 +122,8 @@ main > select option{
 }
 
 #inputGroup, #btnGroup{
-    max-width: 400px;
-    min-width: 250px;
+    /* max-width: 400px;
+    min-width: 250px; */
 }
 
 #btnGroup{
