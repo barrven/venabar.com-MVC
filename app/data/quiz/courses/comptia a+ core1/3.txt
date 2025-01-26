@@ -1,1 +1,28 @@
--: So let's dig into how do we actually take the A+ exam? First, we have to start by buying a voucher. And you might be wondering, well, what's a voucher? Well, you're gonna go to CompTIA site like this here and we can select their CompTIA store and then go to the A+ certification voucher. Now remember, the A+ certification is actually two separate exams. So you're going to need two separate vouchers. And if that price seems a little high, don't worry because you can certainly find some discount vouchers online. So now that we've bought our voucher and we have our codes, we can actually go to the CompTIA website to schedule the exam. So I'm logged into the CompTIA site and I'm gonna go to schedule an exam and I'm gonna try and find the A+. And let's say I wanted to schedule the new Core 1 exam. I can click on that and hit go. And where would I want to take it? So this is an important thing. You have multiple modalities of taking this exam, meaning that you can either take it from the comfort of your own home or you can go to a proctor testing center. Now if you go, if you take it from the comfort of your own home you're gonna have to do some common setup things. They're gonna require you to actually take photos of your testing area. You're gonna have to run a certain a system test on the Pearson View site and a couple other things. And by the way, when you take it online there's actually gonna be somebody hooked into your webcam watching you. So if you're not comfortable with that you may want to take it in person. Now, taking it in person is pretty much just as easy as taking any other test that you've taken in person. You're gonna go to a Pearson View Testing Center in your area. You're going to walk in, show your ID they're gonna have you put all your stuff in a locker and they're gonna walk you into your computer, log you in and say, good luck and that's it. Just remember, there's typically no training materials allowed whatsoever for the A+ exam though I have taken mine in the past and they did give me like a little scrap sheet of paper to write some things on. And those are the simple steps to actually buy a voucher and schedule your exam. Just remember, grab a voucher online from CompTIA store or you might be able to find discount codes online as well. Schedule it in Pearson view and keep your feet to the fire. You can pass this exam. I know you can, and I believe in you.
+**Steps for Taking the A+ Exam:**
+
+1. **Purchase a Voucher:**
+   - Visit the CompTIA website and go to their store.
+   - Select the A+ certification voucher. Note that the A+ certification includes two exams, so you will need two vouchers.
+   - Look for possible discount vouchers online to save money.
+
+2. **Schedule the Exam:**
+   - Log into the CompTIA website.
+   - Navigate to the scheduling section and find the A+ exam (such as the Core 1 exam).
+   - You have two options for taking the test:
+     - **Online from Home:**
+       - Prepare your testing area by taking photos and conducting a system test on the Pearson VUE site.
+       - Be aware that a proctor will monitor you via webcam.
+     - **In-Person at a Testing Center:**
+       - Go to a local Pearson VUE Testing Center.
+       - Bring your ID and secure your belongings in a locker.
+       - Follow the instructions to start the exam.
+
+3. **Exam Conditions:**
+   - No training materials are allowed during the exam.
+   - A scrap sheet of paper may be provided for notes during the test.
+
+4. **Tips for Success:**
+   - Use resources and study materials to prepare for the test.
+   - Stay motivated and believe in your ability to pass the exam.
+
+Following these straightforward steps will help you navigate the process of purchasing a voucher and scheduling your A+ exam.
