@@ -8,3 +8,14 @@
 error_log
 app/logs
 examples/pictionary/data/customWords.csv
+/ssh
+/access-logs
+error_log
+/etc
+/logs
+/mail
+/public_ftp
+/ssl
+/tmp
+/var
+/www

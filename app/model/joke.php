@@ -1,6 +1,6 @@
 <?php
 
-require APP.DS.'connections'.DS.'chatGPT.php';
+require APP.'/connections/chatGPT.php';
 
 $data = [
     // 'model' => 'gpt-3.5-turbo',

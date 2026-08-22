@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-require APP.DS.'connections'.DS.'chatGPT.php';
+require APP.'/connections/chatGPT.php';
 $APP_MODE = getenv('APP_MODE'); //get this from the .env file
 // writeJsonToFile(['message'=>$APP_MODE], 'app/logs/get-quiz-log.txt');
 

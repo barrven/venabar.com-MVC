@@ -1,7 +1,7 @@
 <?php
 
 $paths = [
-    'MODEL' => APP.DS.'model',
-    'VIEW' => APP.DS.'view',
-    'API' => APP.DS.'api'
+    'MODEL' => APP.'/model',
+    'VIEW' => APP.'/view',
+    'API' => APP.'/api'
 ];

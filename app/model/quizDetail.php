@@ -1,5 +1,5 @@
 <?php
-// require APP.DS.'connections'.DS.'chatGPT.php';
+// require APP.'/connections/chatGPT.php';
 // // echo "<br><br><br><br>";
 
 // //parse url into its components: path, query 

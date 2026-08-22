@@ -1,6 +1,6 @@
 <?php
 
-$courseFiles = glob(APP.DS.'data'.DS.'quiz'.DS.'courses'.DS.'*.json');
+$courseFiles = glob(APP.'/data/quiz/courses/*.json');
 
 $courseList = [];
 if ($courseFiles === false) {
