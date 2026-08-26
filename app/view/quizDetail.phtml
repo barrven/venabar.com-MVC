@@ -15,14 +15,14 @@
     $('<link>', {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'style/localStyles/quiz.css' 
+        href: '<?php echo $v('style/localStyles/quiz.css'); ?>'
     }).appendTo('head');
 
     // for loading bar animation
     $('<link>', {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'style/widgets.css' 
+        href: '<?php echo $v('style/widgets.css'); ?>'
     }).appendTo('head');
 
     let data = {status: 'loading'};

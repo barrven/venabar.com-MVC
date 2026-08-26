@@ -3,6 +3,25 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+
+        const setIcon = function (theme) {
+            if (icon) icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        };
+
+        setIcon(document.documentElement.getAttribute('data-theme') || 'light');
+
+        themeToggle.addEventListener('click', function () {
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            setIcon(next);
+        });
+    }
+
     document.querySelectorAll('[data-toggle="collapse"]').forEach(function (btn) {
         btn.addEventListener('click', function () {
             const target = document.querySelector(btn.getAttribute('data-target'));
