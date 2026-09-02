@@ -8,6 +8,12 @@
 
     "projects":[
         {
+            "title":"Drone and Metronome app",
+            "description":"A single-page browser tool for droning notes and keeping time while practicing.",
+            "url":"examples/drone-app.html",
+            "source":""
+        },
+        {
             "title":"Infini Quiz",
             "description":"PHP app that generates infinite multiple choice quizzes based on course information organized by course, section, and subsection. Other features that will be added, such as login, create account, track quiz stats, upload course info.",
             "url":"?page=quiz",
@@ -65,12 +71,6 @@
             "title": "Image Carousel",
             "description": "Use Javascript to display a series of images, one at a time and provide buttons which can view the next image or return to the previous",
             "url": "examples/carousel/oop-carousel-bootstrap.html",
-            "source": ""
-        },
-        {
-            "title": "JS Metronome",
-            "description": "Simple metronome app",
-            "url": "examples/metronome/index.html",
             "source": ""
         },
         {
