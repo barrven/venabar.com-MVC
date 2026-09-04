@@ -14,6 +14,12 @@
             "source":""
         },
         {
+            "title":"Infini Quiz",
+            "description":"PHP app that generates infinite multiple choice quizzes based on course information organized by course, section, and subsection. Other features that will be added, such as login, create account, track quiz stats, upload course info.",
+            "url":"?page=quiz",
+            "source":""
+        },
+        {
             "title":"MyCatGPT",
             "description":"NextJS app which calls the chatGPT API with a system prompt that causes it to respond like a cat.",
             "url":"https://mycatgpt.com/",
@@ -60,18 +66,6 @@
             "description":"This is some simple scripting and styling that shows a contaier where you can add blocks of a specified size and color. You can also click on the blocks you've already added and change their size and color. Implemented in plain javascript",
             "url":"examples/draggable-div-with-container.html",
             "source":""
-        },
-        {
-            "title": "Image Carousel",
-            "description": "Use Javascript to display a series of images, one at a time and provide buttons which can view the next image or return to the previous",
-            "url": "examples/carousel/oop-carousel-bootstrap.html",
-            "source": ""
-        },
-        {
-            "title": "JS Metronome",
-            "description": "Simple metronome app",
-            "url": "examples/metronome/index.html",
-            "source": ""
         },
         {
             "title": "JS Canvas",
