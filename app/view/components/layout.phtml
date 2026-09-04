@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Barrington Venables personal website">
     <meta name="author" content="Barrington Venables">
-    
+
     <title>Venabar <?php echo ucfirst($page); ?></title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Set the theme before first paint to avoid a flash of the wrong theme -->
+    <script>
+        (function () {
+            var stored = localStorage.getItem('theme');
+            var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="style/sticky-footer-navbar.css">
-    <link rel="stylesheet" href="style/main.css">
+    <?php
+        // cache-bust local assets on every edit so browsers never serve a stale copy
+        $assetRoot = dirname(APP);
+        $v = function ($relPath) use ($assetRoot) {
+            $full = $assetRoot . '/' . $relPath;
+            return $relPath . '?v=' . (file_exists($full) ? filemtime($full) : time());
+        };
+    ?>
+    <link rel="stylesheet" href="<?php echo $v('style/framework.css'); ?>">
+    <link rel="stylesheet" href="<?php echo $v('style/sticky-footer-navbar.css'); ?>">
+    <link rel="stylesheet" href="<?php echo $v('style/main.css'); ?>">
     <link rel="icon" href="assets/favicon.ico">
 
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- jQuery (still used by page scripts for DOM manipulation) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -48,8 +60,13 @@
             &copy; <?php echo date('Y'); ?> Barrington Venables
         </div>
     </footer>
-    
-    <script src="js/combine-hover.js"></script>
+
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="<?php echo $v('js/ui.js'); ?>"></script>
+    <script src="<?php echo $v('js/combine-hover.js'); ?>"></script>
 
 </body>
 

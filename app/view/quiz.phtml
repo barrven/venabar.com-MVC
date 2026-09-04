@@ -18,7 +18,7 @@
     $('<link>', {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'style/localStyles/quiz.css' 
+        href: '<?php echo $v('style/localStyles/quiz.css'); ?>'
     }).appendTo('head');
 
     const cs = document.getElementById('courseSelect');

@@ -1,13 +1,61 @@
 /***** This file to be imported on every other stylesheet ******/
 
-:root{
-    --border-radius: 8px;
-    --element-bg-color: #f0f0f0;
-    --accent-color: #007bff;
-    --panel-color: #f8f9fa;
-    --panel-border-color: #dee2e6;
-    --panel-hover-color: #ebeef5;
+:root {
+    /* brand */
+    --accent-color: #2f6fed;
+    --accent-hover-color: #1d54c9;
+    --accent-soft-color: rgba(47, 111, 237, .12);
 
-    --bootstrap-border-radius: 5px
+    /* ink is always-dark, used for the navbar/footer regardless of theme
+       so the brand chrome stays consistent while content areas switch */
+    --ink-color: #14161c;
+    --ink-text-color: rgba(255, 255, 255, .82);
+    --ink-text-hover-color: #ffffff;
+
+    /* surfaces */
+    --bg-color: #f5f6f8;
+    --panel-color: #ffffff;
+    --panel-alt-color: #eef0f3;
+    --panel-border-color: #dfe3ea;
+    --panel-hover-color: var(--accent-soft-color);
+
+    /* text */
+    --text-color: #1c1f26;
+    --heading-color: #10121a;
+    --text-muted-color: #6b7280;
+
+    --success-color: #16a34a;
+    --danger-color: #dc2626;
+
+    --border-radius: 14px;
+    --control-border-radius: 10px;
+
+    --shadow-sm: 0 1px 2px rgba(16, 18, 26, .06), 0 1px 3px rgba(16, 18, 26, .08);
+    --shadow-md: 0 10px 26px rgba(16, 18, 26, .10), 0 2px 6px rgba(16, 18, 26, .06);
+
+    --theme-transition: background-color .25s ease, border-color .25s ease, color .25s ease, box-shadow .25s ease;
 }
 
+:root[data-theme="dark"] {
+    --accent-color: #6d8dfd;
+    --accent-hover-color: #8fa6ff;
+    --accent-soft-color: rgba(109, 141, 253, .16);
+
+    --ink-color: #0a0b0f;
+
+    --bg-color: #0e1014;
+    --panel-color: #171a21;
+    --panel-alt-color: #1e222b;
+    --panel-border-color: #2b303b;
+    --panel-hover-color: var(--accent-soft-color);
+
+    --text-color: #e7e9ee;
+    --heading-color: #f5f6f8;
+    --text-muted-color: #9aa1ad;
+
+    --success-color: #22c55e;
+    --danger-color: #f87171;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .5);
+    --shadow-md: 0 12px 28px rgba(0, 0, 0, .55);
+}
