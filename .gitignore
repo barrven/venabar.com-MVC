@@ -1,21 +1,67 @@
-/cgi-bin
-/.well-known
-.htaccess
-/assets/nbw-gallery
+# ==========================================
+# 1. Webroot / Project Files (public_html)
+# (Migrated from old public_html/.gitignore)
+# ==========================================
+/public_html/cgi-bin/
+/public_html/.well-known/
+/public_html/.htaccess
+/public_html/assets/nbw-gallery/
+/public_html/app/logs/
+/public_html/examples/pictionary/data/customWords.csv
+
+/public_html/404.shtml
+/public_html/500.shtml
+
+# Ignore .env and error_log files anywhere in the project
 .env
-404.shtml
-500.shtml
 error_log
-app/logs
-examples/pictionary/data/customWords.csv
-/ssh
+
+# ==========================================
+# 2. cPanel & Server Root Directories
+# ==========================================
 /access-logs
-error_log
-/etc
-/logs
-/mail
-/public_ftp
-/ssl
-/tmp
-/var
+/barringt-backup/
+/.cache/
+/.cagefs/
+/.caldav/
+/.cl.selector/
+/.clwpos/
+/.config/
+/.cpaddons/
+/.cpanel/
+/.cphorde/
+/etc/
+/.htpasswds/
+/.jbm/
+/.local/
+/logs/
+/mail/
+/.npm/
+/.pki/
+/public_ftp/
+/.putty/
+/.razor/
+/.softaculous/
+/.spamassassin/
+/.ssh/
+/ssl/
+/.subaccounts/
+/tmp/
+/.trash/
+/var/
 /www
+
+# ==========================================
+# 3. cPanel & Server Root Files
+# ==========================================
+/.bash_history
+/.bash_logout
+/.bash_profile
+/.bashrc
+/.contactemail
+/.gitconfig
+/.imunify_patch_id
+/.lastlogin
+/.myimunify_id
+/.spamassassinboxenable
+/.spamassassinenable
