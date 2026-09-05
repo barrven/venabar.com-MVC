@@ -30,17 +30,23 @@ Follow these steps to set up the project locally:
    - Start the Apache server by clicking the "Start" button next to Apache.
 
 5. **Access the Website**:
-   - Open a web browser and navigate to `http://localhost/venabar.com-MVC`.
+   - Open a web browser and navigate to `http://localhost/venabar.com-MVC/public_html`.
   
    - ## Usage
 Once the Apache server is running, you can access the website locally via your browser. Any changes you make to the project files in the `htdocs` directory will be reflected when you refresh the page.
 
 ## Project Structure
-The project follows the MVC design pattern:
+The project follows the MVC design pattern, with the webroot (`public_html/`) separated from the application code (`app/`) and root-level config:
 
 ```plaintext
 venabar.com-MVC/
 │
+├── public_html/            <- webroot: point Apache's DocumentRoot here
+│   ├── index.php           <- front controller
+│   ├── js/
+│   ├── style/
+│   ├── assets/
+│   └── examples/           <- standalone demo projects linked from projects.json
 ├── app/
 │   ├── model/
 │   │   ├── about.php
@@ -56,23 +62,19 @@ venabar.com-MVC/
 │   │   ├── cv.phtml
 │   │   ├── home.phtml
 │   │   └── projects.phtml
-│   ├── config.php
-│   |── functions.php
-|   └── data/quiz/
-|            |──/courses
-|            |──quizPrompt.txt
-|            └──responseSchema.json
-├── assets/
-├── examples/
-├── js/
-│   ├── combine-hover.js
-│   └── populate-work-xp.js
-├── style/
-│   ├── main.css
-│   └── sticky-footer-navbar.css
-└── index.php
+│   ├── connections/
+│   ├── functions.php
+│   └── data/
+│       ├── cv.json
+│       ├── projects.json
+│       └── quiz/
+│            ├── courses/
+│            ├── quizPrompt.txt
+│            └── responseSchema.json
+├── config.php
+└── .env
 ```
-- **Controller**: `index.php` at the root level handles the main application logic.
+- **Controller**: `public_html/index.php` handles the main application logic; the rest of the app (`app/`) and `config.php`/`.env` sit outside the webroot.
 - **Model**: Contains the logic related to data handling, located in `app/model/`.
 - **View**: Contains the templates for displaying the data, located in `app/view/`.
 

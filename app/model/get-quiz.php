@@ -31,7 +31,7 @@ $detail = $urlArgs['detail'];
 $file = explode(".", $detail)[0];
 $section = $urlArgs['section'];
 
-$basePath = 'app/data/quiz';
+$basePath = APP.'/data/quiz';
 
 $srcData = file_get_contents("$basePath/courses/$course/$file.txt");
 $sysPrompt = file_get_contents("$basePath/quizPrompt.txt");

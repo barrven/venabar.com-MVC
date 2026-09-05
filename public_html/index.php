@@ -1,12 +1,14 @@
 <?php
 
 // const DS = DIRECTORY_SEPARATOR;
-define('APP',realpath(dirname(__FILE__).'/app'));
+define('ROOT', realpath(dirname(__FILE__).'/..'));
+define('APP', ROOT.'/app');
+define('PUBLIC_PATH', ROOT.'/public');
 session_start();
-require APP.'/config.php';
+require ROOT.'/config.php';
 require APP.'/functions.php';
 
-loadEnv(APP.'/.env');
+loadEnv(ROOT.'/.env');
 
 $page = getParam('page', 'home'); //default is home
 $model = $paths['MODEL']."/$page.php";
@@ -14,11 +16,11 @@ $view = $paths['VIEW']."/$page.phtml";
 
 $mode = getParam('mode');
 if($mode == 'api'){
-    
+
     if(file_exists($model)){
         require $model;
     }
-    
+
     exit();
 }
 

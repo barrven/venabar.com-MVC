@@ -23,7 +23,7 @@
     <!-- Custom styles for this template -->
     <?php
         // cache-bust local assets on every edit so browsers never serve a stale copy
-        $assetRoot = dirname(APP);
+        $assetRoot = PUBLIC_PATH;
         $v = function ($relPath) use ($assetRoot) {
             $full = $assetRoot . '/' . $relPath;
             return $relPath . '?v=' . (file_exists($full) ? filemtime($full) : time());

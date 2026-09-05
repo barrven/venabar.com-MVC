@@ -8,7 +8,7 @@ if ($courseFiles === false) {
 } else {
     foreach ($courseFiles as $file) {
         // echo basename($file) . "<br>";
-        $json = file_get_contents('app/data/quiz/courses/'.basename($file));
+        $json = file_get_contents(APP.'/data/quiz/courses/'.basename($file));
         $converted = json_decode($json, true);
         $temp = array(
             "name" => $converted['name'],
